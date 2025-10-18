@@ -1,73 +1,24 @@
-# React + TypeScript + Vite
+# Welcome 🌸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio for the year 2025! A lot of work & love went into designing and building this and I hope you enjoy scrolling through it as much as I enjoyed making it. 🩷
 
-Currently, two official plugins are available:
+## Cloning
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In case you'd want to clone this repository and check it out for yourself, follow these steps:
 
-## React Compiler
+1. Use this link: https://github.com/romyjkk/portfolio.git to clone the repository in your code editor. You can also do this by typing `git clone https://github.com/romyjkk/portfolio.git` into your terminal.
+2. Open your terminal if it wasn't open yet, make sure you're in the right folder and install the necessary NPM packages by running `npm install`.
+3. Start the project by running `npm run dev`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## About this portfolio
 
-## Expanding the ESLint configuration
+Since I was young, I've loved all things spooky. 👻 One of my favorite movie franchises is the Alien franchise and one of my favorite games is Alien Isolation. If you've seen these movies/played this game, you know about the iconic user interfaces used throughout them. 📟📺 I decided to design my portfolio based on this design style, called 'Retro Futurism' and the iconic 'Cyberpunk' style, seen throughout a lot of games and movies like The Matrix and Blade Runner.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Sources
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+To showcase my projects, I used mockups, created by amazing artists. The sources of these artworks are linked down below:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. https://www.artstation.com/artwork/w6Ll3Y
+2. https://www.artstation.com/artwork/NyXJwD
+3. https://www.artstation.com/artwork/nYare1
+4. https://www.artstation.com/artwork/0l21g4
