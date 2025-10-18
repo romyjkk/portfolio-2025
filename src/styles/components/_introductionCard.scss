@@ -1,0 +1,115 @@
+.introductionCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    height: 100vh;
+    .introductionCard {
+        perspective: 1000px;
+        width: 100%;
+        height: fit-content;
+        container-type: inline-size;
+        container-name: intro;
+        .introductionCardInner {
+            position: relative;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            .introductionCardFront,
+            .introductionCardBack {
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                filter: drop-shadow(0 0 0.5rem var(--primaryAccentColor));
+                > div {
+                    border: 0.2rem solid var(--primaryAccentColor);
+                    clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+                    background-color: var(--primaryAccentColor);
+                    section {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+                        clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+                        position: relative;
+                        background-color: var(--primaryBackgroundColor);
+                        padding: 2.5rem;
+                        overflow: visible;
+                        z-index: 1;
+                        .portraitContainer {
+                            display: flex;
+                            justify-content: center;
+                            filter: drop-shadow(0 0 0.5rem var(--primaryAccentColor));
+                            aspect-ratio: 2/1;
+                            figure {
+                                aspect-ratio: 2/1;
+                                width: 100%;
+                                border: 0.2rem solid var(--primaryAccentColor);
+                                clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%);
+                                background-color: var(--primaryAccentColor);
+                                img {
+                                    aspect-ratio: 2/1;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: top;
+                                    clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%);
+                                }
+                            }
+                            .glitchImage {
+                                img {
+                                    background-image: url("/portrait.png");
+                                }
+                            }
+                        }
+                        .introduction {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                            margin: 0;
+                            > div {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 2rem;
+                                .arrows {
+                                    position: relative;
+                                    width: 1rem;
+                                    height: 1rem;
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        border-left: 0.2rem solid var(--primaryAccentColor);
+                                        border-bottom: 0.2rem solid var(--primaryAccentColor);
+                                        transform: translate(0, 0rem) rotate(-45deg);
+                                        animation: arrows 2s linear infinite;
+                                        filter: drop-shadow(0 0 1rem var(--primaryAccentColor));
+                                    }
+                                    &:after {
+                                        content: "";
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        border-left: 0.2rem solid var(--primaryAccentColor);
+                                        border-bottom: 0.2rem solid var(--primaryAccentColor);
+                                        transform: translate(0, -0.7rem) rotate(-45deg);
+                                        animation: arrows 2s linear infinite -1s;
+                                        filter: drop-shadow(0 0 1rem var(--primaryAccentColor));
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .introductionCardBack {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: rotateY(180deg);
+            }
+        }
+        &:hover .introductionCardInner {
+            transform: rotateY(180deg);
+        }
+    }
+}

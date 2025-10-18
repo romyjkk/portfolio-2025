@@ -1,0 +1,316 @@
+@media (min-width: 576px) {
+    .pageHeaderOne {
+        .headerContainer {
+            padding: 2rem 3rem;
+            > nav {
+                gap: 5rem;
+            }
+        }
+    }
+    // .pageHeaderTwo {
+    //     .wrapper {
+    //         margin: 2rem 2rem 0;
+    //         border: 0.4rem solid var(--primaryAccentColor);
+    //         .headerContainer {
+    //             padding: 2rem 3rem;
+    //             figure {
+    //             }
+    //             nav {
+    //                 gap: 5rem;
+    //             }
+    //         }
+    //     }
+    // }
+    main .homePageWrapper {
+        .introductionCardContainer {
+            .introductionCard {
+                max-width: 70rem;
+                .introductionCardInner {
+                    .introductionCardFront {
+                        > div {
+                        }
+                    }
+                }
+            }
+        }
+        .projectContainer {
+            .projects {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+                gap: 10rem;
+                max-width: 120rem;
+                .project:nth-of-type(odd) {
+                    justify-self: baseline;
+                }
+                .project:nth-of-type(even) {
+                    justify-self: end;
+                }
+                .projectTwo {
+                    > div {
+                        > section {
+                            margin-left: 3rem;
+                        }
+                    }
+                }
+                .projectFour {
+                    > div {
+                        > section {
+                            margin-left: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+        #wrapper {
+            .myExperience {
+                max-width: 90vw;
+                width: 100%;
+                justify-content: space-between;
+                .timelineContainer {
+                    .timeline {
+                        .sm {
+                            display: none;
+                        }
+                        .lg {
+                            display: block;
+                        }
+                    }
+                }
+                .experiences {
+                    .experience {
+                        .experienceContainer {
+                            .experienceContainerBorder {
+                                .experienceContainerClip {
+                                    padding: 3rem;
+                                    &::before,
+                                    &::after {
+                                        width: 7rem;
+                                        height: 7rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .button {
+        max-width: fit-content;
+        .buttonFront {
+            max-width: fit-content;
+            padding: 1rem 3rem 1rem 3rem;
+        }
+    }
+    footer {
+        margin-top: 10rem;
+        padding: 2rem;
+        ul {
+            gap: 3rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main .homePageWrapper {
+        #wrapper {
+            .myExperience {
+                .experiences {
+                    .experience {
+                        .experienceContainer {
+                            .experienceContainerBorder {
+                                .experienceContainerClip {
+                                    padding: 7rem 4rem;
+                                    &::before,
+                                    &::after {
+                                        width: 8rem;
+                                        height: 8rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    main .homePageWrapper {
+        #wrapper {
+            .myExperience {
+                // margin: 0 2rem;
+                .timelineContainer {
+                    .timeline {
+                        svg {
+                            max-height: 80vh;
+                        }
+                    }
+                }
+                .experiences {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1050px) {
+    main .homePageWrapper {
+        #wrapper {
+            .myExperience {
+                max-width: 100rem;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .pageHeader {
+    }
+    main .homePageWrapper {
+        .projectContainer {
+            .projects {
+                align-self: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@container intro (inline-size > 40rem) {
+    .introductionCardContainer {
+        .introductionCard {
+            .introductionCardInner {
+                .introductionCardFront,
+                .introductionCardBack {
+                    > div {
+                        clip-path: polygon(0 0, 95% 0, 100% 10%, 100% 100%, 5% 100%, 0 90%);
+                        border: 0.4rem solid var(--primaryAccentColor);
+                        > section {
+                            clip-path: polygon(0 0, 95% 0, 100% 10%, 100% 100%, 5% 100%, 0 90%);
+                            flex-direction: row;
+                            padding: 4rem;
+                            gap: 4rem;
+                            .portraitContainer {
+                                aspect-ratio: 1/1;
+                                max-width: 20rem;
+                                figure {
+                                    clip-path: polygon(0 0, 88% 0, 100% 10%, 100% 100%, 10% 100%, 0 92%);
+                                    img {
+                                        clip-path: polygon(0 0, 88% 0, 100% 10%, 100% 100%, 10% 100%, 0 92%);
+                                    }
+                                }
+                            }
+                            .introduction {
+                                justify-content: center;
+                                gap: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@container projectPreview (inline-size >= 60rem) {
+    main {
+        .projectContainer {
+            .projects {
+                .project {
+                    > div {
+                        > section {
+                            width: auto;
+                            gap: 2rem;
+                        }
+                    }
+                    &.projectOne {
+                        > div {
+                            > section {
+                                margin-right: 2rem;
+                            }
+                        }
+                    }
+                    &.projectThree {
+                        > div {
+                            margin-top: 4rem;
+                        }
+                    }
+                    &.projectFout {
+                        > div {
+                            > section {
+                                margin-left: 4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@container aboutMe (inline-size > 30rem) {
+    main {
+        .aboutMeContainer {
+            .me {
+                .portraitContainer {
+                    aspect-ratio: 1 / 1;
+                    max-width: 30rem;
+                    figure {
+                        aspect-ratio: 1 / 1;
+                        img {
+                            aspect-ratio: 1 / 1;
+                        }
+                    }
+                    p {
+                        margin: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@container aboutMe (inline-size > 50rem) {
+    main {
+        .aboutMeContainer {
+            .me {
+                .portraitContainer {
+                    max-width: 50rem;
+                    aspect-ratio: 2/1;
+                    figure {
+                        aspect-ratio: 2/1;
+                        img {
+                            aspect-ratio: 2/1;
+                        }
+                    }
+                    p {
+                        margin: 4rem;
+                    }
+                }
+                .textContainer {
+                    gap: 0;
+                }
+            }
+        }
+    }
+}
+
+@container aboutMe (inline-size > 60rem) {
+    main {
+        .aboutMeContainer {
+            .me {
+                .portraitContainer {
+                    figure {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

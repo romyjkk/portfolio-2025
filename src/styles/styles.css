@@ -1,0 +1,1033 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+main .homePageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+ul,
+figure,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Rocket Command", sans-serif;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-style: italic;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-style: italic;
+}
+
+h3 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-style: italic;
+}
+
+p,
+li,
+a,
+button,
+div,
+small {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--primaryTextColor);
+}
+
+p,
+li {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
+
+button,
+div {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
+
+a p {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.introduction h1 {
+  color: var(--secondaryTextColor);
+  filter: drop-shadow(0 0 0.2rem var(--secondaryTextColor));
+}
+.introduction p {
+  color: var(--secondaryTextColor);
+  font-weight: 300;
+}
+.introduction p strong {
+  font-weight: 900;
+  font-style: italic;
+}
+
+.project h2,
+.project p {
+  align-self: baseline;
+}
+
+footer p {
+  color: var(--tertiaryTextColor);
+  font-weight: 500;
+}
+
+.timeline::before {
+  font-family: "Rocket Command", sans-serif;
+  font-size: clamp(2rem, 4vw, 4rem);
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+footer small {
+  color: var(--tertiaryTextColor);
+}
+
+.pageHeaderOne {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  top: 0;
+}
+.pageHeaderOne .headerContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 1rem 2rem 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  justify-content: space-between;
+  max-width: 80rem;
+  clip-path: polygon(0 0, 95% 0, 100% 15%, 100% 100%, 5% 100%, 0 85%);
+}
+.pageHeaderOne .headerContainer figure img {
+  width: clamp(7rem, 10vw, 10rem);
+}
+.pageHeaderOne .headerContainer nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 11;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+  background-color: var(--primaryAccentColor);
+  padding: 1rem;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+footer ul li a {
+  transition: 0.5s;
+}
+footer ul li a img {
+  transition: 0.5s;
+  width: var(--iconSm);
+  height: var(--iconSm);
+}
+footer ul li a:hover img {
+  filter: drop-shadow(0 0 0.1rem var(--primaryBackgroundColor));
+}
+
+.introductionCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  height: 100vh;
+}
+.introductionCardContainer .introductionCard {
+  perspective: 1000px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  container-type: inline-size;
+  container-name: intro;
+}
+.introductionCardContainer .introductionCard .introductionCardInner {
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront,
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack {
+  backface-visibility: hidden;
+  filter: drop-shadow(0 0 0.5rem var(--primaryAccentColor));
+}
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div,
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div {
+  border: 0.2rem solid var(--primaryAccentColor);
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+  background-color: var(--primaryAccentColor);
+}
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div section,
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+  position: relative;
+  background-color: var(--primaryBackgroundColor);
+  padding: 2.5rem;
+  overflow: visible;
+  z-index: 1;
+}
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div section .portraitContainer,
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div section .portraitContainer {
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(0 0 0.5rem var(--primaryAccentColor));
+  aspect-ratio: 2/1;
+}
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div section .portraitContainer figure,
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div section .portraitContainer figure {
+  aspect-ratio: 2/1;
+  width: 100%;
+  border: 0.2rem solid var(--primaryAccentColor);
+  clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%);
+  background-color: var(--primaryAccentColor);
+}
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div section .portraitContainer figure img,
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div section .portraitContainer figure img {
+  aspect-ratio: 2/1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%);
+}
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div section .portraitContainer .glitchImage img,
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div section .portraitContainer .glitchImage img {
+  background-image: url("/portrait.png");
+}
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div section .introduction,
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div section .introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+}
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div section .introduction > div,
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div section .introduction > div {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div section .introduction > div .arrows,
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div section .introduction > div .arrows {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+}
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div section .introduction > div .arrows:before,
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div section .introduction > div .arrows:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-left: 0.2rem solid var(--primaryAccentColor);
+  border-bottom: 0.2rem solid var(--primaryAccentColor);
+  transform: translate(0, 0rem) rotate(-45deg);
+  animation: arrows 2s linear infinite;
+  filter: drop-shadow(0 0 1rem var(--primaryAccentColor));
+}
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div section .introduction > div .arrows:after,
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div section .introduction > div .arrows:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-left: 0.2rem solid var(--primaryAccentColor);
+  border-bottom: 0.2rem solid var(--primaryAccentColor);
+  transform: translate(0, -0.7rem) rotate(-45deg);
+  animation: arrows 2s linear infinite -1s;
+  filter: drop-shadow(0 0 1rem var(--primaryAccentColor));
+}
+.introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+.introductionCardContainer .introductionCard:hover .introductionCardInner {
+  transform: rotateY(180deg);
+}
+
+main .projectContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+main .projectContainer > h2 {
+  text-align: center;
+}
+main .projectContainer .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  margin: 0 1rem;
+  padding-top: 150px;
+}
+main .projectContainer .projects .project {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  max-width: 60rem;
+  width: 100%;
+  container-type: inline-size;
+  container-name: projectPreview;
+}
+main .projectContainer .projects .project > img {
+  grid-area: 1/1;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  animation: dropShadow 5s linear infinite;
+}
+main .projectContainer .projects .project > div {
+  grid-area: 1/1;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  opacity: 0;
+}
+main .projectContainer .projects .project > div > figure {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+main .projectContainer .projects .project > div > figure img:first-of-type {
+  position: absolute;
+}
+main .projectContainer .projects .project > div > figure img:nth-of-type(2) {
+  position: relative;
+  z-index: 2;
+}
+main .projectContainer .projects .project > div > section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+main .projectContainer .projects .project > div > section .button {
+  margin-top: 1rem;
+}
+main .projectContainer .projects .projectOne > div {
+  margin-top: 1rem;
+}
+main .projectContainer .projects .projectOne > div figure {
+  max-width: 35rem;
+  width: 100%;
+}
+main .projectContainer .projects .projectOne > div figure img {
+  margin-left: 1rem;
+}
+main .projectContainer .projects .projectOne > div figure .noise {
+  position: absolute;
+  width: clamp(6rem, 50%, 20rem);
+  height: clamp(2rem, 35%, 20rem);
+  left: 25%;
+  top: 18%;
+}
+main .projectContainer .projects .projectOne > div section {
+  width: 90%;
+  margin-right: 1rem;
+}
+main .projectContainer .projects .projectTwo > div section {
+  margin-left: 2rem;
+  width: 80%;
+}
+main .projectContainer .projects .projectTwo > div figure {
+  max-width: 35rem;
+  width: 100%;
+  margin-right: 1rem;
+  order: 2;
+}
+main .projectContainer .projects .projectTwo > div figure img {
+  margin-right: 1rem;
+}
+main .projectContainer .projects .projectTwo > div figure img:nth-of-type(2) {
+  transform: rotateY(180deg);
+}
+main .projectContainer .projects .projectThree > div {
+  margin-top: 2rem;
+}
+main .projectContainer .projects .projectThree > div figure {
+  max-width: 40rem;
+  width: 100%;
+  margin-right: -2rem;
+  margin-left: 1rem;
+}
+main .projectContainer .projects .projectThree > div section {
+  width: 80%;
+}
+main .projectContainer .projects .projectFour > div {
+  margin-top: 2rem;
+}
+main .projectContainer .projects .projectFour > div section {
+  width: 70%;
+  margin-left: 2rem;
+}
+main .projectContainer .projects .projectFour > div figure {
+  max-width: 35rem;
+  width: 100%;
+  margin-left: -1rem;
+  order: 4;
+}
+main .aboutMeContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .aboutMeContainer .me {
+  height: 100vh;
+  container-type: inline-size;
+  container-name: aboutMe;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  overflow: hidden;
+  align-self: center;
+}
+main .aboutMeContainer .me .portraitContainer {
+  display: grid;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 0.5rem var(--primaryAccentColor));
+  max-width: 20rem;
+  aspect-ratio: 2/3;
+  z-index: 1;
+  margin: 0 1rem;
+}
+main .aboutMeContainer .me .portraitContainer figure {
+  grid-area: 1/1;
+  aspect-ratio: 2/3;
+  border: 0.5rem solid var(--primaryAccentColor);
+  clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%);
+  background-color: var(--primaryAccentColor);
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main .aboutMeContainer .me .portraitContainer figure img {
+  aspect-ratio: 2/3;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%);
+}
+main .aboutMeContainer .me .portraitContainer p {
+  grid-area: 1/1;
+  margin: 0 0.5rem 0 1rem;
+  z-index: 1;
+  opacity: 0;
+}
+main .aboutMeContainer .me .portraitContainer .introductionText {
+  z-index: 2;
+}
+main .aboutMeContainer .me .portraitContainer .introductionTextCopy1 {
+  color: var(--secondaryTextColor);
+}
+main .aboutMeContainer .me .portraitContainer .introductionTextCopy2 {
+  color: var(--primaryButtonColor);
+}
+main .aboutMeContainer .me .textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .aboutMeContainer .me .textContainer .text {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  will-change: transform;
+}
+main .aboutMeContainer .me .textContainer .text h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-wrap: nowrap;
+  font-size: 12rem;
+  color: var(--secondaryTextColor);
+  filter: drop-shadow(0 0 0.5rem var(--primaryAccentColor));
+}
+main .aboutMeContainer .me .textContainer .text:nth-of-type(odd) {
+  animation: marqueeEffect 100s infinite linear;
+}
+main .aboutMeContainer .me .textContainer .text:nth-of-type(even) {
+  animation: marqueeEffectReverse 100s infinite linear;
+}
+
+main .homePageWrapper #wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .homePageWrapper #wrapper .myExperience {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 1rem;
+}
+main .homePageWrapper #wrapper .myExperience .timelineContainer {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline {
+  display: block;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline svg {
+  max-height: 70vh;
+  height: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline .lg {
+  display: none;
+}
+main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline .tube {
+  filter: drop-shadow(0 0 0.5rem var(--secondaryAccentColor));
+}
+main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline .tubeFiller {
+  position: absolute;
+  left: 0;
+  top: 0;
+  clip-path: inset(0% 0% 100% 0%);
+}
+main .homePageWrapper #wrapper .myExperience .experiences {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main .homePageWrapper #wrapper .myExperience .experiences .experience {
+  grid-area: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  height: 100vh;
+}
+main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 60rem;
+  filter: drop-shadow(0 0 0.5rem var(--secondaryAccentColor));
+}
+main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder {
+  clip-path: polygon(10% 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 20%);
+  border: 0.5rem solid var(--secondaryAccentColor);
+  background-color: var(--secondaryAccentColor);
+}
+main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  clip-path: polygon(10% 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 20%);
+  background-color: black;
+  padding: 3rem 2rem;
+}
+main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip .experienceTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip::before, main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip::after {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+}
+main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip::before {
+  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 115 115' fill='none'><path d='M24.999 25L24.999 90L89.999 90L114.999 115L-0.000465393 115L-0.000475447 1.00536e-05L24.999 25Z' fill='%232AB01C'/></svg>");
+  left: 0;
+  bottom: 0;
+}
+main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip::after {
+  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 115 115' fill='none'><path d='M90 90V25H25L0 0H114.999V115L90 90Z' fill='%232AB01C'/></svg>");
+  right: 0;
+  top: 0;
+}
+
+:root {
+  --gridBackgroundColor: #07210b;
+  --primaryBackgroundColor: #000000;
+  --primaryAccentColor: #1e8114;
+  --secondaryAccentColor: #2ab01c;
+  --primaryTextColor: #ffffff;
+  --secondaryTextColor: #2ab01c;
+  --tertiaryTextColor: #000000;
+  --primaryButtonColor: #a60111;
+  --secondaryButtonColor: #610009;
+  --iconSm: 3rem;
+}
+
+.invisible {
+  display: none;
+}
+
+.red {
+  color: var(--primaryButtonColor);
+}
+
+@keyframes arrows {
+  0% {
+    border-left: 0.2rem solid rgba(30, 129, 20, 0);
+    border-bottom: 0.2rem solid rgba(30, 129, 20, 0);
+    transform: translate(0, -1rem) rotate(-45deg);
+  }
+  10%, 90% {
+    border-left: 0.2rem solid rgba(30, 129, 20, 0);
+    border-bottom: 0.2rem solid rgba(30, 129, 20, 0);
+  }
+  50% {
+    border-left: 0.2rem solid rgba(30, 129, 20, 0.7);
+    border-bottom: 0.2rem solid rgba(30, 129, 20, 0.7);
+    transform: translate(0, 0) rotate(-45deg);
+  }
+  100% {
+    border-left: 0.2rem solid rgba(30, 129, 20, 0);
+    border-bottom: 0.2rem solid rgba(30, 129, 20, 0);
+    transform: translate(0, 1rem) rotate(-45deg);
+  }
+}
+@keyframes dropShadow {
+  0% {
+    filter: drop-shadow(0px 0px 1px #1e8114);
+  }
+  50% {
+    filter: drop-shadow(0px 0px 10px #1e8114);
+  }
+  100% {
+    filter: drop-shadow(0px 0px 1px #1e8114);
+  }
+}
+@keyframes marqueeEffect {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translate(-50%);
+  }
+}
+@keyframes marqueeEffectReverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translate(0%);
+  }
+}
+@keyframes glitch {
+  0% {
+    clip-path: inset(50px 0 2px 0);
+  }
+  5% {
+    clip-path: inset(25px 0 69px 0);
+  }
+  10% {
+    clip-path: inset(53px 0 51px 0);
+  }
+  15% {
+    clip-path: inset(24px 0 63px 0);
+  }
+  20% {
+    clip-path: inset(52px 0 2px 0);
+  }
+  25% {
+    clip-path: inset(33px 0 80px 0);
+  }
+  30% {
+    clip-path: inset(36px 0 31px 0);
+  }
+  35% {
+    clip-path: inset(79px 0 59px 0);
+  }
+  40% {
+    clip-path: inset(67px 0 2px 0);
+  }
+  45% {
+    clip-path: inset(77px 0 27px 0);
+  }
+  50% {
+    clip-path: inset(22px 0 1px 0);
+  }
+  55% {
+    clip-path: inset(73px 0 3px 0);
+  }
+  60% {
+    clip-path: inset(39px 0 40px 0);
+  }
+  65% {
+    clip-path: inset(66px 0 18px 0);
+  }
+  70% {
+    clip-path: inset(9px 0 47px 0);
+  }
+  75% {
+    clip-path: inset(64px 0 17px 0);
+  }
+  80% {
+    clip-path: inset(75px 0 35px 0);
+  }
+  85% {
+    clip-path: inset(13px 0 33px 0);
+  }
+  90% {
+    clip-path: inset(43px 0 37px 0);
+  }
+  95% {
+    clip-path: inset(76px 0 37px 0);
+  }
+  100% {
+    clip-path: inset(67px 0 18px 0);
+  }
+}
+@keyframes noise {
+  0% {
+    transform: translateX(10%) translateY(-10%);
+  }
+  100% {
+    transform: translateX(-10%) translateY(10%);
+  }
+}
+@keyframes noiseEffect {
+  0% {
+    background-position-x: 0%;
+    background-position-y: 0%;
+  }
+  50% {
+    background-position-x: 50%;
+    background-position-y: 50%;
+  }
+  100% {
+    background-position-x: 100%;
+    background-position-y: 100%;
+  }
+}
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  position: relative;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  width: 100%;
+}
+.button .buttonFront {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primaryButtonColor);
+  color: var(--primaryTextColor);
+  padding: 1rem 2rem;
+  transition: 0.5s;
+}
+.button .buttonBack {
+  background-color: var(--secondaryButtonColor);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: -1;
+  transition: 0.5s;
+  box-shadow: -0.15rem -0.15rem 1px 0 var(--secondaryButtonColor);
+}
+.button .buttonBack::before, .button .buttonBack::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  transition: 0.5s;
+}
+.button .buttonBack::before {
+  left: -0.5rem;
+  bottom: 0;
+  border-top: 0.5rem solid var(--secondaryButtonColor);
+  border-left: 0.5rem solid transparent;
+}
+.button .buttonBack::after {
+  right: 0;
+  top: -0.5rem;
+  border-bottom: 0.5rem solid var(--secondaryButtonColor);
+  border-right: 0.5rem solid transparent;
+}
+.button:hover .buttonFront {
+  transform: translate(-0.2rem, -0.2rem);
+}
+.button:hover .buttonBack::before {
+  left: -0.7rem;
+  border-top: 0.7rem solid var(--secondaryButtonColor);
+  border-left: 0.7rem solid transparent;
+}
+.button:hover .buttonBack::after {
+  top: -0.7rem;
+  border-bottom: 0.7rem solid var(--secondaryButtonColor);
+  border-right: 0.7rem solid transparent;
+}
+.button:active .buttonFront {
+  transform: translate(0.3rem, 0.3rem);
+}
+.button:active .buttonBack::before {
+  left: -0.2rem;
+  border-top: 0.2rem solid var(--secondaryButtonColor);
+  border-left: 0.2rem solid transparent;
+}
+.button:active .buttonBack::after {
+  top: -0.2rem;
+  border-bottom: 0.2rem solid var(--secondaryButtonColor);
+  border-right: 0.2rem solid transparent;
+}
+
+body {
+  background-color: var(--primaryBackgroundColor);
+  background-size: 5rem 5rem;
+  background-image: linear-gradient(var(--gridBackgroundColor) 0.1em, transparent 0.1em), linear-gradient(90deg, var(--gridBackgroundColor) 0.1em, transparent 0.1em);
+  background-position: 3rem 3rem;
+  background-attachment: fixed;
+}
+
+@media (min-width: 576px) {
+  .pageHeaderOne .headerContainer {
+    padding: 2rem 3rem;
+  }
+  .pageHeaderOne .headerContainer > nav {
+    gap: 5rem;
+  }
+  main .homePageWrapper .introductionCardContainer .introductionCard {
+    max-width: 70rem;
+  }
+  main .homePageWrapper .projectContainer .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10rem;
+    max-width: 120rem;
+  }
+  main .homePageWrapper .projectContainer .projects .project:nth-of-type(odd) {
+    justify-self: baseline;
+  }
+  main .homePageWrapper .projectContainer .projects .project:nth-of-type(even) {
+    justify-self: end;
+  }
+  main .homePageWrapper .projectContainer .projects .projectTwo > div > section {
+    margin-left: 3rem;
+  }
+  main .homePageWrapper .projectContainer .projects .projectFour > div > section {
+    margin-left: 4rem;
+  }
+  main .homePageWrapper #wrapper .myExperience {
+    max-width: 90vw;
+    width: 100%;
+    justify-content: space-between;
+  }
+  main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline .sm {
+    display: none;
+  }
+  main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline .lg {
+    display: block;
+  }
+  main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip {
+    padding: 3rem;
+  }
+  main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip::before, main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip::after {
+    width: 7rem;
+    height: 7rem;
+  }
+  .button {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .button .buttonFront {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    padding: 1rem 3rem 1rem 3rem;
+  }
+  footer {
+    margin-top: 10rem;
+    padding: 2rem;
+  }
+  footer ul {
+    gap: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip {
+    padding: 7rem 4rem;
+  }
+  main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip::before, main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip::after {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+@media (min-width: 992px) {
+  main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline svg {
+    max-height: 80vh;
+  }
+  main .homePageWrapper #wrapper .myExperience .experiences {
+    width: 100%;
+  }
+}
+@media (min-width: 1050px) {
+  main .homePageWrapper #wrapper .myExperience {
+    max-width: 100rem;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  main .homePageWrapper .projectContainer .projects {
+    align-self: center;
+    width: 100%;
+  }
+}
+@container intro (inline-size > 40rem) {
+  .introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div,
+  .introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div {
+    clip-path: polygon(0 0, 95% 0, 100% 10%, 100% 100%, 5% 100%, 0 90%);
+    border: 0.4rem solid var(--primaryAccentColor);
+  }
+  .introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div > section,
+  .introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div > section {
+    clip-path: polygon(0 0, 95% 0, 100% 10%, 100% 100%, 5% 100%, 0 90%);
+    flex-direction: row;
+    padding: 4rem;
+    gap: 4rem;
+  }
+  .introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div > section .portraitContainer,
+  .introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div > section .portraitContainer {
+    aspect-ratio: 1/1;
+    max-width: 20rem;
+  }
+  .introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div > section .portraitContainer figure,
+  .introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div > section .portraitContainer figure {
+    clip-path: polygon(0 0, 88% 0, 100% 10%, 100% 100%, 10% 100%, 0 92%);
+  }
+  .introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div > section .portraitContainer figure img,
+  .introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div > section .portraitContainer figure img {
+    clip-path: polygon(0 0, 88% 0, 100% 10%, 100% 100%, 10% 100%, 0 92%);
+  }
+  .introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div > section .introduction,
+  .introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div > section .introduction {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@container projectPreview (inline-size >= 60rem) {
+  main .projectContainer .projects .project > div > section {
+    width: auto;
+    gap: 2rem;
+  }
+  main .projectContainer .projects .project.projectOne > div > section {
+    margin-right: 2rem;
+  }
+  main .projectContainer .projects .project.projectThree > div {
+    margin-top: 4rem;
+  }
+  main .projectContainer .projects .project.projectFout > div > section {
+    margin-left: 4rem;
+  }
+}
+@container aboutMe (inline-size > 30rem) {
+  main .aboutMeContainer .me .portraitContainer {
+    aspect-ratio: 1/1;
+    max-width: 30rem;
+  }
+  main .aboutMeContainer .me .portraitContainer figure {
+    aspect-ratio: 1/1;
+  }
+  main .aboutMeContainer .me .portraitContainer figure img {
+    aspect-ratio: 1/1;
+  }
+  main .aboutMeContainer .me .portraitContainer p {
+    margin: 2rem;
+  }
+}
+@container aboutMe (inline-size > 50rem) {
+  main .aboutMeContainer .me .portraitContainer {
+    max-width: 50rem;
+    aspect-ratio: 2/1;
+  }
+  main .aboutMeContainer .me .portraitContainer figure {
+    aspect-ratio: 2/1;
+  }
+  main .aboutMeContainer .me .portraitContainer figure img {
+    aspect-ratio: 2/1;
+  }
+  main .aboutMeContainer .me .portraitContainer p {
+    margin: 4rem;
+  }
+  main .aboutMeContainer .me .textContainer {
+    gap: 0;
+  }
+}
+@container aboutMe (inline-size > 60rem) {
+  main .aboutMeContainer .me .portraitContainer figure {
+    height: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

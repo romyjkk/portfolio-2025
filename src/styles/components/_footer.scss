@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    background-color: var(--primaryAccentColor);
+    padding: 1rem;
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        li {
+            a {
+                transition: 0.5s;
+
+                img {
+                    transition: 0.5s;
+                    width: var(--iconSm);
+                    height: var(--iconSm);
+                }
+                &:hover {
+                    img {
+                        filter: drop-shadow(0 0 0.1rem var(--primaryBackgroundColor));
+                    }
+                }
+            }
+        }
+    }
+}

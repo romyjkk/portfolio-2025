@@ -1,0 +1,87 @@
+@keyframes arrows {
+    0% {
+        border-left: 0.2rem solid rgba(30, 129, 20, 0);
+        border-bottom: 0.2rem solid rgba(30, 129, 20, 0);
+        transform: translate(0, -1rem) rotate(-45deg);
+    }
+    10%,
+    90% {
+        border-left: 0.2rem solid rgba(30, 129, 20, 0);
+        border-bottom: 0.2rem solid rgba(30, 129, 20, 0);
+    }
+    50% {
+        border-left: 0.2rem solid rgba(30, 129, 20, 0.7);
+        border-bottom: 0.2rem solid rgba(30, 129, 20, 0.7);
+        transform: translate(0, 0) rotate(-45deg);
+    }
+    100% {
+        border-left: 0.2rem solid rgba(30, 129, 20, 0);
+        border-bottom: 0.2rem solid rgba(30, 129, 20, 0);
+        transform: translate(0, 1rem) rotate(-45deg);
+    }
+}
+
+@keyframes dropShadow {
+    0% {
+        filter: drop-shadow(0px 0px 1px #1e8114);
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 10px #1e8114);
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 1px #1e8114);
+    }
+}
+
+@keyframes marqueeEffect {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translate(-50%);
+    }
+}
+
+@keyframes marqueeEffectReverse {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translate(0%);
+    }
+}
+
+@keyframes glitch {
+    $steps: 20;
+    @for $i from 0 through $steps {
+        #{percentage($i * (1 / $steps))} {
+            clip-path: inset(random(80) + px 0 random(80) + px 0);
+        }
+    }
+}
+
+@keyframes noise {
+    0% {
+        transform: translateX(10%) translateY(-10%);
+    }
+    100% {
+        transform: translateX(-10%) translateY(10%);
+    }
+}
+
+@keyframes noiseEffect {
+    0% {
+        background-position-x: 0%;
+        background-position-y: 0%;
+    }
+    50% {
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
+    100% {
+        background-position-x: 100%;
+        background-position-y: 100%;
+    }
+}

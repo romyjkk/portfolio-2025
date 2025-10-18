@@ -1,0 +1,73 @@
+.pageHeaderOne {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    top: 0;
+    .headerContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 1rem 2rem 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 2rem;
+        justify-content: space-between;
+        max-width: 80rem;
+        clip-path: polygon(0 0, 95% 0, 100% 15%, 100% 100%, 5% 100%, 0 85%);
+        figure {
+            img {
+                width: clamp(7rem, 10vw, 10rem);
+            }
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2rem;
+            justify-content: flex-end;
+            width: 100%;
+            z-index: 11;
+        }
+    }
+}
+
+// .pageHeaderTwo {
+//     display: flex;
+//     position: fixed;
+//     justify-content: center;
+//     width: 100%;
+//     z-index: 10;
+//     filter: drop-shadow(0 0 0.5rem var(--primaryAccentColor));
+//     .wrapper {
+//         max-width: 80rem;
+//         width: 100%;
+//         margin: 2rem 1rem 0;
+//         background-color: rgba(111, 36, 36, 0.5);
+//         clip-path: polygon(0 0, 95% 0, 100% 15%, 100% 100%, 5% 100%, 0 85%);
+//         border: 0.2rem solid var(--primaryAccentColor);
+//         background-color: var(--primaryAccentColor);
+//     }
+//     .headerContainer {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         padding: 1rem 2rem;
+//         background-color: var(--primaryBackgroundColor);
+//         clip-path: polygon(0 0, 95% 0, 100% 15%, 100% 100%, 5% 100%, 0 85%);
+//         figure {
+//             img {
+//                 width: clamp(7rem, 10vw, 10rem);
+//             }
+//         }
+//         nav {
+//             display: flex;
+//             flex-direction: row;
+//             align-items: center;
+//             gap: 2rem;
+//             justify-content: flex-end;
+//             width: 100%;
+//             z-index: 11;
+//         }
+//     }
+// }
