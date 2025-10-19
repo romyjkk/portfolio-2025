@@ -12,13 +12,15 @@ In case you'd want to clone this repository and check it out for yourself, follo
 
 ## About this portfolio
 
-Since I was young, I've loved all things spooky. 👻 One of my favorite movie franchises is the Alien franchise and one of my favorite games is Alien Isolation. If you've seen these movies/played this game, you know about the iconic user interfaces used throughout them. 📟📺 I decided to design my portfolio based on this design style, called 'Retro Futurism' and the iconic 'Cyberpunk' style, seen throughout a lot of games and movies like The Matrix and Blade Runner.
+Since I was young, I've loved all things spooky 👻 One of my favorite movie franchises is the Alien franchise and one of my favorite games is Alien Isolation. If you've seen these movies/played this game, you know about the iconic user interfaces used throughout them 📟📺 I decided to design my portfolio based on this design style, called 'Retro Futurism' and the iconic 'Cyberpunk' style, seen throughout a lot of games and movies like The Matrix and Blade Runner.
 
 ## Sources
 
-To showcase my projects, I used mockups, created by amazing artists. The sources of these artworks are linked down below:
+To showcase my projects, I made mockups, using artwork by amazing artists. The sources of these artworks are linked down below:
 
-1. https://www.artstation.com/artwork/w6Ll3Y
-2. https://www.artstation.com/artwork/NyXJwD
-3. https://www.artstation.com/artwork/nYare1
-4. https://www.artstation.com/artwork/0l21g4
+1. Retro sci-fi computer, XIACSO. (2021, October 15). ArtStation. https://www.artstation.com/artwork/w6Ll3Y
+2. Retro sci fi computer, Aleksandra Kremic. (2024, May 13). ArtStation. https://www.artstation.com/artwork/NyXJwD
+3. Retro sci - fi computer, XIACSO. (2021, October 15). ArtStation. https://www.artstation.com/artwork/nYare1
+4. Retro Sci-Fi computer – inspired by Alien: Romulus, Abraham Zuñiga. (2025, June 19). ArtStation. https://www.artstation.com/artwork/0l21g4
+
+You may have noticed that these artworks are almost all based on the Alien franchise - peek the Weyland-Yutani logo ;)

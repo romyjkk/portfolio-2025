@@ -58,7 +58,7 @@ function ProjectPreview(props: {
       tl2.fromTo(
         contentRef.current,
         { opacity: 0 },
-        { opacity: 1, duration: 1, ease: "steps(3)" },
+        { opacity: 1, duration: 1, ease: "power1.out" },
         0.5
       );
       return tl2;
