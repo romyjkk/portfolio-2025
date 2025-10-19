@@ -73,7 +73,7 @@ function ProjectPreview(props: {
         trigger: containerRef.current,
         start: "top bottom",
         end: "bottom +=500",
-        markers: true,
+        // markers: true,
         toggleActions: "play none none none",
         animation: tl3,
       });
