@@ -18,7 +18,7 @@ Since I was young, I've loved all things spooky 👻 One of my favorite movie fr
 
 To showcase my projects, I made mockups, using artwork by amazing artists. The sources of these artworks are linked down below:
 
-1. Retro sci-fi computer, XIACSO. (2021, October 15). ArtStation. https://www.artstation.com/artwork/w6Ll3Y
+1. [Retro sci-fi computer, XIACSO. (2021, October 15). ArtStation. https://www.artstation.com/artwork/w6Ll3Y](https://www.artstation.com/artwork/w6Ll3Y){:target="\_blank"}
 2. Retro sci fi computer, Aleksandra Kremic. (2024, May 13). ArtStation. https://www.artstation.com/artwork/NyXJwD
 3. Retro sci - fi computer, XIACSO. (2021, October 15). ArtStation. https://www.artstation.com/artwork/nYare1
 4. Retro Sci-Fi computer – inspired by Alien: Romulus, Abraham Zuñiga. (2025, June 19). ArtStation. https://www.artstation.com/artwork/0l21g4
