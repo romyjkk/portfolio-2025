@@ -2,7 +2,7 @@
 // import { useGSAP } from "@gsap/react";
 
 import ProjectPreview from "./ProjectPreview";
-import { projects } from "../data/ProjectData";
+import { projects } from "../data/ProjectPreviewData";
 
 function ProjectPreviews() {
   return (

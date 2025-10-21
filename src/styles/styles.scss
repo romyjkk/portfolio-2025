@@ -8,6 +8,9 @@
 @use "components/aboutMe";
 @use "components/experience";
 
+@use "projectComponents/hero";
+@use "projectComponents/badge";
+
 @use "helpers/variables";
 @use "helpers/classes";
 @use "helpers/animations";

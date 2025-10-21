@@ -1,0 +1,41 @@
+.badge {
+    position: relative;
+    width: 100%;
+    .badgeFront {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primaryBadgeColor);
+        padding: 0.5rem 1rem;
+    }
+    .badgeBack {
+        background-color: var(--secondaryBadgeColor);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        z-index: -1;
+        box-shadow: -0.15rem -0.15rem 1px 0 var(--secondaryBadgeColor);
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            transition: 0.5s;
+        }
+        &::before {
+            left: -0.5rem;
+            bottom: 0;
+            border-top: 0.5rem solid var(--secondaryBadgeColor);
+            border-left: 0.5rem solid transparent;
+        }
+        &::after {
+            right: 0;
+            top: -0.5rem;
+            border-bottom: 0.5rem solid var(--secondaryBadgeColor);
+            border-right: 0.5rem solid transparent;
+        }
+    }
+}

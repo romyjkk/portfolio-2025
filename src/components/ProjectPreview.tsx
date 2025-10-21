@@ -2,12 +2,14 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import Button from "./Button";
 
 function ProjectPreview(props: {
-  id: number;
+  id: string;
   title: string;
+  slug?: string;
   className: string;
   roles: string;
   mockup: string;
@@ -73,7 +75,6 @@ function ProjectPreview(props: {
         trigger: containerRef.current,
         start: "top bottom",
         end: "bottom +=500",
-        // markers: true,
         toggleActions: "play none none none",
         animation: tl3,
       });
@@ -94,13 +95,12 @@ function ProjectPreview(props: {
             src={props.projectImage}
             alt={`${props.title} project image`}
           />
-          {/* <div className="noise"></div> */}
           <img src={props.mockup} alt={`${props.title} mockup`} />
         </figure>
         <section>
           <h2>{props.title}</h2>
           <p>{props.roles}</p>
-          <Button href="#" buttonText="More" />
+          <Button href={`/${props.slug}`} buttonText="More" />
         </section>
       </div>
     </section>

@@ -1,5 +1,7 @@
 import { gsap } from "gsap";
-import { useRef, useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -15,14 +17,16 @@ gsap.registerPlugin(
   MorphSVGPlugin,
   DrawSVGPlugin
 );
-gsap.registerPlugin(useRef, useLayoutEffect);
+// gsap.registerPlugin(useRef, useLayoutEffect);
 
 import Header from "./components/Header";
-import IntroductionCard from "./components/IntroductionCard";
-import ProjectPreviews from "./components/ProjectPreviews";
-import AboutMe from "./components/AboutMe";
-import Experience from "./components/Experience";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+// import EscapeManager from "./pages/EscapeManager";
+// import OurSolarSystem from "./pages/OurSolarSystem";
+// import BacSac from "./pages/BacSac";
+// import Horrorflix from "./pages/Horrorflix";
+import ProjectPage from "./pages/ProjectPage";
 
 export default function App() {
   useLayoutEffect(() => {
@@ -31,24 +35,24 @@ export default function App() {
     });
   }, []);
   return (
-    <>
+    <BrowserRouter>
       <Header />
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          <main className="homePage" id="smooth-wrapper">
-            <div className="homePageWrapper">
-              <IntroductionCard />
-              <ProjectPreviews />
-              <section id="wrapper">
-                <AboutMe />
-                <Experience />
-              </section>
-            </div>
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/:slug" element={<ProjectPage />} />
+              {/* <Route path="/escape-manager" element={<EscapeManager />} />
+              <Route path="/our-solar-system" element={<OurSolarSystem />} />
+              <Route path="/bac-sac" element={<BacSac />} />
+              <Route path="/horrorflix" element={<Horrorflix />} /> */}
+            </Routes>
+            <Footer />
           </main>
-          <Footer />
         </div>
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 
