@@ -13,9 +13,9 @@ function Header() {
   return (
     <header className="pageHeaderOne">
       <nav className="headerContainer">
-        <figure>
+        <a href="/">
           <img src={logo} alt="My logo" />
-        </figure>
+        </a>
         <nav>
           <Button
             buttonText="Work"

@@ -1,0 +1,264 @@
+main {
+    .projectPageWrapper {
+        .projectDetailsSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4rem;
+            margin: 0 1rem;
+            .paragraphs {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                max-width: 70rem;
+                padding: 1rem;
+                background-color: rgb(0, 0, 0, 0.5);
+                // border: 0.3rem solid var(--primaryAccentColor);
+                // box-shadow: 0 0 0.5rem var(--primaryAccentColor);
+            }
+            .imagesAndDescription {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+                .projectImages {
+                    display: flex;
+                    gap: 2rem;
+                    overflow-x: scroll;
+                    overflow-y: hidden;
+                    padding: 1rem 0 1rem 0;
+                    scroll-snap-type: x mandatory;
+                    // --webkit-overflow-scrolling: touch;
+                    .projectImage {
+                        padding: 1rem;
+                        background-color: var(--primaryBackgroundColor);
+                        border: 0.3rem solid var(--primaryAccentColor);
+                        box-shadow: 0 0 0.5rem var(--primaryAccentColor);
+                        flex: 0 0 auto;
+                        scroll-snap-align: center;
+                    }
+                }
+            }
+            .processParagraphs {
+                ul {
+                    list-style: disc;
+                    padding: 0 0 0 2rem;
+                }
+            }
+            .scrollIndicator {
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+            }
+            .demonstrationVideoContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5rem;
+                // height: 100vh;
+                // position: relative;
+                .tvShape {
+                    width: 7rem;
+                    height: 7rem;
+                    border-radius: 4rem;
+                    background-color: var(--primaryAccentColor);
+                    position: relative;
+                    // top: -3rem;
+                    z-index: -1;
+                    box-shadow: 0 0 1rem var(--primaryAccentColor);
+                    margin-bottom: -4rem;
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 8rem;
+                        height: 0.5rem;
+                        background-color: var(--primaryAccentColor);
+                        box-shadow: 0 0 1rem var(--primaryAccentColor);
+                        border-radius: 1rem;
+                    }
+                    &::before {
+                        transform: rotate(45deg);
+                        left: -50%;
+                    }
+                    &::after {
+                        transform: rotate(-45deg);
+                        right: -50%;
+                    }
+                }
+                .videoFrame {
+                    width: 70%;
+                    padding: 1rem;
+                    background-color: var(--primaryBackgroundColor);
+                    border: 1rem solid var(--primaryAccentColor);
+                    box-shadow: 0 0 0.5rem var(--primaryAccentColor);
+                    flex: 0 0 auto;
+                    // height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .buttonContainer {
+                display: flex;
+                flex-direction: row;
+                gap: 3rem;
+                justify-content: center;
+            }
+        }
+    }
+    .escape-manager-project {
+        .projectDetailsSection {
+            .projectImages {
+                .projectImage {
+                    // height: 100%;
+                    width: 50%;
+                    img {
+                        // max-height: 30rem;
+                        // width: 100%;
+                        // height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .our-solar-system-project {
+        .heroSection {
+            .projImageContainer {
+                max-width: 35rem;
+            }
+        }
+        .projectDetailsSection {
+            .introParagraphs,
+            .processParagraphs {
+                gap: 2rem;
+            }
+            .singleProjectImage {
+                display: flex;
+                justify-content: center;
+                .projectImage {
+                    padding: 1rem;
+                    background-color: var(--primaryBackgroundColor);
+                    border: 0.3rem solid var(--primaryAccentColor);
+                    box-shadow: 0 0 0.5rem var(--primaryAccentColor);
+                    flex: 0 0 auto;
+                    // width: 100%;
+                    // height: 100%;
+                    width: 80%;
+                    img {
+                        // max-height: 30rem;
+                        // width: 100%;
+                        // height: 100%;
+                    }
+                }
+            }
+            .projectImages {
+                display: flex;
+                gap: 1rem;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                // padding: 0 0 1rem 0;
+
+                .projectImage {
+                    padding: 1rem;
+                    background-color: var(--primaryBackgroundColor);
+                    border: 0.3rem solid var(--primaryAccentColor);
+                    box-shadow: 0 0 0.5rem var(--primaryAccentColor);
+                    flex: 0 0 auto;
+                    width: 80%;
+                    height: fit-content;
+                    // max-width: 100%;
+                    img {
+                        // max-width: 30rem;
+                        // max-height: 100%;
+                        // max-width: 90%;
+                        // width: 100%;
+                    }
+                }
+            }
+            .demonstrationVideoContainer {
+                .videoFrame {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+.projectImages,
+.projectImagesBig {
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+    &::-webkit-scrollbar-track {
+        background: var(--primaryBackgroundColor);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--primaryAccentColor);
+        &:hover,
+        &:active {
+            background-color: var(--secondaryAccentColor);
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    main {
+        .projectPageWrapper {
+            .projectDetailsSection {
+                .imagesAndDescription {
+                    gap: 2rem;
+                    .projectImages {
+                        padding: 1rem 0 2rem 0;
+                        .projectImage {
+                            border: 0.5rem solid var(--primaryAccentColor);
+                            box-shadow: 0 0 1rem var(--primaryAccentColor);
+                        }
+                    }
+                }
+            }
+        }
+        .escape-manager-project {
+            .projectDetailsSection {
+                .projectImages {
+                    .projectImage {
+                        max-width: 25rem;
+                        img {
+                            // max-height: 40rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        .projectPageWrapper {
+        }
+        .our-solar-system-project {
+            .heroSection {
+                .projImageContainer {
+                    max-width: 40rem;
+                }
+            }
+            .projectDetailsSection {
+                .imagesAndDescription {
+                    .projectImage {
+                        max-width: 80rem;
+                        width: 100%;
+                    }
+                }
+                .demonstrationVideoContainer {
+                    .videoFrame {
+                        max-width: 90rem;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

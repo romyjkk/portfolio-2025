@@ -96,6 +96,13 @@ footer {
     }
 }
 
+.scrollIndicator {
+    strong {
+        color: var(--secondaryTextColor);
+        font-style: italic;
+    }
+}
+
 footer {
     small {
         color: var(--tertiaryTextColor);

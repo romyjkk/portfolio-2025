@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import { useParams } from "react-router";
 
 import Hero from "../projectComponents/Hero";
+import ProjectDetails from "../projectComponents/ProjectDetails";
 
 function ProjectPage() {
   const { slug } = useParams();
@@ -21,6 +22,7 @@ function ProjectPage() {
   return (
     <div className={`projectPageWrapper ${project.id}`}>
       <Hero key={project.id} {...project} />
+      <ProjectDetails {...project} />
     </div>
   );
 }
