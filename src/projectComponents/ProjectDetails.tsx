@@ -37,7 +37,7 @@ function ProjectDetails({ id }: { id: string }) {
 
       {project.images?.[0]?.oldDesign && (
         <article className="imagesAndDescription">
-          <article className="projectImages">
+          <article className="bacSacProjImages">
             {project.images?.[0]?.oldDesign?.map((oldDesign, index) => {
               return (
                 <figure key={index} className="projectImage">
@@ -82,7 +82,7 @@ function ProjectDetails({ id }: { id: string }) {
 
       {project.images?.[0]?.wordPress && (
         <article className="imagesAndDescription">
-          <article className="projectImages">
+          <article className="bacSacProjImages">
             {project.images?.[0]?.wordPress?.map((wp, index) => {
               return (
                 <figure key={index} className="projectImage">
@@ -179,7 +179,7 @@ function ProjectDetails({ id }: { id: string }) {
 
       {project.images?.[0]?.newDesign && (
         <article className="imagesAndDescription">
-          <article className="projectImages">
+          <article className="bacSacProjImages bacSacProjImagesBig">
             {project.images?.[0].newDesign?.map((newDesign, index) => {
               return (
                 <figure key={index} className="projectImage veryHigh">

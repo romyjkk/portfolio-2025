@@ -837,9 +837,34 @@ main .our-solar-system-project .projectDetailsSection .projectImages .projectIma
 main .our-solar-system-project .projectDetailsSection .demonstrationVideoContainer .videoFrame {
   width: 80%;
 }
-main .bac-sac-project .projectDetailsSection .imagesAndDescription .projectImages .projectImage {
-  height: 100%;
-  width: 60%;
+main .bac-sac-project .projectDetailsSection .imagesAndDescription .bacSacProjImages {
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 1rem 0 1rem 0;
+  scroll-snap-type: x mandatory;
+}
+main .bac-sac-project .projectDetailsSection .imagesAndDescription .bacSacProjImages .projectImage {
+  padding: 1rem;
+  background-color: var(--primaryBackgroundColor);
+  border: 0.3rem solid var(--primaryAccentColor);
+  box-shadow: 0 0 0.5rem var(--primaryAccentColor);
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .bac-sac-project .projectDetailsSection .imagesAndDescription .bacSacProjImages .projectImage img {
+  height: clamp(20rem, 30vw, 45rem);
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+main .bac-sac-project .projectDetailsSection .imagesAndDescription .bacSacProjImagesBig .projectImage img {
+  height: clamp(40rem, 60vw, 70rem);
 }
 main .horrorflix-project .projectDetailsSection .singleProjectImage {
   display: flex;
@@ -863,20 +888,25 @@ main .horrorflix-project .projectDetailsSection .demonstrationVideoContainer .vi
 }
 
 .projectImages::-webkit-scrollbar,
-.projectImagesBig::-webkit-scrollbar {
+.projectImagesBig::-webkit-scrollbar,
+.bacSacProjImages::-webkit-scrollbar {
   width: 0.5rem;
 }
 .projectImages::-webkit-scrollbar-track,
-.projectImagesBig::-webkit-scrollbar-track {
+.projectImagesBig::-webkit-scrollbar-track,
+.bacSacProjImages::-webkit-scrollbar-track {
   background: var(--primaryBackgroundColor);
 }
 .projectImages::-webkit-scrollbar-thumb,
-.projectImagesBig::-webkit-scrollbar-thumb {
+.projectImagesBig::-webkit-scrollbar-thumb,
+.bacSacProjImages::-webkit-scrollbar-thumb {
   background-color: var(--primaryAccentColor);
 }
 .projectImages::-webkit-scrollbar-thumb:hover, .projectImages::-webkit-scrollbar-thumb:active,
 .projectImagesBig::-webkit-scrollbar-thumb:hover,
-.projectImagesBig::-webkit-scrollbar-thumb:active {
+.projectImagesBig::-webkit-scrollbar-thumb:active,
+.bacSacProjImages::-webkit-scrollbar-thumb:hover,
+.bacSacProjImages::-webkit-scrollbar-thumb:active {
   background-color: var(--secondaryAccentColor);
 }
 
@@ -884,10 +914,14 @@ main .horrorflix-project .projectDetailsSection .demonstrationVideoContainer .vi
   main .projectPageWrapper .projectDetailsSection .imagesAndDescription {
     gap: 2rem;
   }
-  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .projectImages {
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .projectImages,
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .bacSacProjImages,
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .singleProjectImage {
     padding: 1rem 0 2rem 0;
   }
-  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .projectImages .projectImage {
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .projectImages .projectImage,
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .bacSacProjImages .projectImage,
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .singleProjectImage .projectImage {
     border: 0.5rem solid var(--primaryAccentColor);
     box-shadow: 0 0 1rem var(--primaryAccentColor);
   }
@@ -1038,67 +1072,67 @@ main .horrorflix-project .projectDetailsSection .demonstrationVideoContainer .vi
 }
 @keyframes glitch {
   0% {
-    clip-path: inset(16px 0 46px 0);
+    clip-path: inset(25px 0 19px 0);
   }
   5% {
-    clip-path: inset(5px 0 4px 0);
+    clip-path: inset(21px 0 28px 0);
   }
   10% {
-    clip-path: inset(16px 0 60px 0);
+    clip-path: inset(63px 0 75px 0);
   }
   15% {
-    clip-path: inset(47px 0 65px 0);
+    clip-path: inset(35px 0 18px 0);
   }
   20% {
-    clip-path: inset(55px 0 1px 0);
+    clip-path: inset(41px 0 33px 0);
   }
   25% {
-    clip-path: inset(9px 0 47px 0);
+    clip-path: inset(55px 0 41px 0);
   }
   30% {
-    clip-path: inset(41px 0 58px 0);
+    clip-path: inset(15px 0 43px 0);
   }
   35% {
-    clip-path: inset(64px 0 6px 0);
+    clip-path: inset(2px 0 31px 0);
   }
   40% {
-    clip-path: inset(36px 0 4px 0);
+    clip-path: inset(4px 0 46px 0);
   }
   45% {
-    clip-path: inset(35px 0 26px 0);
+    clip-path: inset(30px 0 35px 0);
   }
   50% {
-    clip-path: inset(76px 0 15px 0);
+    clip-path: inset(57px 0 58px 0);
   }
   55% {
-    clip-path: inset(60px 0 37px 0);
+    clip-path: inset(63px 0 47px 0);
   }
   60% {
-    clip-path: inset(28px 0 2px 0);
+    clip-path: inset(78px 0 54px 0);
   }
   65% {
-    clip-path: inset(42px 0 28px 0);
+    clip-path: inset(7px 0 38px 0);
   }
   70% {
-    clip-path: inset(17px 0 69px 0);
+    clip-path: inset(73px 0 73px 0);
   }
   75% {
-    clip-path: inset(51px 0 46px 0);
+    clip-path: inset(69px 0 8px 0);
   }
   80% {
-    clip-path: inset(44px 0 72px 0);
+    clip-path: inset(52px 0 48px 0);
   }
   85% {
-    clip-path: inset(37px 0 16px 0);
+    clip-path: inset(51px 0 34px 0);
   }
   90% {
-    clip-path: inset(56px 0 76px 0);
+    clip-path: inset(66px 0 56px 0);
   }
   95% {
-    clip-path: inset(48px 0 35px 0);
+    clip-path: inset(65px 0 17px 0);
   }
   100% {
-    clip-path: inset(50px 0 15px 0);
+    clip-path: inset(19px 0 41px 0);
   }
 }
 @keyframes noise {

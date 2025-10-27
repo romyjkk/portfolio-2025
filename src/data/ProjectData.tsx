@@ -296,7 +296,6 @@ export const projectData = [
     ),
     mockup: "/mockups/mockup4.png",
     projectImage: "/projImages/proj4/projImg4Flipped.png",
-    introParagraphs: [],
     processParagraphs: [
       <>
         The only requirements for this project were using
