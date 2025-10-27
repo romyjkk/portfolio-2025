@@ -145,7 +145,7 @@ function ProjectDetails({ id }: { id: string }) {
 
       {project.images?.[1]?.sent && (
         <article className="imagesAndDescription">
-          <article className="projectImages">
+          <article className="horrorflixProjImages">
             {project.images?.[1].sent?.map((sent, index) => {
               return (
                 <figure key={index} className="projectImage">

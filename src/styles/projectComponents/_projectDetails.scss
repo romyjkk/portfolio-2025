@@ -1,5 +1,6 @@
 main {
     .projectPageWrapper {
+        // width: 100%;
         .projectDetailsSection {
             display: flex;
             flex-direction: column;
@@ -14,25 +15,19 @@ main {
                 max-width: 70rem;
                 padding: 1rem;
                 background-color: rgb(0, 0, 0, 0.5);
-                // border: 0.3rem solid var(--primaryAccentColor);
-                // box-shadow: 0 0 0.5rem var(--primaryAccentColor);
             }
             .imagesAndDescription {
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
                 text-align: center;
-                // width: 100%;
                 .projectImages {
                     display: flex;
                     gap: 2rem;
-                    overflow-x: scroll;
+                    overflow-x: auto;
                     overflow-y: hidden;
                     padding: 1rem 0 1rem 0;
                     scroll-snap-type: x mandatory;
-                    // width: 100%;
-                    // justify-content: center;
-                    // --webkit-overflow-scrolling: touch;
                     .projectImage {
                         padding: 1rem;
                         background-color: var(--primaryBackgroundColor);
@@ -41,8 +36,6 @@ main {
                         flex: 0 0 auto;
                         scroll-snap-align: center;
                         height: fit-content;
-                        // width: 100%;
-                        // justify-content: center;
                     }
                 }
             }
@@ -63,15 +56,12 @@ main {
                 justify-content: center;
                 align-items: center;
                 margin-top: 5rem;
-                // height: 100vh;
-                // position: relative;
                 .tvShape {
                     width: 7rem;
                     height: 7rem;
                     border-radius: 4rem;
                     background-color: var(--primaryAccentColor);
                     position: relative;
-                    // top: -3rem;
                     z-index: -1;
                     box-shadow: 0 0 1rem var(--primaryAccentColor);
                     margin-bottom: -4rem;
@@ -101,10 +91,9 @@ main {
                     border: 1rem solid var(--primaryAccentColor);
                     box-shadow: 0 0 0.5rem var(--primaryAccentColor);
                     flex: 0 0 auto;
-                    // height: 100%;
-                    img {
+                    video {
                         width: 100%;
-                        height: 100%;
+                        // height: 100%;
                     }
                 }
             }
@@ -120,12 +109,8 @@ main {
         .projectDetailsSection {
             .projectImages {
                 .projectImage {
-                    // height: 100%;
                     width: 50%;
                     img {
-                        // max-height: 30rem;
-                        // width: 100%;
-                        // height: 100%;
                     }
                 }
             }
@@ -153,6 +138,7 @@ main {
                     flex: 0 0 auto;
                     width: 80%;
                     img {
+                        width: 100%;
                     }
                 }
             }
@@ -161,6 +147,7 @@ main {
                     width: 80%;
                     height: fit-content;
                     img {
+                        width: 100%;
                     }
                 }
             }
@@ -177,7 +164,7 @@ main {
                 .bacSacProjImages {
                     display: flex;
                     gap: 2rem;
-                    overflow-x: scroll;
+                    overflow-x: auto;
                     overflow-y: hidden;
                     padding: 1rem 0 1rem 0;
                     scroll-snap-type: x mandatory;
@@ -212,31 +199,54 @@ main {
     }
     .horrorflix-project {
         .projectDetailsSection {
+            // .singleProjectImage {
+            //     display: flex;
+            //     justify-content: center;
+            //     .projectImage {
+            //         padding: 1rem;
+            //         background-color: var(--primaryBackgroundColor);
+            //         border: 0.3rem solid var(--primaryAccentColor);
+            //         box-shadow: 0 0 0.5rem var(--primaryAccentColor);
+            //         flex: 0 0 auto;
+            //         width: 7%;
+            //         img {
+            //             width: 100%;
+            //         }
+            //     }
+            // }
+            .horrorflixProjImages,
             .singleProjectImage {
                 display: flex;
-                justify-content: center;
+                gap: 2rem;
+                overflow-x: auto;
+                overflow-y: hidden;
+                padding: 1rem 0 1rem 0;
+                scroll-snap-type: x mandatory;
                 .projectImage {
                     padding: 1rem;
                     background-color: var(--primaryBackgroundColor);
                     border: 0.3rem solid var(--primaryAccentColor);
                     box-shadow: 0 0 0.5rem var(--primaryAccentColor);
                     flex: 0 0 auto;
-                    width: 80%;
+                    scroll-snap-align: center;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     img {
-                    }
-                }
-            }
-            .projectImages {
-                .projectImage {
-                    width: 80%;
-                    height: fit-content;
-                    img {
+                        height: clamp(15rem, 30vw, 45rem);
+                        width: auto;
+                        object-fit: contain;
+                        display: block;
                     }
                 }
             }
             .demonstrationVideoContainer {
                 .videoFrame {
                     width: 80%;
+                    video {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -245,7 +255,8 @@ main {
 
 .projectImages,
 .projectImagesBig,
-.bacSacProjImages {
+.bacSacProjImages,
+.horrorflixProjImages {
     &::-webkit-scrollbar {
         width: 0.5rem;
     }
@@ -269,7 +280,8 @@ main {
                     gap: 2rem;
                     .projectImages,
                     .bacSacProjImages,
-                    .singleProjectImage {
+                    .singleProjectImage,
+                    .horrorflixProjImages {
                         padding: 1rem 0 2rem 0;
                         .projectImage {
                             border: 0.5rem solid var(--primaryAccentColor);
@@ -328,14 +340,24 @@ main {
                     .projectImage {
                         max-width: 35rem;
                         img {
-                            // max-height: 40rem;
                         }
                     }
                 }
             }
         }
-        .our-solar-system-project,
         .horrorflix-project {
+            .projectDetailsSection {
+                .imagesAndDescription {
+                    .singleProjectImage {
+                        .projectImage {
+                            // max-width: 85rem;
+                            // width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .our-solar-system-project {
             .heroSection {
                 .projImageContainer {
                     max-width: 40rem;
