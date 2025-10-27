@@ -355,6 +355,12 @@ export const projectData = [
         ],
       },
     ],
+    imageDescriptions: [
+      {
+        validation: "Form validation",
+        results: "Easter eggs, confirmation and email",
+      },
+    ],
     demonstrationVideo: "/projImages/proj4/details/horrorflixResults.mp4",
     githubLink: "https://github.com/romyjkk/horrorflix/tree/main",
   },

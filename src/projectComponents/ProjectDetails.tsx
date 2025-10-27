@@ -74,6 +74,9 @@ function ProjectDetails({ id }: { id: string }) {
               <img src={project.images?.[0].validation} />
             </figure>
           </article>
+          {project.imageDescriptions?.[0].validation && (
+            <strong>{project.imageDescriptions?.[0].validation}</strong>
+          )}
         </article>
       )}
 
@@ -151,6 +154,9 @@ function ProjectDetails({ id }: { id: string }) {
               );
             })}
           </article>
+          {project.imageDescriptions?.[0].results && (
+            <strong>{project.imageDescriptions?.[0].results}</strong>
+          )}
         </article>
       )}
 
