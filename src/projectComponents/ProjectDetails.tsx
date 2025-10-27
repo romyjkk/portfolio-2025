@@ -67,6 +67,16 @@ function ProjectDetails({ id }: { id: string }) {
         </article>
       )}
 
+      {project.images?.[0]?.validation && (
+        <article className="imagesAndDescription">
+          <article className="singleProjectImage">
+            <figure className="projectImage">
+              <img src={project.images?.[0].validation} />
+            </figure>
+          </article>
+        </article>
+      )}
+
       {project.images?.[0]?.wordPress && (
         <article className="imagesAndDescription">
           <article className="projectImages">
@@ -130,6 +140,20 @@ function ProjectDetails({ id }: { id: string }) {
         </article>
       )}
 
+      {project.images?.[1]?.sent && (
+        <article className="imagesAndDescription">
+          <article className="projectImages">
+            {project.images?.[1].sent?.map((sent, index) => {
+              return (
+                <figure key={index} className="projectImage">
+                  <img src={sent} />
+                </figure>
+              );
+            })}
+          </article>
+        </article>
+      )}
+
       {project.images?.[1]?.ossResults && (
         <article className="imagesAndDescription">
           <article className="projectImages">
@@ -173,7 +197,10 @@ function ProjectDetails({ id }: { id: string }) {
         <article className="demonstrationVideoContainer">
           <div className="tvShape"></div>
           <figure className="videoFrame">
-            <img src={project.demonstrationVideo} />
+            <video muted loop autoPlay>
+              <source src={project.demonstrationVideo} type="video/mp4" />
+            </video>
+            {/* <img src={project.demonstrationVideo} /> */}
           </figure>
         </article>
       )}

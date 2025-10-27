@@ -224,6 +224,58 @@ main {
             }
         }
     }
+    .horrorflix-project {
+        .projectDetailsSection {
+            .singleProjectImage {
+                display: flex;
+                justify-content: center;
+                .projectImage {
+                    padding: 1rem;
+                    background-color: var(--primaryBackgroundColor);
+                    border: 0.3rem solid var(--primaryAccentColor);
+                    box-shadow: 0 0 0.5rem var(--primaryAccentColor);
+                    flex: 0 0 auto;
+                    // width: 100%;
+                    // height: 100%;
+                    width: 80%;
+                    img {
+                        // max-height: 30rem;
+                        // width: 100%;
+                        // height: 100%;
+                    }
+                }
+            }
+            .projectImages {
+                // display: flex;
+                // gap: 1rem;
+                // overflow-x: scroll;
+                // overflow-y: hidden;
+                // padding: 0 0 1rem 0;
+
+                .projectImage {
+                    // padding: 1rem;
+                    // background-color: var(--primaryBackgroundColor);
+                    // border: 0.3rem solid var(--primaryAccentColor);
+                    // box-shadow: 0 0 0.5rem var(--primaryAccentColor);
+                    // flex: 0 0 auto;
+                    width: 80%;
+                    height: fit-content;
+                    // max-width: 100%;
+                    img {
+                        // max-width: 30rem;
+                        // max-height: 100%;
+                        // max-width: 90%;
+                        // width: 100%;
+                    }
+                }
+            }
+            .demonstrationVideoContainer {
+                .videoFrame {
+                    width: 80%;
+                }
+            }
+        }
+    }
 }
 
 .projectImages,
@@ -321,7 +373,8 @@ main {
                 }
             }
         }
-        .our-solar-system-project {
+        .our-solar-system-project,
+        .horrorflix-project {
             .heroSection {
                 .projImageContainer {
                     max-width: 40rem;
@@ -338,6 +391,9 @@ main {
                     .videoFrame {
                         max-width: 90rem;
                         width: 100%;
+                        video {
+                            width: 100%;
+                        }
                     }
                 }
             }

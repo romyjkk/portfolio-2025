@@ -296,7 +296,8 @@ export const projectData = [
     ),
     mockup: "/mockups/mockup4.png",
     projectImage: "/projImages/proj4/projImg4Flipped.png",
-    introParagraphs: [
+    introParagraphs: [],
+    processParagraphs: [
       <>
         The only requirements for this project were using
         <strong className="red"> PHP</strong> for
@@ -306,8 +307,6 @@ export const projectData = [
         to sign up for ‘Horrorflix’, a Netflix for horror movies (which, as it
         turns out, actually exists).
       </>,
-    ],
-    processParagraphs: [
       <>
         Since I had no prior (real) experience with PHP, I didn’t really know
         where to start, but luckily there was an experienced back-end developer
@@ -344,6 +343,19 @@ export const projectData = [
         form was finished!
       </>,
     ],
+    images: [
+      {
+        validation: "/projImages/proj4/details/validation.png",
+      },
+      {
+        sent: [
+          "/projImages/proj4/details/easterEgg1.png",
+          "/projImages/proj4/details/sent.png",
+          "/projImages/proj4/details/email.png",
+        ],
+      },
+    ],
+    demonstrationVideo: "/projImages/proj4/details/horrorflixResults.mp4",
     githubLink: "https://github.com/romyjkk/horrorflix/tree/main",
   },
 ];
