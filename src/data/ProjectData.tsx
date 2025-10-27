@@ -37,7 +37,7 @@ export const projectData = [
         tested.,
       </>,
       <>
-        During the project, I was responsible for the
+        During the project, I was responsible for the{" "}
         <strong className="red">front-end,</strong> but in addition to that I
         spent many hours in the JavaScript files after expressing my interest in
         improving my <strong className="red">JavaScript (and back-end)</strong>{" "}
@@ -72,9 +72,9 @@ export const projectData = [
     conclusionParagraphs: [
       <>
         There’s still a lot of work to do, we’d like to implement more{" "}
-        <strong className="red">Classes</strong>
-        and use an actual <strong className="red">database</strong>, instead of
-        using JSON. In addition to that we wanna make the application{" "}
+        <strong className="red">Classes</strong> and use an actual{" "}
+        <strong className="red">database</strong>, instead of using JSON. In
+        addition to that we wanna make the application{" "}
         <strong className="red">scale-proof</strong> and hopefully develop it as
         an app for <strong className="red">iOs and Android</strong> one day, for
         other escaperooms to use.
@@ -103,11 +103,12 @@ export const projectData = [
     ],
     imageDescriptions: [
       {
-        emSketches: ["Dashboard sketch to final result"],
-        emResults: ["The current application in use"],
+        emSketches: ["Dashboard: sketch to final result"],
+        emResults: ["The application in use (still a bit empty)"],
       },
     ],
     demonstrationVideo: "/projImages/proj1/details/dashboard.png",
+    file: "/files/designRationale.pdf",
   },
   {
     id: "our-solar-system-project",
@@ -195,9 +196,88 @@ export const projectData = [
     runtime: "2024",
     client: "Baseball/Softball against Cancer",
     roles: ["WordPress", "Front-end"],
-    description: `A WordPress website made for the non-profit Baseball/Software against Cancer, a beautiful project I got the opportunity to work on during my internship at Kobalt Digital.`,
+    description: (
+      <>
+        A <strong className="red">WordPress</strong> website made for the
+        non-profit Baseball/Software against Cancer, a beautiful project I got
+        the opportunity to work on during my internship at Kobalt Digital.
+      </>
+    ),
     mockup: "/mockups/mockup3.png",
     projectImage: "/projImages/proj3/projImg3.png",
+    introParagraphs: [
+      <>
+        During my internship at Kobalt Digital, I worked on the (sponsor)
+        <strong className="red"> WordPress</strong> website for Baseball and
+        Softball against Cancer, an amazing organisation raising money for
+        cancer research. It’s a WordPress website and the theme is custom made
+        using <strong className="red">Blade PHP</strong>.
+      </>,
+      <>
+        This project was perfect for learning how to work with WordPress and
+        Kobalt’s boilerplate. The designer made a design in Figma and then it
+        was up to me to build it, with assistance from my supervisor. During
+        this project I learned to work with{" "}
+        <strong className="red">Tailwind CSS,</strong> since that’s in Kobalt’s
+        tech stack.
+      </>,
+    ],
+    processParagraphs: [
+      <>
+        The website was built using the{" "}
+        <strong className="red">ACF plugin,</strong> which I used to create
+        fields that could then be filled with content by the client, allowing
+        for full customization. In addition to that,{" "}
+        <strong className="red">Gravity Forms</strong> was added to the website,
+        for the different forms on the website.
+      </>,
+      <>
+        Lastly, options were added for the website colors, logo and social media
+        links, since there had to be a second website for Softball against
+        Cancer. This is the same website, but with different colors and content.
+      </>,
+    ],
+    conclusionParagraphs: [
+      <>
+        When I began with this project, I wasn’t familiar with WordPress at all
+        and definitely didn’t know how to work in a{" "}
+        <strong className="red">boilerplate</strong> and create the theme from
+        scratch. By the end I could easily navigate WordPress and the
+        boilerplate and find what I was looking for.
+      </>,
+      <>
+        I helped deliver the website to the client, showing him around the
+        front-end and the <strong className="red">WordPress back-end</strong>{" "}
+        and explaining how he could add his own content. It was amazing to be
+        part of this project and being able to contribute to such a noble
+        organisation this way.
+      </>,
+    ],
+    images: [
+      {
+        oldDesign: [
+          "/projImages/proj3/details/bacOld.jpeg",
+          "/projImages/proj3/details/sacOld.jpeg",
+        ],
+        wordPress: [
+          "/projImages/proj3/details/bacHeroBackEnd.webp",
+          "/projImages/proj3/details/bacHeroFrontEnd.png",
+        ],
+        newDesign: [
+          "/projImages/proj3/details/bacNew.jpeg",
+          "/projImages/proj3/details/sacNew.png",
+        ],
+      },
+    ],
+    imageDescriptions: [
+      {
+        oldDesign: ["The old websites"],
+        wordPress: ["WordPress back-end and front-end"],
+        newDesign: ["The new websites"],
+      },
+    ],
+    demonstrationVideo: "",
+    liveWebsite: "https://baseballagainstcancer.nl/",
   },
   {
     id: "horrorflix-project",
@@ -206,9 +286,65 @@ export const projectData = [
     runtime: "2023",
     client: "Go2People",
     roles: ["Front-end", "Back-end"],
-    description: `A sign up form I made during my internship at Go2People, built using PHP, utilizing the Fetch API and sending an email using the mailto PHP function.`,
+    description: (
+      <>
+        A sign up form I made during my internship at Go2People, built using{" "}
+        <strong className="red">PHP</strong>, utilizing the{" "}
+        <strong className="red">Fetch API</strong> and sending an email using
+        the <strong className="red">mail PHP</strong> function.
+      </>
+    ),
     mockup: "/mockups/mockup4.png",
     projectImage: "/projImages/proj4/projImg4Flipped.png",
+    introParagraphs: [
+      <>
+        The only requirements for this project were using
+        <strong className="red"> PHP</strong> for
+        <strong className="red"> form validation </strong>
+        and sending an email to the person that signed up. I was free to create
+        whatever form I liked. As a lover of horror, I decided to create a form
+        to sign up for ‘Horrorflix’, a Netflix for horror movies (which, as it
+        turns out, actually exists).
+      </>,
+    ],
+    processParagraphs: [
+      <>
+        Since I had no prior (real) experience with PHP, I didn’t really know
+        where to start, but luckily there was an experienced back-end developer
+        I could help for assistance when that was necessary.
+      </>,
+      <>
+        The <strong className="red">Fetch API</strong> was crucial for sending
+        form data to the PHP validation file, where all the form validation
+        happened. A few examples of the form validation:
+      </>,
+    ],
+    myWork: [
+      <>
+        Name and description with no weird symbols and/or HTML elements using
+        <strong className="red"> regular expressions;</strong>
+      </>,
+      <>An actual email;</>,
+      <>
+        An age of at least 16 and no older than 120 years, using a
+        <strong className="red"> DateTimeImmutable.</strong>
+      </>,
+    ],
+    conclusionParagraphs: [
+      <>
+        I added error messages which were displayed underneath the correct
+        inputs. This was done using a{" "}
+        <strong className="red">forEach loop</strong> which looped through the
+        fields and added the appropriate error message element and text when
+        necessary, which was really challenging for me back then.
+      </>,
+      <>
+        Lastly, I used the <strong className="red">PHP mail function</strong>{" "}
+        which sent an email, styled the form and added some easter eggs. The
+        form was finished!
+      </>,
+    ],
+    githubLink: "https://github.com/romyjkk/horrorflix/tree/main",
   },
 ];
 

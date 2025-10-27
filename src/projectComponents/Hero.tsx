@@ -1,7 +1,7 @@
 import Badge from "./Badge";
 import projectData from "../data/ProjectData";
 
-function Hero({ id }) {
+function Hero({ id }: { id: string }) {
   const project = projectData.find((p) => p.id === id);
 
   if (!project) {

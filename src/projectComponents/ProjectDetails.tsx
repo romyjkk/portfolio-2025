@@ -1,7 +1,7 @@
 import projectData from "../data/ProjectData";
 import Button from "../components/Button";
 
-function ProjectDetails({ id }) {
+function ProjectDetails({ id }: { id: string }) {
   const project = projectData.find((p) => p.id === id);
 
   if (!project) {
@@ -29,7 +29,26 @@ function ProjectDetails({ id }) {
               );
             })}
           </article>
-          <strong>Dashboard: sketch to final version</strong>
+          {project.imageDescriptions?.[0].emSketches && (
+            <strong>{project.imageDescriptions?.[0].emSketches}</strong>
+          )}
+        </article>
+      )}
+
+      {project.images?.[0]?.oldDesign && (
+        <article className="imagesAndDescription">
+          <article className="projectImages">
+            {project.images?.[0]?.oldDesign?.map((oldDesign, index) => {
+              return (
+                <figure key={index} className="projectImage">
+                  <img src={oldDesign} />
+                </figure>
+              );
+            })}
+          </article>
+          {project.imageDescriptions?.[0].oldDesign && (
+            <strong>{project.imageDescriptions?.[0].oldDesign}</strong>
+          )}
         </article>
       )}
 
@@ -48,6 +67,23 @@ function ProjectDetails({ id }) {
         </article>
       )}
 
+      {project.images?.[0]?.wordPress && (
+        <article className="imagesAndDescription">
+          <article className="projectImages">
+            {project.images?.[0]?.wordPress?.map((wp, index) => {
+              return (
+                <figure key={index} className="projectImage">
+                  <img src={wp} />
+                </figure>
+              );
+            })}
+          </article>
+          {project.imageDescriptions?.[0].wordPress && (
+            <strong>{project.imageDescriptions?.[0].wordPress}</strong>
+          )}
+        </article>
+      )}
+      {/* 
       {project.images?.[1]?.emResults && (
         <article className="imagesAndDescription">
           <article className="projectImages">
@@ -59,11 +95,11 @@ function ProjectDetails({ id }) {
               );
             })}
           </article>
-          {project.imageDescriptions?.[0].emSketches && (
-            <strong>{project.imageDescriptions?.[0].emSketches}</strong>
+          {project.imageDescriptions?.[0].emResults && (
+            <strong>{project.imageDescriptions?.[0].emResults}</strong>
           )}
         </article>
-      )}
+      )} */}
 
       {project.images?.[0]?.scrollTrigger && (
         <article className="imagesAndDescription">
@@ -111,6 +147,23 @@ function ProjectDetails({ id }) {
         </article>
       )}
 
+      {project.images?.[0]?.newDesign && (
+        <article className="imagesAndDescription">
+          <article className="projectImages">
+            {project.images?.[0].newDesign?.map((newDesign, index) => {
+              return (
+                <figure key={index} className="projectImage veryHigh">
+                  <img src={newDesign} />
+                </figure>
+              );
+            })}
+          </article>
+          {project.imageDescriptions?.[0].newDesign && (
+            <strong>{project.imageDescriptions?.[0].newDesign}</strong>
+          )}
+        </article>
+      )}
+
       <article className="scrollIndicator">
         <strong>Demonstration video</strong>
         <div className="arrows"></div>
@@ -125,7 +178,10 @@ function ProjectDetails({ id }) {
         </article>
       )}
 
-      {(project.githubLink || project.liveDemo) && (
+      {(project.githubLink ||
+        project.liveDemo ||
+        project.file ||
+        project.liveWebsite) && (
         <article className="buttonContainer">
           {project.githubLink && (
             <Button
@@ -139,6 +195,20 @@ function ProjectDetails({ id }) {
               target="_blank"
               href={project.liveDemo}
               buttonText="Live demo"
+            />
+          )}
+          {project.file && (
+            <Button
+              href={project.file}
+              buttonText="Download design file (Dutch)"
+              download="Design Rationale"
+            />
+          )}
+          {project.liveWebsite && (
+            <Button
+              target="_blank"
+              href={project.liveWebsite}
+              buttonText="Live website"
             />
           )}
         </article>
