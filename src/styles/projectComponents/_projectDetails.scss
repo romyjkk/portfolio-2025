@@ -1,13 +1,11 @@
 main {
     .projectPageWrapper {
-        // width: 100%;
         .projectDetailsSection {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 4rem;
             margin: 0 1rem;
-            // width: 100%;
             .paragraphs {
                 display: flex;
                 flex-direction: column;
@@ -109,8 +107,15 @@ main {
         .projectDetailsSection {
             .projectImages {
                 .projectImage {
-                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    // width: 50%;
                     img {
+                        height: clamp(20rem, 30vw, 50rem);
+                        width: auto;
+                        object-fit: contain;
+                        display: block;
                     }
                 }
             }
@@ -277,7 +282,7 @@ main {
         .projectPageWrapper {
             .projectDetailsSection {
                 .imagesAndDescription {
-                    gap: 2rem;
+                    // gap: 2rem;
                     .projectImages,
                     .bacSacProjImages,
                     .singleProjectImage,
