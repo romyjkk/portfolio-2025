@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { useLayoutEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";

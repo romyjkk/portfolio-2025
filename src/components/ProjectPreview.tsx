@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+// import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import Button from "./Button";
 
@@ -31,7 +31,7 @@ function ProjectPreview(props: {
       props.glitch2,
       props.glitch3,
       props.glitch4,
-    ].filter(Boolean);
+    ].filter(Boolean) as string[];
 
     const makeGlitch = () => {
       const tl = gsap.timeline({ repeat: -1, repeatDelay: 3 });
