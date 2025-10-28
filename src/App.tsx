@@ -21,8 +21,6 @@ gsap.registerPlugin(
   Flip
 );
 ScrollTrigger.normalizeScroll(true);
-ScrollTrigger.config({ ignoreMobileResize: true });
-// ScrollTrigger.config({ ignoreMobileResize: true });
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
