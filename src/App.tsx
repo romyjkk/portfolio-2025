@@ -20,7 +20,7 @@ gsap.registerPlugin(
   DrawSVGPlugin,
   Flip
 );
-ScrollTrigger.normalizeScroll(true);
+// ScrollTrigger.normalizeScroll(true);
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
