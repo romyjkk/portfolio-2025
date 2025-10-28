@@ -29,17 +29,21 @@ import ProjectPage from "./pages/ProjectPage";
 
 export default function App() {
   useLayoutEffect(() => {
-    let smoother: ScrollSmoother | null = null;
+    const isDesktop = window.innerWidth > 576;
 
-    if (window.innerWidth > 576) {
-      smoother = ScrollSmoother.create({
+    if (isDesktop) {
+      ScrollTrigger.defaults({ scroller: "#smooth-content" });
+      ScrollSmoother.create({
         smooth: 1,
+        content: "#smooth-content",
+        wrapper: "#smooth-wrapper",
       });
+    } else {
+      ScrollTrigger.defaults({ scroller: window });
     }
 
-    return () => {
-      if (smoother) smoother.kill();
-    };
+    ScrollTrigger.config({ ignoreMobileResize: true });
+    ScrollTrigger.refresh();
   }, []);
   return (
     <BrowserRouter>
