@@ -20,6 +20,8 @@ gsap.registerPlugin(
   DrawSVGPlugin,
   Flip
 );
+ScrollTrigger.normalizeScroll(true);
+ScrollTrigger.config({ ignoreMobileResize: true });
 // ScrollTrigger.config({ ignoreMobileResize: true });
 
 import Header from "./components/Header";
@@ -29,21 +31,17 @@ import ProjectPage from "./pages/ProjectPage";
 
 export default function App() {
   useLayoutEffect(() => {
-    const isDesktop = window.innerWidth > 576;
+    let smoother: ScrollSmoother | null = null;
 
-    if (isDesktop) {
-      ScrollTrigger.defaults({ scroller: "#smooth-content" });
-      ScrollSmoother.create({
+    if (window.innerWidth > 576) {
+      smoother = ScrollSmoother.create({
         smooth: 1,
-        content: "#smooth-content",
-        wrapper: "#smooth-wrapper",
       });
-    } else {
-      ScrollTrigger.defaults({ scroller: window });
     }
 
-    ScrollTrigger.config({ ignoreMobileResize: true });
-    ScrollTrigger.refresh();
+    return () => {
+      if (smoother) smoother.kill();
+    };
   }, []);
   return (
     <BrowserRouter>
