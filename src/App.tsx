@@ -20,6 +20,7 @@ gsap.registerPlugin(
   DrawSVGPlugin,
   Flip
 );
+ScrollTrigger.config({ ignoreMobileResize: true });
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";

@@ -49,12 +49,12 @@ function Experience() {
         trigger: ".myExperience",
         start: "top top",
         end: "bottom +=-500",
+
         // markers: true,
         pinSpacing: true,
         scrub: true,
       },
     });
-
     ScrollTrigger.create({
       trigger: ".myExperience",
       start: "top top",
@@ -134,7 +134,6 @@ function Experience() {
         </figure>
       </div>
       <section className="experiences">
-        {/* <h2>MY EXPERIENCES</h2> */}
         <section className="experience first">
           <div className="experienceContainer">
             <div className="experienceContainerBorder">
