@@ -601,15 +601,16 @@ main .projectPageWrapper {
   flex-direction: column;
   align-items: center;
   gap: 10rem;
-  margin-top: 10rem;
 }
 main .projectPageWrapper .heroSection {
   margin: 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
   max-width: 110rem;
   justify-self: center;
+  justify-content: center;
 }
 main .projectPageWrapper .heroSection .funkyShape {
   display: none;
@@ -1095,67 +1096,67 @@ main .horrorflix-project .projectDetailsSection .demonstrationVideoContainer .vi
 }
 @keyframes glitch {
   0% {
-    clip-path: inset(30px 0 6px 0);
+    clip-path: inset(21px 0 56px 0);
   }
   5% {
-    clip-path: inset(41px 0 64px 0);
+    clip-path: inset(70px 0 26px 0);
   }
   10% {
-    clip-path: inset(68px 0 49px 0);
+    clip-path: inset(30px 0 39px 0);
   }
   15% {
-    clip-path: inset(8px 0 48px 0);
+    clip-path: inset(57px 0 5px 0);
   }
   20% {
-    clip-path: inset(2px 0 52px 0);
+    clip-path: inset(55px 0 69px 0);
   }
   25% {
-    clip-path: inset(58px 0 32px 0);
+    clip-path: inset(2px 0 39px 0);
   }
   30% {
-    clip-path: inset(44px 0 44px 0);
+    clip-path: inset(31px 0 80px 0);
   }
   35% {
-    clip-path: inset(69px 0 34px 0);
+    clip-path: inset(66px 0 61px 0);
   }
   40% {
-    clip-path: inset(49px 0 2px 0);
+    clip-path: inset(28px 0 16px 0);
   }
   45% {
-    clip-path: inset(79px 0 27px 0);
+    clip-path: inset(52px 0 25px 0);
   }
   50% {
-    clip-path: inset(72px 0 76px 0);
+    clip-path: inset(10px 0 25px 0);
   }
   55% {
-    clip-path: inset(71px 0 22px 0);
+    clip-path: inset(70px 0 41px 0);
   }
   60% {
-    clip-path: inset(6px 0 12px 0);
+    clip-path: inset(62px 0 71px 0);
   }
   65% {
-    clip-path: inset(1px 0 5px 0);
+    clip-path: inset(31px 0 62px 0);
   }
   70% {
-    clip-path: inset(62px 0 2px 0);
+    clip-path: inset(12px 0 18px 0);
   }
   75% {
-    clip-path: inset(2px 0 10px 0);
+    clip-path: inset(67px 0 73px 0);
   }
   80% {
-    clip-path: inset(65px 0 47px 0);
+    clip-path: inset(29px 0 45px 0);
   }
   85% {
-    clip-path: inset(46px 0 52px 0);
+    clip-path: inset(3px 0 4px 0);
   }
   90% {
-    clip-path: inset(67px 0 29px 0);
+    clip-path: inset(20px 0 7px 0);
   }
   95% {
-    clip-path: inset(58px 0 58px 0);
+    clip-path: inset(52px 0 36px 0);
   }
   100% {
-    clip-path: inset(63px 0 63px 0);
+    clip-path: inset(55px 0 41px 0);
   }
 }
 @keyframes noise {
@@ -1328,9 +1329,6 @@ body {
   }
   footer ul {
     gap: 3rem;
-  }
-  main .projectPageWrapper {
-    margin-top: 15rem;
   }
   main .projectPageWrapper .heroSection {
     display: grid;
