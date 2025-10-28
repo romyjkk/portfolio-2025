@@ -7,21 +7,38 @@ function Experience() {
   useGSAP(() => {
     const tl = gsap.timeline({ paused: true });
 
-    tl.from(".first", { transform: "translateY(80%)", ease: "back.out" });
+    tl.fromTo(
+      ".first",
+      { transform: "translateY(80%)", ease: "back.out" },
+      { transform: "translateY(-10%)", ease: "back.out" },
+      0
+    );
     // tl.to(".first .experienceContainer", { "--before-opacity": 0 }, 1);
     if (window.innerWidth < 768) {
       tl.fromTo(
         ".second",
         { transform: "translateY(80%)", ease: "back.out" },
-        { transform: "translateY(5%)", ease: "back.out" },
+        { transform: "translateY(-5%)", ease: "back.out" },
         1
+      );
+      tl.fromTo(
+        ".third",
+        { transform: "translateY(80%)", ease: "back.out" },
+        { transform: "translateY(0%)", ease: "back.out" },
+        2
       );
     } else if (window.innerWidth > 768) {
       tl.fromTo(
         ".second",
         { transform: "translateY(80%)", ease: "back.out" },
-        { transform: "translateY(10%)", ease: "back.out" },
+        { transform: "translateY(0%)", ease: "back.out" },
         1
+      );
+      tl.fromTo(
+        ".third",
+        { transform: "translateY(80%)", ease: "back.out" },
+        { transform: "translateY(10%)", ease: "back.out" },
+        2
       );
     }
 
@@ -51,6 +68,7 @@ function Experience() {
   });
   return (
     <section className="myExperience">
+      {/* <h2 className="title">My experience</h2> */}
       <div className="timelineContainer">
         {/* <h2 className="year">2023</h2> */}
         <figure className="timeline">
@@ -80,7 +98,7 @@ function Experience() {
           >
             <path
               d="M56 625.42L144.025 712.954L145.5 714.421V1219.5H89.5V745.664L1.57812 663.146L0 661.664V0H56V625.42ZM10 657.335L97.9219 739.854L99.5 741.336V1209.5H135.5V718.579L47.4746 631.046L46 629.579V10H10V657.335Z"
-              fill="#2AB01C"
+              fill="#1e8114"
             />
           </svg>
 
@@ -95,8 +113,8 @@ function Experience() {
           >
             <path
               d="M5 744V1214.5H51V717.5V627.5V5H5V654.5V744Z"
-              fill="#2AB01C"
-              stroke="#2AB01C"
+              fill="#1e8114"
+              stroke="#1e8114"
               stroke-width="10"
             />
           </svg>
@@ -111,8 +129,8 @@ function Experience() {
           >
             <path
               d="M94.5 744V1214.5H140.5V717.5L50 627V5H5V654.5L94.5 744Z"
-              fill="#2AB01C"
-              stroke="#2AB01C"
+              fill="#1e8114"
+              stroke="#1e8114"
               stroke-width="10"
             />
           </svg>
@@ -121,6 +139,22 @@ function Experience() {
       <section className="experiences">
         {/* <h2>MY EXPERIENCES</h2> */}
         <section className="experience first">
+          <div className="experienceContainer">
+            <div className="experienceContainerBorder">
+              <div className="experienceContainerClip">
+                <header className="experienceTextContainer">
+                  <h2>My experiences</h2>
+                </header>
+                <p>
+                  During my time at CMD, I got to do two internships. During
+                  both internships I worked as a front-end developer, since my
+                  goal was to improve my skills significantly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="experience second">
           <div className="experienceContainer">
             <div className="experienceContainerBorder">
               <div className="experienceContainerClip">
@@ -136,16 +170,12 @@ function Experience() {
                     HTML, (S)CSS, JavaScript & PHP
                   </strong>{" "}
                   (check out 'Horrorflix').
-                  {/* During my internship at Go2People I got the chance to level up
-                both my HTML and (S)CSS skills. In addition to that I learned
-                PHP (for more information on that, check out my project named
-                ‘Horrorflix’) and dove into WordPress for the first time. */}
                 </p>
               </div>
             </div>
           </div>
         </section>
-        <section className="experience second">
+        <section className="experience third">
           <div className="experienceContainer">
             <div className="experienceContainerBorder">
               <div className="experienceContainerClip">

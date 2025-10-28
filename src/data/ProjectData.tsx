@@ -185,7 +185,7 @@ export const projectData = [
         ossResults: "The final product",
       },
     ],
-    demonstrationVideo: "/projImages/proj2/details/sun.png",
+    demonstrationVideo: "/projImages/proj2/details/ourSolarSystemResults.mp4",
     githubLink: "https://github.com/romyjkk/our-solar-system",
     liveDemo: "https://our-solar-system-five.vercel.app/",
   },

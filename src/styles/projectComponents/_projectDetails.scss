@@ -158,7 +158,7 @@ main {
             }
             .demonstrationVideoContainer {
                 .videoFrame {
-                    width: 80%;
+                    // width: 80%;
                 }
             }
         }
@@ -248,7 +248,7 @@ main {
             }
             .demonstrationVideoContainer {
                 .videoFrame {
-                    width: 80%;
+                    // width: 80%;
                     video {
                         width: 100%;
                     }
@@ -282,7 +282,6 @@ main {
         .projectPageWrapper {
             .projectDetailsSection {
                 .imagesAndDescription {
-                    // gap: 2rem;
                     .projectImages,
                     .bacSacProjImages,
                     .singleProjectImage,

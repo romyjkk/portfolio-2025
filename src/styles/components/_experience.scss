@@ -26,7 +26,7 @@ main {
                             display: none;
                         }
                         .tube {
-                            filter: drop-shadow(0 0 0.5rem var(--secondaryAccentColor));
+                            filter: drop-shadow(0 0 0.5rem var(--primaryAccentColor));
                         }
                         .tubeFiller {
                             position: absolute;
@@ -52,11 +52,11 @@ main {
                             align-items: center;
                             position: relative;
                             max-width: 60rem;
-                            filter: drop-shadow(0 0 0.5rem var(--secondaryAccentColor));
+                            filter: drop-shadow(0 0 0.5rem var(--primaryAccentColor));
                             .experienceContainerBorder {
                                 clip-path: polygon(10% 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 20%);
-                                border: 0.5rem solid var(--secondaryAccentColor);
-                                background-color: var(--secondaryAccentColor);
+                                border: 0.5rem solid var(--primaryAccentColor);
+                                background-color: var(--primaryAccentColor);
                                 .experienceContainerClip {
                                     display: flex;
                                     flex-direction: column;
@@ -77,12 +77,12 @@ main {
                                         height: 6rem;
                                     }
                                     &::before {
-                                        content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 115 115' fill='none'><path d='M24.999 25L24.999 90L89.999 90L114.999 115L-0.000465393 115L-0.000475447 1.00536e-05L24.999 25Z' fill='%232AB01C'/></svg>");
+                                        content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 115 115' fill='none'><path d='M24.999 25L24.999 90L89.999 90L114.999 115L-0.000465393 115L-0.000475447 1.00536e-05L24.999 25Z' fill='%231e8114'/></svg>");
                                         left: 0;
                                         bottom: 0;
                                     }
                                     &::after {
-                                        content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 115 115' fill='none'><path d='M90 90V25H25L0 0H114.999V115L90 90Z' fill='%232AB01C'/></svg>");
+                                        content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 115 115' fill='none'><path d='M90 90V25H25L0 0H114.999V115L90 90Z' fill='%231e8114'/></svg>");
                                         right: 0;
                                         top: 0;
                                     }

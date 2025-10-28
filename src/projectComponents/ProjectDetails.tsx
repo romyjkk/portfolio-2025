@@ -194,21 +194,23 @@ function ProjectDetails({ id }: { id: string }) {
         </article>
       )}
 
-      <article className="scrollIndicator">
-        <strong>Demonstration video</strong>
-        <div className="arrows"></div>
-      </article>
-
       {project.demonstrationVideo && (
-        <article className="demonstrationVideoContainer">
-          <div className="tvShape"></div>
-          <figure className="videoFrame">
-            <video muted loop autoPlay>
-              <source src={project.demonstrationVideo} type="video/mp4" />
-            </video>
-            {/* <img src={project.demonstrationVideo} /> */}
-          </figure>
-        </article>
+        <>
+          <article className="scrollIndicator">
+            <strong>Demonstration video</strong>
+            <div className="arrows"></div>
+          </article>
+
+          <article className="demonstrationVideoContainer">
+            <div className="tvShape"></div>
+            <figure className="videoFrame">
+              <video muted loop autoPlay>
+                <source src={project.demonstrationVideo} type="video/mp4" />
+              </video>
+              {/* <img src={project.demonstrationVideo} /> */}
+            </figure>
+          </article>
+        </>
       )}
 
       {(project.githubLink ||
