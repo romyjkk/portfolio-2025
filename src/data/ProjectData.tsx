@@ -60,7 +60,7 @@ export const projectData = [
         <strong className="red">Template inheritance</strong> with Jinja.
       </>,
     ],
-    challenges: [
+    conclusionParagraphs: [
       <>
         One of the biggest challenges for me was finding my way around multiple
         files with <strong className="red">1000+</strong> lines of code and
@@ -68,8 +68,6 @@ export const projectData = [
         <strong className="red">dynamic data</strong>, while still applying{" "}
         <strong className="red">semantics</strong>.
       </>,
-    ],
-    conclusionParagraphs: [
       <>
         There’s still a lot of work to do, we’d like to implement more{" "}
         <strong className="red">Classes</strong> and use an actual{" "}
@@ -91,20 +89,19 @@ export const projectData = [
       },
       {
         emResults: [
-          "/projImages/proj1/details/dashboard.png",
-          "/projImages/proj1/details/existingIssue.png",
-          "/projImages/proj1/details/addingInventory.png",
-          "/projImages/proj1/details/existingObject.png",
-          "/projImages/proj1/details/folderOverview.png",
-          "/projImages/proj1/details/issueOverview.png",
-          "/projImages/proj1/details/profile.png",
+          "/projImages/proj1/details/createIssue.png",
+          "/projImages/proj1/details/createObject.png",
+          "/projImages/proj1/details/workingFilters.png",
+          "/projImages/proj1/details/profilePage.png",
         ],
       },
     ],
     imageDescriptions: [
       {
         emSketches: ["Dashboard: sketch to final result"],
-        emResults: ["The application in use (still a bit empty)"],
+        emResults: [
+          "Creating issues & objects, working filters and profile page",
+        ],
       },
     ],
     demonstrationVideo: "/projImages/proj1/details/dashboard.png",

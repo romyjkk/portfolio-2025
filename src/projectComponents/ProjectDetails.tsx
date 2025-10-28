@@ -96,23 +96,6 @@ function ProjectDetails({ id }: { id: string }) {
           )}
         </article>
       )}
-      {/* 
-      {project.images?.[1]?.emResults && (
-        <article className="imagesAndDescription">
-          <article className="projectImages">
-            {project.images?.[1].emResults?.map((emResults, index) => {
-              return (
-                <figure key={index} className="projectImage">
-                  <img src={emResults} />
-                </figure>
-              );
-            })}
-          </article>
-          {project.imageDescriptions?.[0].emResults && (
-            <strong>{project.imageDescriptions?.[0].emResults}</strong>
-          )}
-        </article>
-      )} */}
 
       {project.images?.[0]?.scrollTrigger && (
         <article className="imagesAndDescription">
@@ -132,6 +115,23 @@ function ProjectDetails({ id }: { id: string }) {
           {project.challenges?.map((challenge, index) => {
             return <p key={index}>{challenge}</p>;
           })}
+        </article>
+      )}
+
+      {project.images?.[1]?.emResults && (
+        <article className="imagesAndDescription">
+          <article className="projectImages">
+            {project.images?.[1]?.emResults?.map((emResult, index) => {
+              return (
+                <figure key={index} className="projectImage">
+                  <img src={emResult} />
+                </figure>
+              );
+            })}
+          </article>
+          {project.imageDescriptions?.[0].emResults && (
+            <strong>{project.imageDescriptions?.[0].emResults}</strong>
+          )}
         </article>
       )}
 
