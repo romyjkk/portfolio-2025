@@ -18,36 +18,42 @@ function ProjectDetails({ id }: { id: string }) {
         </article>
       )}
 
-      {project.images?.[0]?.emSketches && (
+      {(project.images?.[0] as any)?.emSketches && (
         <article className="imagesAndDescription">
           <article className="projectImages">
-            {project.images?.[0].emSketches?.map((emSketch, index) => {
-              return (
-                <figure key={index} className="projectImage">
-                  <img src={emSketch} />
-                </figure>
-              );
-            })}
+            {(project.images?.[0] as any)?.emSketches?.map(
+              (emSketch: string, index: number) => {
+                return (
+                  <figure key={index} className="projectImage">
+                    <img src={emSketch} />
+                  </figure>
+                );
+              }
+            )}
           </article>
-          {project.imageDescriptions?.[0].emSketches && (
-            <strong>{project.imageDescriptions?.[0].emSketches}</strong>
+          {(project.imageDescriptions?.[0] as any).emSketches && (
+            <strong>
+              {(project.imageDescriptions?.[0] as any).emSketches}
+            </strong>
           )}
         </article>
       )}
 
-      {project.images?.[0]?.oldDesign && (
+      {(project.images?.[0] as any)?.oldDesign && (
         <article className="imagesAndDescription">
           <article className="bacSacProjImages">
-            {project.images?.[0]?.oldDesign?.map((oldDesign, index) => {
-              return (
-                <figure key={index} className="projectImage">
-                  <img src={oldDesign} />
-                </figure>
-              );
-            })}
+            {(project.images?.[0] as any)?.oldDesign?.map(
+              (oldDesign: string, index: number) => {
+                return (
+                  <figure key={index} className="projectImage">
+                    <img src={oldDesign} />
+                  </figure>
+                );
+              }
+            )}
           </article>
-          {project.imageDescriptions?.[0].oldDesign && (
-            <strong>{project.imageDescriptions?.[0].oldDesign}</strong>
+          {(project.imageDescriptions?.[0] as any).oldDesign && (
+            <strong>{(project.imageDescriptions?.[0] as any).oldDesign}</strong>
           )}
         </article>
       )}
@@ -67,70 +73,78 @@ function ProjectDetails({ id }: { id: string }) {
         </article>
       )}
 
-      {project.images?.[0]?.validation && (
+      {(project.images?.[0] as any)?.validation && (
         <article className="imagesAndDescription">
           <article className="singleProjectImage">
             <figure className="projectImage">
-              <img src={project.images?.[0].validation} />
+              <img src={(project.images?.[0] as any).validation} />
             </figure>
           </article>
-          {project.imageDescriptions?.[0].validation && (
-            <strong>{project.imageDescriptions?.[0].validation}</strong>
+          {(project.imageDescriptions?.[0] as any).validation && (
+            <strong>
+              {(project.imageDescriptions?.[0] as any).validation}
+            </strong>
           )}
         </article>
       )}
 
-      {project.images?.[0]?.wordPress && (
+      {(project.images?.[0] as any)?.wordPress && (
         <article className="imagesAndDescription">
           <article className="bacSacProjImages">
-            {project.images?.[0]?.wordPress?.map((wp, index) => {
-              return (
-                <figure key={index} className="projectImage">
-                  <img src={wp} />
-                </figure>
-              );
-            })}
+            {(project.images?.[0] as any)?.wordPress?.map(
+              (wp: string, index: number) => {
+                return (
+                  <figure key={index} className="projectImage">
+                    <img src={wp} />
+                  </figure>
+                );
+              }
+            )}
           </article>
-          {project.imageDescriptions?.[0].wordPress && (
-            <strong>{project.imageDescriptions?.[0].wordPress}</strong>
+          {(project.imageDescriptions?.[0] as any).wordPress && (
+            <strong>{(project.imageDescriptions?.[0] as any).wordPress}</strong>
           )}
         </article>
       )}
 
-      {project.images?.[0]?.scrollTrigger && (
+      {(project.images?.[0] as any)?.scrollTrigger && (
         <article className="imagesAndDescription">
           <article className="singleProjectImage">
             <figure className="projectImage">
-              <img src={project.images?.[0].scrollTrigger} />
+              <img src={(project.images?.[0] as any).scrollTrigger} />
             </figure>
           </article>
-          {project.imageDescriptions?.[0].scrollTrigger && (
-            <strong>{project.imageDescriptions?.[0].scrollTrigger}</strong>
+          {(project.imageDescriptions?.[0] as any).scrollTrigger && (
+            <strong>
+              {(project.imageDescriptions?.[0] as any).scrollTrigger}
+            </strong>
           )}
         </article>
       )}
 
-      {project.challenges && (
+      {/* {project.challenges && (
         <article className="paragraphs challengesParagraphs">
-          {project.challenges?.map((challenge, index) => {
+          {project.challenges?.map((challenge: string, index: number) => {
             return <p key={index}>{challenge}</p>;
           })}
         </article>
-      )}
+      )} */}
 
-      {project.images?.[1]?.emResults && (
+      {(project.images?.[1] as any)?.emResults && (
         <article className="imagesAndDescription">
           <article className="projectImages">
-            {project.images?.[1]?.emResults?.map((emResult, index) => {
-              return (
-                <figure key={index} className="projectImage">
-                  <img src={emResult} />
-                </figure>
-              );
-            })}
+            {(project.images?.[1] as any)?.emResults?.map(
+              (emResult: string, index: number) => {
+                return (
+                  <figure key={index} className="projectImage">
+                    <img src={emResult} />
+                  </figure>
+                );
+              }
+            )}
           </article>
-          {project.imageDescriptions?.[0].emResults && (
-            <strong>{project.imageDescriptions?.[0].emResults}</strong>
+          {(project.imageDescriptions?.[0] as any).emResults && (
+            <strong>{(project.imageDescriptions?.[0] as any).emResults}</strong>
           )}
         </article>
       )}
@@ -143,53 +157,61 @@ function ProjectDetails({ id }: { id: string }) {
         </article>
       )}
 
-      {project.images?.[1]?.sent && (
+      {(project.images?.[1] as any)?.sent && (
         <article className="imagesAndDescription">
           <article className="horrorflixProjImages">
-            {project.images?.[1].sent?.map((sent, index) => {
-              return (
-                <figure key={index} className="projectImage">
-                  <img src={sent} />
-                </figure>
-              );
-            })}
+            {(project.images?.[1] as any)?.sent?.map(
+              (sent: string, index: number) => {
+                return (
+                  <figure key={index} className="projectImage">
+                    <img src={sent} />
+                  </figure>
+                );
+              }
+            )}
           </article>
-          {project.imageDescriptions?.[0].results && (
-            <strong>{project.imageDescriptions?.[0].results}</strong>
+          {(project.imageDescriptions?.[0] as any).results && (
+            <strong>{(project.imageDescriptions?.[0] as any).results}</strong>
           )}
         </article>
       )}
 
-      {project.images?.[1]?.ossResults && (
+      {(project.images?.[1] as any)?.ossResults && (
         <article className="imagesAndDescription">
           <article className="projectImages">
-            {project.images?.[1].ossResults?.map((ossResult, index) => {
-              return (
-                <figure key={index} className="projectImage">
-                  <img src={ossResult} />
-                </figure>
-              );
-            })}
+            {(project.images?.[1] as any)?.ossResults?.map(
+              (ossResult: string, index: number) => {
+                return (
+                  <figure key={index} className="projectImage">
+                    <img src={ossResult} />
+                  </figure>
+                );
+              }
+            )}
           </article>
-          {project.imageDescriptions?.[0].ossResults && (
-            <strong>{project.imageDescriptions?.[0].ossResults}</strong>
+          {(project.imageDescriptions?.[0] as any).ossResults && (
+            <strong>
+              {(project.imageDescriptions?.[0] as any).ossResults}
+            </strong>
           )}
         </article>
       )}
 
-      {project.images?.[0]?.newDesign && (
+      {(project.images?.[0] as any)?.newDesign && (
         <article className="imagesAndDescription">
           <article className="bacSacProjImages bacSacProjImagesBig">
-            {project.images?.[0].newDesign?.map((newDesign, index) => {
-              return (
-                <figure key={index} className="projectImage veryHigh">
-                  <img src={newDesign} />
-                </figure>
-              );
-            })}
+            {(project.images?.[0] as any).newDesign?.map(
+              (newDesign: string, index: number) => {
+                return (
+                  <figure key={index} className="projectImage veryHigh">
+                    <img src={newDesign} />
+                  </figure>
+                );
+              }
+            )}
           </article>
-          {project.imageDescriptions?.[0].newDesign && (
-            <strong>{project.imageDescriptions?.[0].newDesign}</strong>
+          {(project.imageDescriptions?.[0] as any).newDesign && (
+            <strong>{(project.imageDescriptions?.[0] as any).newDesign}</strong>
           )}
         </article>
       )}
