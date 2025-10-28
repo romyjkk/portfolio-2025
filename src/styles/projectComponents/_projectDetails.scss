@@ -405,3 +405,17 @@ main {
         }
     }
 }
+
+@media (min-width: 1200px) {
+    main {
+        .horrorflix-project {
+            .projectDetailsSection {
+                .demonstrationVideoContainer {
+                    .videoFrame {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}

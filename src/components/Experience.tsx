@@ -10,37 +10,37 @@ function Experience() {
     tl.fromTo(
       ".first",
       { transform: "translateY(80%)", ease: "back.out" },
-      { transform: "translateY(-10%)", ease: "back.out" },
+      { transform: "translateY(-15%)", ease: "back.out" },
       0
     );
     // tl.to(".first .experienceContainer", { "--before-opacity": 0 }, 1);
-    if (window.innerWidth < 768) {
-      tl.fromTo(
-        ".second",
-        { transform: "translateY(80%)", ease: "back.out" },
-        { transform: "translateY(-5%)", ease: "back.out" },
-        1
-      );
-      tl.fromTo(
-        ".third",
-        { transform: "translateY(80%)", ease: "back.out" },
-        { transform: "translateY(0%)", ease: "back.out" },
-        2
-      );
-    } else if (window.innerWidth > 768) {
-      tl.fromTo(
-        ".second",
-        { transform: "translateY(80%)", ease: "back.out" },
-        { transform: "translateY(0%)", ease: "back.out" },
-        1
-      );
-      tl.fromTo(
-        ".third",
-        { transform: "translateY(80%)", ease: "back.out" },
-        { transform: "translateY(10%)", ease: "back.out" },
-        2
-      );
-    }
+    // if (window.innerWidth < 768) {
+    tl.fromTo(
+      ".second",
+      { transform: "translateY(80%)", ease: "back.out" },
+      { transform: "translateY(-5%)", ease: "back.out" },
+      1
+    );
+    tl.fromTo(
+      ".third",
+      { transform: "translateY(80%)", ease: "back.out" },
+      { transform: "translateY(5%)", ease: "back.out" },
+      2
+    );
+    // } else if (window.innerWidth > 768) {
+    //   tl.fromTo(
+    //     ".second",
+    //     { transform: "translateY(80%)", ease: "back.out" },
+    //     { transform: "translateY(5%)", ease: "back.out" },
+    //     1
+    //   );
+    //   tl.fromTo(
+    //     ".third",
+    //     { transform: "translateY(80%)", ease: "back.out" },
+    //     { transform: "translateY(10%)", ease: "back.out" },
+    //     2
+    //   );
+    // }
 
     gsap.to(".tubeFiller", {
       clipPath: "inset(0% 0% 0% 0%)",
@@ -68,11 +68,8 @@ function Experience() {
   });
   return (
     <section className="myExperience">
-      {/* <h2 className="title">My experience</h2> */}
       <div className="timelineContainer">
-        {/* <h2 className="year">2023</h2> */}
         <figure className="timeline">
-          {/* tube */}
           <svg
             className="sm tube"
             width="56"

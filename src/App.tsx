@@ -28,9 +28,17 @@ import ProjectPage from "./pages/ProjectPage";
 
 export default function App() {
   useLayoutEffect(() => {
-    ScrollSmoother.create({
-      smooth: 1,
-    });
+    let smoother: ScrollSmoother | null = null;
+
+    if (window.innerWidth > 576) {
+      smoother = ScrollSmoother.create({
+        smooth: 1,
+      });
+    }
+
+    return () => {
+      if (smoother) smoother.kill();
+    };
   }, []);
   return (
     <BrowserRouter>
