@@ -2,14 +2,29 @@ import { gsap } from "gsap";
 
 import Button from "./Button";
 import logo from "/logo.svg";
+import { useLocation, useNavigate } from "react-router";
 
 function Header() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const scrollToSection = (target: string) => {
-    gsap.to(window, {
-      duration: 2,
-      scrollTo: { y: target },
-    });
+    if (location.pathname === "/") {
+      // Als we al op de homepage zijn → gewoon scrollen
+      const section = document.querySelector(target);
+      if (section) {
+        gsap.to(window, {
+          duration: 1,
+          scrollTo: { y: target, offsetY: 0 },
+          ease: "power2.out",
+        });
+      }
+    } else {
+      // ⬇️ Als we NIET op home zijn → navigeer erheen met state
+      navigate("/", { state: { scrollTarget: target } });
+    }
   };
+
   return (
     <header className="pageHeaderOne">
       <nav className="headerContainer">

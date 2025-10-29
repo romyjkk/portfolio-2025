@@ -3,10 +3,6 @@ import { gsap } from "gsap";
 
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { ScrollSmoother } from "gsap/ScrollSmoother";
-// import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-
-// import Experience from "./Experience";
 
 function AboutMe() {
   useGSAP(() => {
@@ -49,32 +45,16 @@ function AboutMe() {
       .add(makeGlitch2(".introductionTextCopy1"), 0.6)
       .add(makeGlitch1(".introductionTextCopy2"), 0.6)
       .add(makeGlitch1(".introductionText"), 0.7);
-    // .fromTo(".textContainer", { opacity: 1 }, { opacity: 0 }, 0.5);
 
     ScrollTrigger.create({
       trigger: "#aboutMeContainer",
       start: "top top",
       end: "bottom +=500",
       pin: ".me",
-      // markers: true,
-      // scrub: 1,
       pinSpacing: true,
       toggleActions: "restart none reverse reverse",
       animation: tl,
     });
-
-    // gsap.set(".timeline svg", { height: "60vh" });
-
-    // ScrollTrigger.create({
-    //   trigger: ".myExperience",
-    //   start: "top top",
-    //   end: "bottom bottom",
-    //   pin: ".timeline",
-    //   markers: true,
-    //   pinSpacing: false,
-    //   toggleActions: "restart none reverse reverse",
-    //   onEnter: () => console.log("enter"),
-    // });
   });
   return (
     <>
@@ -135,7 +115,6 @@ function AboutMe() {
           </div>
         </section>
       </section>
-      {/* <Experience /> */}
     </>
   );
 }

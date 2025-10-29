@@ -12,8 +12,14 @@ function Button({
   download?: string;
 }) {
   return (
-    <a download={download} target={target} className="button" href={href}>
-      <div onClick={onClick} className="buttonFront">
+    <a
+      download={download}
+      target={target}
+      className="button"
+      onClick={onClick}
+      href={href}
+    >
+      <div className="buttonFront">
         <p>{buttonText}</p>
       </div>
       <div className="buttonBack"></div>

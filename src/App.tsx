@@ -1,7 +1,6 @@
 import { gsap } from "gsap";
 import { useLayoutEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import { useGSAP } from "@gsap/react";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
@@ -20,7 +19,6 @@ gsap.registerPlugin(
   DrawSVGPlugin,
   Flip
 );
-// ScrollTrigger.normalizeScroll(true);
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -58,5 +56,3 @@ export default function App() {
     </BrowserRouter>
   );
 }
-
-// export default App;

@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import Button from "./Button";
+// import { useNavigate } from "react-router";
 
 function ProjectPreview(props: {
   id: string;
@@ -20,6 +21,14 @@ function ProjectPreview(props: {
   glitch3?: string;
   glitch4?: string;
 }) {
+  // const navigate = useNavigate();
+
+  // const handleClick = () => {
+  //   const state = Flip.getState(".projImageContainer img");
+  //   sessionStorage.setItem("flipState", JSON.stringify(state));
+  //   navigate(`/${props.slug}`);
+  // };
+
   const imgRef = useRef<HTMLImageElement | null>(null);
   const containerRef = useRef<HTMLElement | null>(null);
   const shapeRef = useRef<HTMLImageElement | null>(null);
@@ -100,7 +109,11 @@ function ProjectPreview(props: {
         <section>
           <h2>{props.title}</h2>
           <p>{props.roles}</p>
-          <Button href={`/${props.slug}`} buttonText="More" />
+          <Button
+            // onClick={handleClick}
+            href={`/${props.slug}`}
+            buttonText="More"
+          />
         </section>
       </div>
     </section>
