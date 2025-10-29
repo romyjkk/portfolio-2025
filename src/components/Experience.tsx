@@ -81,7 +81,7 @@ function Experience() {
             <path
               d="M5 744V1214.5H51V717.5V627.5V5H5V654.5V744Z"
               stroke="#2AB01C"
-              stroke-width="10"
+              strokeWidth="10"
             />
           </svg>
 
@@ -112,7 +112,7 @@ function Experience() {
               d="M5 744V1214.5H51V717.5V627.5V5H5V654.5V744Z"
               fill="#1e8114"
               stroke="#1e8114"
-              stroke-width="10"
+              strokeWidth="10"
             />
           </svg>
 
@@ -128,7 +128,7 @@ function Experience() {
               d="M94.5 744V1214.5H140.5V717.5L50 627V5H5V654.5L94.5 744Z"
               fill="#1e8114"
               stroke="#1e8114"
-              stroke-width="10"
+              strokeWidth="10"
             />
           </svg>
         </figure>

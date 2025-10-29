@@ -24,6 +24,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ProjectPage from "./pages/ProjectPage";
+import PageTransitions from "./helperFunctions/PageTransitions";
 
 export default function App() {
   useLayoutEffect(() => {
@@ -45,10 +46,12 @@ export default function App() {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/:slug" element={<ProjectPage />} />
-            </Routes>
+            <PageTransitions>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/:slug" element={<ProjectPage />} />
+              </Routes>
+            </PageTransitions>
             <Footer />
           </main>
         </div>
