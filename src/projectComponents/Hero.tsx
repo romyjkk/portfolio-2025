@@ -6,21 +6,6 @@ import { Flip } from "gsap/Flip";
 function Hero({ id }: { id: string }) {
   const project = projectData.find((p) => p.id === id);
 
-  useGSAP(() => {
-    const state = Flip.getState(".projImageContainer img", {
-      props: "transform",
-    });
-
-    requestAnimationFrame(() => {
-      Flip.from(state, {
-        duration: 1,
-        ease: "power1.inOut",
-        absolute: true,
-        scale: true,
-      });
-    });
-  }, [id]);
-
   if (!project) {
     return null;
   }

@@ -21,14 +21,6 @@ function ProjectPreview(props: {
   glitch3?: string;
   glitch4?: string;
 }) {
-  // const navigate = useNavigate();
-
-  // const handleClick = () => {
-  //   const state = Flip.getState(".projImageContainer img");
-  //   sessionStorage.setItem("flipState", JSON.stringify(state));
-  //   navigate(`/${props.slug}`);
-  // };
-
   const imgRef = useRef<HTMLImageElement | null>(null);
   const containerRef = useRef<HTMLElement | null>(null);
   const shapeRef = useRef<HTMLImageElement | null>(null);
