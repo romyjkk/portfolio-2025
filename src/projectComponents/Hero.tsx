@@ -1,7 +1,7 @@
 import Badge from "./Badge";
 import projectData from "../data/ProjectData";
-import { useGSAP } from "@gsap/react";
-import { Flip } from "gsap/Flip";
+// import { useGSAP } from "@gsap/react";
+// import { Flip } from "gsap/Flip";
 
 function Hero({ id }: { id: string }) {
   const project = projectData.find((p) => p.id === id);
