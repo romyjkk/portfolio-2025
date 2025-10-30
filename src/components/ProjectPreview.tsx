@@ -2,10 +2,8 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import Button from "./Button";
-// import { useNavigate } from "react-router";
 
 function ProjectPreview(props: {
   id: string;
@@ -33,6 +31,15 @@ function ProjectPreview(props: {
       props.glitch3,
       props.glitch4,
     ].filter(Boolean) as string[];
+
+    if (
+      !imgRef.current ||
+      !containerRef.current ||
+      !shapeRef.current ||
+      !contentRef.current
+    ) {
+      return;
+    }
 
     const makeGlitch = () => {
       const tl = gsap.timeline({ repeat: -1, repeatDelay: 3 });
@@ -71,15 +78,14 @@ function ProjectPreview(props: {
     tl3.add(makeGlitch());
     tl3.add(furtherAnimations(), 0);
 
-    if (containerRef.current) {
-      ScrollTrigger.create({
-        trigger: containerRef.current,
-        start: "top bottom",
-        end: "bottom +=500",
-        toggleActions: "play none none none",
-        animation: tl3,
-      });
-    }
+    // if (imgRef.current) {
+    ScrollTrigger.create({
+      trigger: containerRef.current,
+      start: "top bottom",
+      end: "bottom +=500",
+      toggleActions: "play none none none",
+      animation: tl3,
+    });
   });
   return (
     <section
@@ -101,11 +107,7 @@ function ProjectPreview(props: {
         <section>
           <h2>{props.title}</h2>
           <p>{props.roles}</p>
-          <Button
-            // onClick={handleClick}
-            href={`/${props.slug}`}
-            buttonText="More"
-          />
+          <Button href={`/${props.slug}`} buttonText="More" />
         </section>
       </div>
     </section>
