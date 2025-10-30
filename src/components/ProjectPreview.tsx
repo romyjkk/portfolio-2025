@@ -78,14 +78,16 @@ function ProjectPreview(props: {
     tl3.add(makeGlitch());
     tl3.add(furtherAnimations(), 0);
 
+    if (imgRef.current) {
+      ScrollTrigger.create({
+        trigger: containerRef.current,
+        start: "top bottom",
+        end: "bottom +=500",
+        toggleActions: "play none none none",
+        animation: tl3,
+      });
+    }
     // if (imgRef.current) {
-    ScrollTrigger.create({
-      trigger: containerRef.current,
-      start: "top bottom",
-      end: "bottom +=500",
-      toggleActions: "play none none none",
-      animation: tl3,
-    });
   });
   return (
     <section

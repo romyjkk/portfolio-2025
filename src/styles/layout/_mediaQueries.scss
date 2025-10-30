@@ -117,11 +117,6 @@
             .heroSection {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                .funkyShape {
-                    display: block;
-                    grid-area: 1 / 1 / 2 / 3;
-                    animation: dropShadow 5s linear infinite;
-                }
                 .projImageContainer {
                     justify-self: center;
                     grid-area: 1 / 1 / 2 / 2;
@@ -129,7 +124,6 @@
                 .projMetaData {
                     text-align: start;
                     grid-area: 1 / 2 / 2 / 3;
-                    // margin-left: -2rem;
                     align-items: start;
                     .container {
                         .roles {
@@ -147,6 +141,15 @@
 }
 
 @media (min-width: 768px) {
+    main .projectPageWrapper {
+        .heroSection {
+            .funkyShape {
+                display: block;
+                grid-area: 1 / 1 / 2 / 3;
+                animation: dropShadow 5s linear infinite;
+            }
+        }
+    }
     main .homePageWrapper {
         #wrapper {
             .myExperience {
