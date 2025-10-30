@@ -10,7 +10,7 @@ import { useEffect } from "react";
 function ProjectPage({
   smootherRef,
 }: {
-  smootherRef: React.RefObject<ScrollSmoother>;
+  smootherRef: React.RefObject<ScrollSmoother | null>;
 }) {
   const { slug } = useParams();
   const project = ProjectData.find((p) => p.slug === slug);

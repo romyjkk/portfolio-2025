@@ -1,5 +1,4 @@
 import projectData from "../data/ProjectData";
-import Button from "../components/Button";
 import Link from "../components/Link";
 
 function ProjectDetails({ id }: { id: string }) {

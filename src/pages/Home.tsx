@@ -12,7 +12,7 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 function Home({
   smootherRef,
 }: {
-  smootherRef: React.RefObject<ScrollSmoother>;
+  smootherRef: React.RefObject<ScrollSmoother | null>;
 }) {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
@@ -26,15 +26,12 @@ function Home({
 
     const state = location.state as { scrollTarget?: string } | null;
 
-    // Wacht tot de layout volledig is berekend
     setTimeout(() => {
-      // Refresh ScrollTriggers na layout berekening
       ScrollTrigger.refresh();
 
-      // Scroll naar de sectie als er een target is
       if (state?.scrollTarget) {
         setTimeout(() => {
-          const section = document.querySelector(state.scrollTarget);
+          const section = document.querySelector(state.scrollTarget as string);
           if (section) {
             if (smootherRef.current) {
               smootherRef.current.scrollTo(section, true, "top top");

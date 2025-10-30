@@ -27,7 +27,6 @@ import Home from "./pages/Home";
 import ProjectPage from "./pages/ProjectPage";
 import { TransitionProvider } from "./helperFunctions/TransitionContext";
 import TransitionComponent from "./helperFunctions/Transition";
-import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 function AppContent() {
