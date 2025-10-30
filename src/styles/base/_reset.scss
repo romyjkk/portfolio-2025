@@ -51,6 +51,11 @@ a {
     user-select: none;
 }
 
+button {
+    padding: 0;
+    border: none;
+}
+
 * {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */

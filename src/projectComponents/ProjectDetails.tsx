@@ -1,5 +1,6 @@
 import projectData from "../data/ProjectData";
 import Button from "../components/Button";
+import Link from "../components/Link";
 
 function ProjectDetails({ id }: { id: string }) {
   const project = projectData.find((p) => p.id === id);
@@ -241,28 +242,28 @@ function ProjectDetails({ id }: { id: string }) {
         project.liveWebsite) && (
         <article className="buttonContainer">
           {project.githubLink && (
-            <Button
+            <Link
               target="_blank"
               href={project.githubLink}
               buttonText="Github repo"
             />
           )}
           {project.liveDemo && (
-            <Button
+            <Link
               target="_blank"
               href={project.liveDemo}
               buttonText="Live demo"
             />
           )}
           {project.file && (
-            <Button
+            <Link
               href={project.file}
               buttonText="Download design file (Dutch)"
               download="Design Rationale"
             />
           )}
           {project.liveWebsite && (
-            <Button
+            <Link
               target="_blank"
               href={project.liveWebsite}
               buttonText="Live website"

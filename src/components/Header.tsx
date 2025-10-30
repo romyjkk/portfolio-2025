@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 
 import Button from "./Button";
 import logo from "/logo.svg";
-import { useLocation, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 
 function Header() {
   const navigate = useNavigate();
@@ -10,7 +10,6 @@ function Header() {
 
   const scrollToSection = (target: string) => {
     if (location.pathname === "/") {
-      // Als we al op de homepage zijn → gewoon scrollen
       const section = document.querySelector(target);
       if (section) {
         gsap.to(window, {
@@ -20,7 +19,6 @@ function Header() {
         });
       }
     } else {
-      // ⬇️ Als we NIET op home zijn → navigeer erheen met state
       navigate("/", { state: { scrollTarget: target } });
     }
   };
@@ -28,9 +26,9 @@ function Header() {
   return (
     <header className="pageHeaderOne">
       <nav className="headerContainer">
-        <a href="/">
+        <Link to="/">
           <img src={logo} alt="My logo" />
-        </a>
+        </Link>
         <nav>
           <Button
             buttonText="Work"

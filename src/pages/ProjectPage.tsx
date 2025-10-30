@@ -5,10 +5,23 @@ import { useParams } from "react-router";
 
 import Hero from "../projectComponents/Hero";
 import ProjectDetails from "../projectComponents/ProjectDetails";
+import { useEffect } from "react";
 
-function ProjectPage() {
+function ProjectPage({
+  smootherRef,
+}: {
+  smootherRef: React.RefObject<ScrollSmoother>;
+}) {
   const { slug } = useParams();
   const project = ProjectData.find((p) => p.slug === slug);
+
+  useEffect(() => {
+    if (smootherRef.current) {
+      smootherRef.current.scrollTo(0, false);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [slug, smootherRef]);
 
   if (!project) {
     return (

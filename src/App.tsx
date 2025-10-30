@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import { useLayoutEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useRef } from "react";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
@@ -24,38 +25,57 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ProjectPage from "./pages/ProjectPage";
-import PageTransitions from "./helperFunctions/PageTransitions";
+import { TransitionProvider } from "./helperFunctions/TransitionContext";
+import TransitionComponent from "./helperFunctions/Transition";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-export default function App() {
+function AppContent() {
+  const location = useLocation();
+  const smootherRef = useRef<ScrollSmoother | null>(null);
+
   useLayoutEffect(() => {
-    let smoother: ScrollSmoother | null = null;
-
     if (window.innerWidth > 576) {
-      smoother = ScrollSmoother.create({
+      smootherRef.current = ScrollSmoother.create({
         smooth: 1,
+        effects: true,
       });
     }
 
     return () => {
-      if (smoother) smoother.kill();
+      if (smootherRef.current) smootherRef.current.kill();
     };
   }, []);
+
   return (
-    <BrowserRouter>
+    <>
       <Header />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <PageTransitions>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/:slug" element={<ProjectPage />} />
+            <TransitionComponent>
+              <Routes location={location}>
+                <Route path="/" element={<Home smootherRef={smootherRef} />} />
+                <Route
+                  path="/:slug"
+                  element={<ProjectPage smootherRef={smootherRef} />}
+                />
               </Routes>
-            </PageTransitions>
+            </TransitionComponent>
             <Footer />
           </main>
         </div>
       </div>
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <TransitionProvider>
+        <AppContent />
+      </TransitionProvider>
     </BrowserRouter>
   );
 }

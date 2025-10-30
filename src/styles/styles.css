@@ -40,6 +40,11 @@ a {
           user-select: none;
 }
 
+button {
+  padding: 0;
+  border: none;
+}
+
 * {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
@@ -1116,67 +1121,67 @@ main .horrorflix-project .projectDetailsSection .demonstrationVideoContainer .vi
 }
 @keyframes glitch {
   0% {
-    clip-path: inset(31px 0 27px 0);
+    clip-path: inset(55px 0 76px 0);
   }
   5% {
-    clip-path: inset(2px 0 73px 0);
+    clip-path: inset(77px 0 77px 0);
   }
   10% {
-    clip-path: inset(76px 0 66px 0);
+    clip-path: inset(48px 0 36px 0);
   }
   15% {
-    clip-path: inset(72px 0 34px 0);
+    clip-path: inset(46px 0 13px 0);
   }
   20% {
-    clip-path: inset(29px 0 2px 0);
+    clip-path: inset(29px 0 47px 0);
   }
   25% {
-    clip-path: inset(9px 0 80px 0);
+    clip-path: inset(32px 0 3px 0);
   }
   30% {
-    clip-path: inset(2px 0 73px 0);
+    clip-path: inset(17px 0 38px 0);
   }
   35% {
-    clip-path: inset(1px 0 6px 0);
+    clip-path: inset(64px 0 11px 0);
   }
   40% {
-    clip-path: inset(25px 0 32px 0);
+    clip-path: inset(34px 0 4px 0);
   }
   45% {
-    clip-path: inset(38px 0 1px 0);
+    clip-path: inset(1px 0 69px 0);
   }
   50% {
-    clip-path: inset(80px 0 15px 0);
+    clip-path: inset(62px 0 37px 0);
   }
   55% {
-    clip-path: inset(49px 0 44px 0);
+    clip-path: inset(7px 0 26px 0);
   }
   60% {
-    clip-path: inset(47px 0 71px 0);
+    clip-path: inset(53px 0 52px 0);
   }
   65% {
-    clip-path: inset(33px 0 1px 0);
+    clip-path: inset(36px 0 24px 0);
   }
   70% {
-    clip-path: inset(57px 0 25px 0);
+    clip-path: inset(16px 0 50px 0);
   }
   75% {
-    clip-path: inset(26px 0 66px 0);
+    clip-path: inset(80px 0 12px 0);
   }
   80% {
-    clip-path: inset(52px 0 58px 0);
+    clip-path: inset(19px 0 24px 0);
   }
   85% {
-    clip-path: inset(61px 0 38px 0);
+    clip-path: inset(48px 0 64px 0);
   }
   90% {
-    clip-path: inset(3px 0 40px 0);
+    clip-path: inset(22px 0 28px 0);
   }
   95% {
-    clip-path: inset(36px 0 23px 0);
+    clip-path: inset(3px 0 44px 0);
   }
   100% {
-    clip-path: inset(63px 0 35px 0);
+    clip-path: inset(4px 0 65px 0);
   }
 }
 @keyframes noise {
@@ -1212,6 +1217,7 @@ button {
   max-width: -moz-fit-content;
   max-width: fit-content;
   width: 100%;
+  background: none;
 }
 .button .buttonFront {
   display: flex;

@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 function Button({
   onClick,
   href,
@@ -11,19 +13,31 @@ function Button({
   target?: string;
   download?: string;
 }) {
+  const navigate = useNavigate();
+
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+
+    if (onClick) {
+      onClick();
+    } else if (href) {
+      navigate(href);
+    }
+  };
+
   return (
-    <a
-      download={download}
-      target={target}
+    <button
+      // download={download}
+      // target={target}
       className="button"
-      onClick={onClick}
-      href={href}
+      onClick={handleClick}
+      // href={href}
     >
       <div className="buttonFront">
         <p>{buttonText}</p>
       </div>
       <div className="buttonBack"></div>
-    </a>
+    </button>
   );
 }
 

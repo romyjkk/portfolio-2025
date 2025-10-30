@@ -1,4 +1,3 @@
-// import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 
 import portrait from "/portrait.png";
@@ -44,23 +43,26 @@ function IntroductionCard() {
     ];
 
     const tl = gsap.timeline({ repeat: -1, repeatDelay: 3 }); // glitch elke ±3 seconden
+    const glitchImage = document.querySelector(".glitchImage");
+    if (glitchImage) {
+      tl.set(glitchImage, { attr: { src: matrixifiedPortrait } }); // start normaal
 
-    tl.set(".glitchImage", { attr: { src: matrixifiedPortrait } }); // start normaal
-
-    // glitch burst
-    tl.add(() => {
-      // laat in korte tijd meerdere glitches zien
-      const burst = gsap.timeline();
-      glitches.forEach((img, i) => {
-        burst.set(".glitchImage", { attr: { src: img } }, i * 0.05);
+      // glitch burst
+      tl.add(() => {
+        // laat in korte tijd meerdere glitches zien
+        const burst = gsap.timeline();
+        glitches.forEach((img, i) => {
+          burst.set(glitchImage, { attr: { src: img } }, i * 0.05);
+        });
+        burst.set(
+          glitchImage,
+          { attr: { src: matrixifiedPortrait } },
+          "+=0.05"
+        );
       });
-      burst.set(
-        ".glitchImage",
-        { attr: { src: matrixifiedPortrait } },
-        "+=0.05"
-      );
-    });
+    }
   };
+
   return (
     <div className="introductionCardContainer">
       <section className="introductionCard">
