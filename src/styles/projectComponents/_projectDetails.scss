@@ -124,7 +124,7 @@ main {
     .our-solar-system-project {
         .heroSection {
             .projImageContainer {
-                max-width: 35rem;
+                max-width: 30rem;
             }
         }
         .projectDetailsSection {
@@ -305,6 +305,13 @@ main {
                         img {
                         }
                     }
+                }
+            }
+        }
+        .our-solar-system-project {
+            .heroSection {
+                .projImageContainer {
+                    max-width: 35rem;
                 }
             }
         }
