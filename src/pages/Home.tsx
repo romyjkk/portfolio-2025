@@ -19,9 +19,9 @@ function Home({
 
   useGSAP(() => {
     if (smootherRef.current) {
-      smootherRef.current.scrollTo(0, false);
+      // smootherRef.current.scrollTo(0, false);
     } else {
-      window.scrollTo(0, 0);
+      // window.scrollTo(0, 0);
     }
 
     const state = location.state as { scrollTarget?: string } | null;

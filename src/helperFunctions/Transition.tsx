@@ -23,13 +23,30 @@ const TransitionComponent = ({ children }: { children: React.ReactNode }) => {
           toggleCompleted(false);
           const node = nodeRef.current;
           if (node) {
-            gsap.set(node, { autoAlpha: 0, scale: 0.8, xPercent: -100 });
-            gsap
-              .timeline({
+            gsap.fromTo(
+              node,
+              {
+                autoAlpha: 0,
+                skewX: 5,
+                "--blur": 1,
+                "--brightness": 1.5,
+              },
+              {
+                autoAlpha: 1,
+                "--blur": 0,
+                "--brightness": 1,
+                skewX: 0,
+                duration: 1,
+                onUpdate: function () {
+                  if (node) {
+                    const blur = gsap.getProperty(node, "--blur");
+                    const brightness = gsap.getProperty(node, "--brightness");
+                    node.style.filter = `blur(${blur}px) brightness(${brightness})`;
+                  }
+                },
                 onComplete: () => toggleCompleted(true),
-              })
-              .to(node, { autoAlpha: 1, xPercent: 0, duration: 0.25 })
-              .to(node, { scale: 1, duration: 0.25 });
+              }
+            );
           }
         }}
         onExit={() => {
@@ -37,8 +54,22 @@ const TransitionComponent = ({ children }: { children: React.ReactNode }) => {
           if (node) {
             gsap
               .timeline()
-              .to(node, { scale: 0.8, duration: 0.2 })
-              .to(node, { xPercent: 100, autoAlpha: 0, duration: 0.2 });
+              .to(node, {
+                autoAlpha: 1,
+                skewX: -5,
+                "--blur": 1,
+                "--brightness": 1.5,
+                duration: 0.5,
+                ease: "power2.out",
+                onUpdate: function () {
+                  if (node) {
+                    const blur = gsap.getProperty(node, "--blur");
+                    const brightness = gsap.getProperty(node, "--brightness");
+                    node.style.filter = `blur(${blur}px) brightness(${brightness})`;
+                  }
+                },
+              })
+              .to(node, { autoAlpha: 0, duration: 0.5 });
           }
         }}
       >
