@@ -50,7 +50,7 @@ function AboutMe() {
       trigger: "#aboutMeContainer",
       start: "top top",
       end: "bottom +=500",
-      pin: ".me",
+      pin: window.innerWidth > 768 ? ".me" : false,
       pinSpacing: true,
       toggleActions: "restart none reverse reverse",
       animation: tl,
