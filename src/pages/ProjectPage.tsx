@@ -1,4 +1,3 @@
-// import { Children } from "react";
 import ProjectData from "../data/ProjectData";
 import Button from "../components/Button";
 import { useParams } from "react-router";

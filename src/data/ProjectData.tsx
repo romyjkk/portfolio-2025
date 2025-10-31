@@ -95,6 +95,14 @@ export const projectData = [
           "/projImages/proj1/details/profilePage.png",
         ],
       },
+      {
+        glitch: [
+          "/projImages/proj1/glitch1.png",
+          "/projImages/proj1/glitch2.png",
+          "/projImages/proj1/glitch3.png",
+          "/projImages/proj1/glitch4.png",
+        ],
+      },
     ],
     imageDescriptions: [
       {
@@ -173,6 +181,14 @@ export const projectData = [
           "/projImages/proj2/details/sun.png",
           "/projImages/proj2/details/uranus.png",
           "/projImages/proj2/details/fullScene.png",
+        ],
+      },
+      {
+        glitch: [
+          "/projImages/proj2/glitch1Flipped.png",
+          "/projImages/proj2/glitch2Flipped.png",
+          "/projImages/proj2/glitch3Flipped.png",
+          "/projImages/proj2/glitch4Flipped.png",
         ],
       },
     ],
@@ -265,6 +281,14 @@ export const projectData = [
           "/projImages/proj3/details/sacNew.png",
         ],
       },
+      {
+        glitch: [
+          "/projImages/proj3/glitch1.png",
+          "/projImages/proj3/glitch2.png",
+          "/projImages/proj3/glitch3.png",
+          "/projImages/proj3/glitch4.png",
+        ],
+      },
     ],
     imageDescriptions: [
       {
@@ -348,6 +372,14 @@ export const projectData = [
           "/projImages/proj4/details/easterEgg1.png",
           "/projImages/proj4/details/sent.png",
           "/projImages/proj4/details/email.png",
+        ],
+      },
+      {
+        glitch: [
+          "/projImages/proj4/glitch1Flipped.png",
+          "/projImages/proj4/glitch2Flipped.png",
+          "/projImages/proj4/glitch3Flipped.png",
+          "/projImages/proj4/glitch4Flipped.png",
         ],
       },
     ],

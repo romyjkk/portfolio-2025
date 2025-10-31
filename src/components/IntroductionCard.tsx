@@ -2,38 +2,12 @@ import { gsap } from "gsap";
 
 import portrait from "/portrait.png";
 import matrixifiedPortrait from "/portraitMatrixified.jpg";
-import matrixifiedGlitch1 from "/glitch/glitch1.1.png";
-import matrixifiedGlitch2 from "/glitch/glitch2.2.png";
-import matrixifiedGlitch3 from "/glitch/glitch3.3.png";
-import matrixifiedGlitch4 from "/glitch/glitch3.4.png";
+import matrixifiedGlitch1 from "/glitch/glitch1.png";
+import matrixifiedGlitch2 from "/glitch/glitch2.png";
+import matrixifiedGlitch3 from "/glitch/glitch3.png";
+import matrixifiedGlitch4 from "/glitch/glitch4.png";
 
 function IntroductionCard() {
-  // useGSAP(() => {
-  //   const glitches = [
-  //     matrixifiedGlitch1,
-  //     matrixifiedGlitch2,
-  //     matrixifiedGlitch3,
-  //     matrixifiedGlitch4,
-  //   ];
-
-  //   const tl = gsap.timeline({ repeat: -1, repeatDelay: 2 }); // glitch elke ±3 seconden
-
-  //   tl.set(".glitchImage", { attr: { src: matrixifiedPortrait } }); // start normaal
-
-  //   // glitch burst
-  //   tl.add(() => {
-  //     // laat in korte tijd meerdere glitches zien
-  //     const burst = gsap.timeline();
-  //     glitches.forEach((img, i) => {
-  //       burst.set(".glitchImage", { attr: { src: img } }, i * 0.05);
-  //     });
-  //     burst.set(
-  //       ".glitchImage",
-  //       { attr: { src: matrixifiedPortrait } },
-  //       "+=0.05"
-  //     );
-  //   });
-  // });
   const glitchEffect = () => {
     const glitches = [
       matrixifiedGlitch1,
