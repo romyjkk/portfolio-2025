@@ -535,6 +535,7 @@ main .homePageWrapper #wrapper .myExperience .timelineContainer {
   display: flex;
   align-items: center;
   height: 100vh;
+  display: none;
 }
 main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline {
   display: block;
@@ -547,9 +548,6 @@ main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline svg {
   height: 100%;
   width: -moz-fit-content;
   width: fit-content;
-}
-main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline .lg {
-  display: none;
 }
 main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline .tube {
   filter: drop-shadow(0 0 0.5rem var(--primaryAccentColor));
@@ -573,6 +571,8 @@ main .homePageWrapper #wrapper .myExperience .experiences .experience {
   justify-content: center;
   align-items: end;
   height: 100vh;
+  width: 90%;
+  justify-self: center;
 }
 main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer {
   display: flex;
@@ -593,7 +593,7 @@ main .homePageWrapper #wrapper .myExperience .experiences .experience .experienc
   position: relative;
   clip-path: polygon(10% 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 20%);
   background-color: black;
-  padding: 3rem 2rem;
+  padding: 4rem 3rem;
 }
 main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip .experienceTextContainer {
   display: flex;
@@ -1124,67 +1124,67 @@ main .horrorflix-project .projectDetailsSection .demonstrationVideoContainer .vi
 }
 @keyframes glitch {
   0% {
-    clip-path: inset(80px 0 15px 0);
+    clip-path: inset(78px 0 47px 0);
   }
   5% {
-    clip-path: inset(48px 0 78px 0);
+    clip-path: inset(39px 0 40px 0);
   }
   10% {
-    clip-path: inset(46px 0 26px 0);
+    clip-path: inset(29px 0 1px 0);
   }
   15% {
-    clip-path: inset(42px 0 64px 0);
+    clip-path: inset(62px 0 53px 0);
   }
   20% {
-    clip-path: inset(65px 0 30px 0);
+    clip-path: inset(73px 0 63px 0);
   }
   25% {
-    clip-path: inset(15px 0 9px 0);
+    clip-path: inset(6px 0 62px 0);
   }
   30% {
-    clip-path: inset(80px 0 63px 0);
+    clip-path: inset(8px 0 60px 0);
   }
   35% {
-    clip-path: inset(49px 0 16px 0);
+    clip-path: inset(59px 0 21px 0);
   }
   40% {
-    clip-path: inset(68px 0 60px 0);
+    clip-path: inset(72px 0 66px 0);
   }
   45% {
-    clip-path: inset(33px 0 55px 0);
+    clip-path: inset(53px 0 37px 0);
   }
   50% {
-    clip-path: inset(37px 0 42px 0);
+    clip-path: inset(77px 0 53px 0);
   }
   55% {
-    clip-path: inset(57px 0 27px 0);
+    clip-path: inset(73px 0 8px 0);
   }
   60% {
-    clip-path: inset(29px 0 39px 0);
+    clip-path: inset(8px 0 47px 0);
   }
   65% {
-    clip-path: inset(42px 0 5px 0);
+    clip-path: inset(40px 0 53px 0);
   }
   70% {
-    clip-path: inset(33px 0 17px 0);
+    clip-path: inset(2px 0 60px 0);
   }
   75% {
-    clip-path: inset(67px 0 70px 0);
+    clip-path: inset(54px 0 6px 0);
   }
   80% {
-    clip-path: inset(76px 0 44px 0);
+    clip-path: inset(57px 0 26px 0);
   }
   85% {
-    clip-path: inset(79px 0 70px 0);
+    clip-path: inset(17px 0 23px 0);
   }
   90% {
-    clip-path: inset(30px 0 38px 0);
+    clip-path: inset(15px 0 45px 0);
   }
   95% {
-    clip-path: inset(11px 0 64px 0);
+    clip-path: inset(59px 0 4px 0);
   }
   100% {
-    clip-path: inset(48px 0 74px 0);
+    clip-path: inset(34px 0 64px 0);
   }
 }
 @keyframes noise {
@@ -1325,17 +1325,6 @@ body {
   main .homePageWrapper .projectContainer .projects .projectFour > div > section {
     margin-left: 4rem;
   }
-  main .homePageWrapper #wrapper .myExperience {
-    max-width: 90vw;
-    width: 100%;
-    justify-content: space-between;
-  }
-  main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline .sm {
-    display: none;
-  }
-  main .homePageWrapper #wrapper .myExperience .timelineContainer .timeline .lg {
-    display: block;
-  }
   main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip {
     padding: 3rem;
   }
@@ -1386,8 +1375,19 @@ body {
     grid-area: 1/1/2/3;
     animation: dropShadow 5s linear infinite;
   }
+  main .homePageWrapper #wrapper .myExperience {
+    max-width: 90vw;
+    width: 100%;
+    justify-content: space-between;
+  }
+  main .homePageWrapper #wrapper .myExperience .timelineContainer {
+    display: flex;
+  }
+  main .homePageWrapper #wrapper .myExperience .experiences .experience {
+    width: 100%;
+  }
   main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip {
-    padding: 7rem 4rem;
+    padding: 7rem 5rem;
   }
   main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip::before, main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip::after {
     width: 8rem;

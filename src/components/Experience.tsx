@@ -49,8 +49,6 @@ function Experience() {
         trigger: ".myExperience",
         start: "top top",
         end: "bottom +=-500",
-
-        // markers: true,
         pinSpacing: true,
         scrub: true,
       },
@@ -70,7 +68,7 @@ function Experience() {
     <section className="myExperience">
       <div className="timelineContainer">
         <figure className="timeline">
-          <svg
+          {/* <svg
             className="sm tube"
             width="56"
             height="1220"
@@ -83,7 +81,7 @@ function Experience() {
               stroke="#2AB01C"
               strokeWidth="10"
             />
-          </svg>
+          </svg> */}
 
           <svg
             className="lg tube"
@@ -100,7 +98,7 @@ function Experience() {
           </svg>
 
           {/* tube filler */}
-          <svg
+          {/* <svg
             className="tubeFiller sm"
             width="56"
             height="1220"
@@ -114,7 +112,7 @@ function Experience() {
               stroke="#1e8114"
               strokeWidth="10"
             />
-          </svg>
+          </svg> */}
 
           <svg
             className="tubeFiller lg"

@@ -64,19 +64,6 @@
         }
         #wrapper {
             .myExperience {
-                max-width: 90vw;
-                width: 100%;
-                justify-content: space-between;
-                .timelineContainer {
-                    .timeline {
-                        .sm {
-                            display: none;
-                        }
-                        .lg {
-                            display: block;
-                        }
-                    }
-                }
                 .experiences {
                     .experience {
                         .experienceContainer {
@@ -153,12 +140,19 @@
     main .homePageWrapper {
         #wrapper {
             .myExperience {
+                max-width: 90vw;
+                width: 100%;
+                justify-content: space-between;
+                .timelineContainer {
+                    display: flex;
+                }
                 .experiences {
                     .experience {
+                        width: 100%;
                         .experienceContainer {
                             .experienceContainerBorder {
                                 .experienceContainerClip {
-                                    padding: 7rem 4rem;
+                                    padding: 7rem 5rem;
                                     &::before,
                                     &::after {
                                         width: 8rem;
