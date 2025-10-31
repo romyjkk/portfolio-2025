@@ -233,7 +233,7 @@ footer ul li a:hover img {
 }
 .introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div,
 .introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div {
-  border: 0.2rem solid var(--primaryAccentColor);
+  border: 0.5rem solid var(--primaryAccentColor);
   clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
   background-color: var(--primaryAccentColor);
 }
@@ -1124,67 +1124,67 @@ main .horrorflix-project .projectDetailsSection .demonstrationVideoContainer .vi
 }
 @keyframes glitch {
   0% {
-    clip-path: inset(45px 0 23px 0);
+    clip-path: inset(30px 0 30px 0);
   }
   5% {
-    clip-path: inset(67px 0 20px 0);
+    clip-path: inset(26px 0 48px 0);
   }
   10% {
-    clip-path: inset(21px 0 11px 0);
+    clip-path: inset(47px 0 69px 0);
   }
   15% {
-    clip-path: inset(69px 0 76px 0);
+    clip-path: inset(60px 0 4px 0);
   }
   20% {
-    clip-path: inset(53px 0 15px 0);
+    clip-path: inset(36px 0 48px 0);
   }
   25% {
-    clip-path: inset(75px 0 48px 0);
+    clip-path: inset(21px 0 15px 0);
   }
   30% {
-    clip-path: inset(3px 0 24px 0);
+    clip-path: inset(57px 0 28px 0);
   }
   35% {
-    clip-path: inset(39px 0 67px 0);
+    clip-path: inset(58px 0 35px 0);
   }
   40% {
-    clip-path: inset(69px 0 60px 0);
+    clip-path: inset(52px 0 61px 0);
   }
   45% {
-    clip-path: inset(78px 0 55px 0);
+    clip-path: inset(33px 0 19px 0);
   }
   50% {
-    clip-path: inset(66px 0 68px 0);
+    clip-path: inset(60px 0 60px 0);
   }
   55% {
-    clip-path: inset(67px 0 56px 0);
+    clip-path: inset(52px 0 57px 0);
   }
   60% {
-    clip-path: inset(6px 0 8px 0);
+    clip-path: inset(33px 0 46px 0);
   }
   65% {
-    clip-path: inset(27px 0 24px 0);
+    clip-path: inset(11px 0 80px 0);
   }
   70% {
-    clip-path: inset(6px 0 1px 0);
+    clip-path: inset(61px 0 38px 0);
   }
   75% {
-    clip-path: inset(6px 0 49px 0);
+    clip-path: inset(36px 0 66px 0);
   }
   80% {
-    clip-path: inset(62px 0 27px 0);
+    clip-path: inset(10px 0 53px 0);
   }
   85% {
-    clip-path: inset(62px 0 12px 0);
+    clip-path: inset(75px 0 46px 0);
   }
   90% {
-    clip-path: inset(63px 0 11px 0);
+    clip-path: inset(18px 0 68px 0);
   }
   95% {
-    clip-path: inset(16px 0 11px 0);
+    clip-path: inset(64px 0 11px 0);
   }
   100% {
-    clip-path: inset(55px 0 19px 0);
+    clip-path: inset(25px 0 31px 0);
   }
 }
 @keyframes noise {
@@ -1383,7 +1383,13 @@ body {
   main .homePageWrapper #wrapper .myExperience .timelineContainer {
     display: flex;
   }
+  main .homePageWrapper #wrapper .myExperience .experiences {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+  }
   main .homePageWrapper #wrapper .myExperience .experiences .experience {
+    grid-area: 1/1;
+    height: 100vh;
     width: 100%;
   }
   main .homePageWrapper #wrapper .myExperience .experiences .experience .experienceContainer .experienceContainerBorder .experienceContainerClip {
@@ -1418,7 +1424,6 @@ body {
   .introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div,
   .introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div {
     clip-path: polygon(0 0, 95% 0, 100% 10%, 100% 100%, 5% 100%, 0 90%);
-    border: 0.4rem solid var(--primaryAccentColor);
   }
   .introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div > section,
   .introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div > section {

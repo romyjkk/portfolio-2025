@@ -60,6 +60,7 @@ main {
                             .experienceContainerBorder {
                                 clip-path: polygon(10% 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 20%);
                                 border: 0.5rem solid var(--primaryAccentColor);
+
                                 background-color: var(--primaryAccentColor);
                                 .experienceContainerClip {
                                     display: flex;
