@@ -343,27 +343,11 @@ main {
 
 @media (min-width: 992px) {
     main {
-        .projectPageWrapper {
-        }
         .escape-manager-project {
             .projectDetailsSection {
                 .projectImages {
                     .projectImage {
                         max-width: 35rem;
-                        img {
-                        }
-                    }
-                }
-            }
-        }
-        .horrorflix-project {
-            .projectDetailsSection {
-                .imagesAndDescription {
-                    .singleProjectImage {
-                        .projectImage {
-                            // max-width: 85rem;
-                            // width: 100%;
-                        }
                     }
                 }
             }

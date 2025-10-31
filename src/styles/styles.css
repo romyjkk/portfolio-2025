@@ -627,7 +627,7 @@ main .projectPageWrapper .heroSection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  margin-top: 12rem;
   max-width: 110rem;
   justify-self: center;
   justify-content: center;
@@ -1124,67 +1124,67 @@ main .horrorflix-project .projectDetailsSection .demonstrationVideoContainer .vi
 }
 @keyframes glitch {
   0% {
-    clip-path: inset(30px 0 30px 0);
+    clip-path: inset(46px 0 17px 0);
   }
   5% {
-    clip-path: inset(26px 0 48px 0);
+    clip-path: inset(60px 0 67px 0);
   }
   10% {
-    clip-path: inset(47px 0 69px 0);
+    clip-path: inset(69px 0 74px 0);
   }
   15% {
-    clip-path: inset(60px 0 4px 0);
+    clip-path: inset(26px 0 52px 0);
   }
   20% {
-    clip-path: inset(36px 0 48px 0);
+    clip-path: inset(25px 0 37px 0);
   }
   25% {
-    clip-path: inset(21px 0 15px 0);
+    clip-path: inset(52px 0 3px 0);
   }
   30% {
-    clip-path: inset(57px 0 28px 0);
+    clip-path: inset(36px 0 50px 0);
   }
   35% {
-    clip-path: inset(58px 0 35px 0);
+    clip-path: inset(4px 0 34px 0);
   }
   40% {
-    clip-path: inset(52px 0 61px 0);
+    clip-path: inset(28px 0 69px 0);
   }
   45% {
-    clip-path: inset(33px 0 19px 0);
+    clip-path: inset(53px 0 54px 0);
   }
   50% {
-    clip-path: inset(60px 0 60px 0);
+    clip-path: inset(30px 0 55px 0);
   }
   55% {
-    clip-path: inset(52px 0 57px 0);
+    clip-path: inset(11px 0 54px 0);
   }
   60% {
-    clip-path: inset(33px 0 46px 0);
+    clip-path: inset(33px 0 44px 0);
   }
   65% {
-    clip-path: inset(11px 0 80px 0);
+    clip-path: inset(6px 0 53px 0);
   }
   70% {
-    clip-path: inset(61px 0 38px 0);
+    clip-path: inset(37px 0 15px 0);
   }
   75% {
-    clip-path: inset(36px 0 66px 0);
+    clip-path: inset(1px 0 34px 0);
   }
   80% {
-    clip-path: inset(10px 0 53px 0);
+    clip-path: inset(11px 0 36px 0);
   }
   85% {
-    clip-path: inset(75px 0 46px 0);
+    clip-path: inset(41px 0 70px 0);
   }
   90% {
-    clip-path: inset(18px 0 68px 0);
+    clip-path: inset(43px 0 80px 0);
   }
   95% {
-    clip-path: inset(64px 0 11px 0);
+    clip-path: inset(38px 0 17px 0);
   }
   100% {
-    clip-path: inset(25px 0 31px 0);
+    clip-path: inset(58px 0 59px 0);
   }
 }
 @keyframes noise {
@@ -1351,6 +1351,8 @@ body {
   main .projectPageWrapper .heroSection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    margin-top: 0;
   }
   main .projectPageWrapper .heroSection .projImageContainer {
     justify-self: center;

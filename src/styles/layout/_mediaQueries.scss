@@ -7,20 +7,6 @@
             }
         }
     }
-    // .pageHeaderTwo {
-    //     .wrapper {
-    //         margin: 2rem 2rem 0;
-    //         border: 0.4rem solid var(--primaryAccentColor);
-    //         .headerContainer {
-    //             padding: 2rem 3rem;
-    //             figure {
-    //             }
-    //             nav {
-    //                 gap: 5rem;
-    //             }
-    //         }
-    //     }
-    // }
     main .homePageWrapper {
         .introductionCardContainer {
             .introductionCard {
@@ -104,6 +90,8 @@
             .heroSection {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+                height: 100vh;
+                margin-top: 0;
                 .projImageContainer {
                     justify-self: center;
                     grid-area: 1 / 1 / 2 / 2;
@@ -251,26 +239,6 @@
         }
     }
 }
-
-// @container experience (inline-size > 40rem) {
-//     main {
-//         .homePageWrapper {
-//             #wrapper {
-//                 .myExperience {
-//                     .experiences {
-//                         .experience {
-//                             .experienceContainer {
-//                                 .experienceContainerBorder {
-//                                     border: 0.5rem solid var(--primaryAccentColor);
-//                                 }
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
 
 @container projectPreview (inline-size >= 60rem) {
     main {

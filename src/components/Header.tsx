@@ -45,24 +45,3 @@ function Header() {
 }
 
 export default Header;
-
-// header version 2
-// <header class="pageHeaderTwo">
-//   <div class="wrapper">
-//     <nav class="headerContainer">
-//       <figure>
-//         <img src="src/logoRomy.svg" alt="Logo" />
-//       </figure>
-//       <nav>
-//         <a class="button" href="#">
-//           <div class="buttonFront">Work</div>
-//           <div class="buttonBack"></div>
-//         </a>
-//         <a class="button" href="#">
-//           <div class="buttonFront">About</div>
-//           <div class="buttonBack"></div>
-//         </a>
-//       </nav>
-//     </nav>
-//   </div>
-// </header>
