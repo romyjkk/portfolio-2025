@@ -2,87 +2,119 @@ import { gsap } from "gsap";
 
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { useRef } from "react";
 
 function Experience() {
+  // const experienceRef = useRef<HTMLElement | null>(null);
+
   useGSAP(() => {
-    const tl = gsap.timeline({ paused: true });
+    if (window.innerWidth > 768) {
+      const tl = gsap.timeline({ paused: true });
 
-    tl.fromTo(
-      ".first",
-      { transform: "translateY(80%)", ease: "back.out" },
-      { transform: "translateY(-15%)", ease: "back.out" },
-      0
-    );
-    // tl.to(".first .experienceContainer", { "--before-opacity": 0 }, 1);
-    // if (window.innerWidth < 768) {
-    tl.fromTo(
-      ".second",
-      { transform: "translateY(80%)", ease: "back.out" },
-      { transform: "translateY(-5%)", ease: "back.out" },
-      1
-    );
-    tl.fromTo(
-      ".third",
-      { transform: "translateY(80%)", ease: "back.out" },
-      { transform: "translateY(5%)", ease: "back.out" },
-      2
-    );
-    // } else if (window.innerWidth > 768) {
-    //   tl.fromTo(
-    //     ".second",
-    //     { transform: "translateY(80%)", ease: "back.out" },
-    //     { transform: "translateY(5%)", ease: "back.out" },
-    //     1
-    //   );
-    //   tl.fromTo(
-    //     ".third",
-    //     { transform: "translateY(80%)", ease: "back.out" },
-    //     { transform: "translateY(10%)", ease: "back.out" },
-    //     2
-    //   );
-    // }
+      tl.fromTo(
+        ".first",
+        { transform: "translateY(80%)", ease: "back.out" },
+        { transform: "translateY(-15%)", ease: "back.out" },
+        0
+      );
+      tl.fromTo(
+        ".second",
+        { transform: "translateY(80%)", ease: "back.out" },
+        { transform: "translateY(-5%)", ease: "back.out" },
+        1
+      );
+      tl.fromTo(
+        ".third",
+        { transform: "translateY(80%)", ease: "back.out" },
+        { transform: "translateY(5%)", ease: "back.out" },
+        2
+      );
 
-    gsap.to(".tubeFiller", {
-      clipPath: "inset(0% 0% 0% 0%)",
-      ease: "none",
-      scrollTrigger: {
+      gsap.to(".tubeFiller", {
+        clipPath: "inset(0% 0% 0% 0%)",
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".myExperience",
+          start: "top top",
+          end: "bottom +=-500",
+          pinSpacing: true,
+          scrub: true,
+        },
+      });
+      ScrollTrigger.create({
         trigger: ".myExperience",
         start: "top top",
         end: "bottom +=-500",
+        pin: ".myExperience",
         pinSpacing: true,
         scrub: true,
-      },
-    });
-    ScrollTrigger.create({
-      trigger: ".myExperience",
-      start: "top top",
-      end: "bottom +=-500",
-      pin: ".myExperience",
-      // markers: true,
-      pinSpacing: true,
-      scrub: true,
-      animation: tl,
-    });
+        animation: tl,
+      });
+    } else {
+      const experiences = gsap.utils.toArray<HTMLElement>(".experience");
+      experiences.forEach((el) => {
+        gsap.fromTo(
+          el,
+          { opacity: 0, scale: 0 },
+          {
+            opacity: 1,
+            scale: 1,
+            duration: 1,
+            ease: "power1.out",
+            scrollTrigger: {
+              trigger: el,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
+      });
+    }
   });
+
+  // gsap.fromTo(
+  //   ".experience",
+  //   {
+  //     opacity: 0,
+  //     scale: 0,
+  //   },
+  //   {
+  //     opacity: 1,
+  //     scale: 1,
+  //     duration: 1,
+  //     ease: "power1.out",
+  //     scrollTrigger: {
+  //       trigger: "myExperience",
+  //       start: "top top",
+  //       end: "bottom +=-500",
+  //       toggleActions: "play none none none",
+  //     },
+  //   }
+  // );
+
+  // const mobileTl = gsap.timeline();
+  // mobileTl.fromTo(
+  //   ".first",
+  //   { opacity: 0, scale: 0 },
+  //   { opacity: 1, scale: 1, duration: 1, ease: "power1.out" }
+  // );
+  // mobileTl.fromTo(
+  //   ".second",
+  //   { opacity: 0, scale: 0 },
+  //   { opacity: 1, scale: 1, duration: 1, ease: "power1.out" },
+  //   0.5
+  // );
+  // mobileTl.fromTo(
+  //   ".third",
+  //   { opacity: 0, scale: 0 },
+  //   { opacity: 1, scale: 1, duration: 1, ease: "power1.out" },
+  //   1
+  // );
+
   return (
     <section className="myExperience">
       <div className="timelineContainer">
         <figure className="timeline">
-          {/* <svg
-            className="sm tube"
-            width="56"
-            height="1220"
-            viewBox="0 0 56 1220"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5 744V1214.5H51V717.5V627.5V5H5V654.5V744Z"
-              stroke="#2AB01C"
-              strokeWidth="10"
-            />
-          </svg> */}
-
           <svg
             className="lg tube"
             width="146"
@@ -96,24 +128,6 @@ function Experience() {
               fill="#1e8114"
             />
           </svg>
-
-          {/* tube filler */}
-          {/* <svg
-            className="tubeFiller sm"
-            width="56"
-            height="1220"
-            viewBox="0 0 56 1220"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5 744V1214.5H51V717.5V627.5V5H5V654.5V744Z"
-              fill="#1e8114"
-              stroke="#1e8114"
-              strokeWidth="10"
-            />
-          </svg> */}
-
           <svg
             className="tubeFiller lg"
             width="146"

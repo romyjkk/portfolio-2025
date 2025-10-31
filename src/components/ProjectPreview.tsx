@@ -87,7 +87,6 @@ function ProjectPreview(props: {
         animation: tl3,
       });
     }
-    // if (imgRef.current) {
   });
   return (
     <section
