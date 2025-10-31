@@ -72,45 +72,6 @@ function Experience() {
     }
   });
 
-  // gsap.fromTo(
-  //   ".experience",
-  //   {
-  //     opacity: 0,
-  //     scale: 0,
-  //   },
-  //   {
-  //     opacity: 1,
-  //     scale: 1,
-  //     duration: 1,
-  //     ease: "power1.out",
-  //     scrollTrigger: {
-  //       trigger: "myExperience",
-  //       start: "top top",
-  //       end: "bottom +=-500",
-  //       toggleActions: "play none none none",
-  //     },
-  //   }
-  // );
-
-  // const mobileTl = gsap.timeline();
-  // mobileTl.fromTo(
-  //   ".first",
-  //   { opacity: 0, scale: 0 },
-  //   { opacity: 1, scale: 1, duration: 1, ease: "power1.out" }
-  // );
-  // mobileTl.fromTo(
-  //   ".second",
-  //   { opacity: 0, scale: 0 },
-  //   { opacity: 1, scale: 1, duration: 1, ease: "power1.out" },
-  //   0.5
-  // );
-  // mobileTl.fromTo(
-  //   ".third",
-  //   { opacity: 0, scale: 0 },
-  //   { opacity: 1, scale: 1, duration: 1, ease: "power1.out" },
-  //   1
-  // );
-
   return (
     <section className="myExperience">
       <div className="timelineContainer">
@@ -154,9 +115,10 @@ function Experience() {
                   <h2>My experiences</h2>
                 </header>
                 <p>
-                  During my time at CMD, I got to do two internships. During
-                  both internships I worked as a front-end developer, since my
-                  goal was to improve my skills significantly.
+                  During my time at CMD, I got to do two internships as a
+                  front-end developer. I worked on many different projects, from
+                  front to back-end development, improving my skills
+                  significantly.
                 </p>
               </div>
             </div>

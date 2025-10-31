@@ -34,14 +34,14 @@ export const projectData = [
         After graduating, my boyfriend (who’s a software engineer) and I
         developed the product into a working web application for my workplace.
         We recently finished developing the first MVP and it’s currently being
-        tested.,
+        tested.
       </>,
       <>
         During the project, I was responsible for the{" "}
         <strong className="red">front-end,</strong> but in addition to that I
         spent many hours in the JavaScript files after expressing my interest in
         improving my <strong className="red">JavaScript (and back-end)</strong>{" "}
-        skills. I worked on:,
+        skills. I worked on:
       </>,
     ],
     myWork: [
@@ -152,14 +152,14 @@ export const projectData = [
         <strong className="red">Classes</strong> and created a ModelLoader
         Class, which I could use for each model. This made it much more
         efficient to load each model in. I got some help from my boyfriend,
-        who’s a software engineer, with this. He’s better than AI!,
+        who’s a software engineer, with this. He’s better than AI!
       </>,
       <>
         Next up, GSAP ScrollTrigger for the camera position and information
         blocks. With a <strong className="red">loop</strong>, I iterated over
         all the planets and the camera positions, which I had put in a{" "}
         <strong className="red">JSON</strong> file. This way, I had to write the
-        animation for all the planets only once.,
+        animation for all the planets only once.
       </>,
     ],
     // challenges: [],
@@ -212,8 +212,9 @@ export const projectData = [
     description: (
       <>
         A <strong className="red">WordPress</strong> website made for the
-        non-profit Baseball/Software against Cancer, a beautiful project I got
-        the opportunity to work on during my internship at Kobalt Digital.
+        non-profit organisation Baseball/Software against Cancer, a beautiful
+        project I got the opportunity to work on during my internship at Kobalt
+        Digital.
       </>
     ),
     mockup: "/mockups/mockup3.png",
