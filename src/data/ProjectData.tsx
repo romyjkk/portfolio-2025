@@ -37,10 +37,11 @@ export const projectData = [
         tested.
       </>,
       <>
-        During the project, I was responsible for the{" "}
-        <strong className="red">front-end,</strong> but in addition to that I
+        During the project, I was responsible for the
+        <strong className="red"> front-end, </strong> but in addition to that I
         spent many hours in the JavaScript files after expressing my interest in
-        improving my <strong className="red">JavaScript (and back-end)</strong>{" "}
+        improving my{" "}
+        <strong className="red"> JavaScript (and back-end) </strong>
         skills. I worked on:
       </>,
     ],
@@ -48,8 +49,8 @@ export const projectData = [
       <>Filtering and sorting issues;</>,
       <>
         Fetching data from <strong className="red">JSON</strong> and displaying
-        this all over the application using more{" "}
-        <strong className="red">if-statements and loops</strong> than I can
+        this all over the application using more
+        <strong className="red"> if-statements and loops </strong> than I can
         count;
       </>,
       <>
@@ -64,18 +65,18 @@ export const projectData = [
       <>
         One of the biggest challenges for me was finding my way around multiple
         files with <strong className="red">1000+</strong> lines of code and
-        creating/editing components using JavaScript with{" "}
-        <strong className="red">dynamic data</strong>, while still applying{" "}
-        <strong className="red">semantics</strong>.
+        creating/editing components using JavaScript with
+        <strong className="red"> dynamic data</strong>, while still applying
+        <strong className="red"> semantics</strong>.
       </>,
       <>
-        There’s still a lot of work to do, we’d like to implement more{" "}
-        <strong className="red">Classes</strong> and use an actual{" "}
-        <strong className="red">database</strong>, instead of using JSON. In
-        addition to that we wanna make the application{" "}
-        <strong className="red">scale-proof</strong> and hopefully develop it as
-        an app for <strong className="red">iOs and Android</strong> one day, for
-        other escaperooms to use.
+        There’s still a lot of work to do, we’d like to implement more
+        <strong className="red"> Classes</strong> and use an actual
+        <strong className="red"> database</strong>, instead of using JSON. In
+        addition to that we wanna make the application
+        <strong className="red"> scale-proof</strong> and hopefully develop it
+        as an app for <strong className="red">iOs and Android</strong> one day,
+        for other escaperooms to use.
       </>,
     ],
     images: [
@@ -141,15 +142,15 @@ export const projectData = [
         My idea was to create something space related, since I love science
         fiction movies and have an interest in astronomy. Using Sketchfab, I
         searched for models I could use and eventually settled on creating our
-        solar system, using <strong className="red">GSAP ScrollTrigger</strong>{" "}
+        solar system, using <strong className="red">GSAP ScrollTrigger </strong>
         to zoom in and out.
       </>,
     ],
     processParagraphs: [
       <>
         The first challenge was loading the nine different models into the scene
-        and positioning them correctly. To add an extra challenge, I worked with{" "}
-        <strong className="red">Classes</strong> and created a ModelLoader
+        and positioning them correctly. To add an extra challenge, I worked with
+        <strong className="red"> Classes</strong> and created a ModelLoader
         Class, which I could use for each model. This made it much more
         efficient to load each model in. I got some help from my boyfriend,
         who’s a software engineer, with this. He’s better than AI!
@@ -157,9 +158,9 @@ export const projectData = [
       <>
         Next up, GSAP ScrollTrigger for the camera position and information
         blocks. With a <strong className="red">loop</strong>, I iterated over
-        all the planets and the camera positions, which I had put in a{" "}
-        <strong className="red">JSON</strong> file. This way, I had to write the
-        animation for all the planets only once.
+        all the planets and the camera positions, which I had put in a
+        <strong className="red"> JSON</strong> file. This way, I had to write
+        the animation for all the planets only once.
       </>,
     ],
     // challenges: [],
@@ -231,19 +232,19 @@ export const projectData = [
         This project was perfect for learning how to work with WordPress and
         Kobalt’s boilerplate. The designer made a design in Figma and then it
         was up to me to build it, with assistance from my supervisor. During
-        this project I learned to work with{" "}
-        <strong className="red">Tailwind CSS,</strong> since that’s in Kobalt’s
+        this project I learned to work with
+        <strong className="red"> Tailwind CSS,</strong> since that’s in Kobalt’s
         tech stack.
       </>,
     ],
     processParagraphs: [
       <>
-        The website was built using the{" "}
-        <strong className="red">ACF plugin,</strong> which I used to create
+        The website was built using the
+        <strong className="red"> ACF plugin,</strong> which I used to create
         fields that could then be filled with content by the client, allowing
-        for full customization. In addition to that,{" "}
-        <strong className="red">Gravity Forms</strong> was added to the website,
-        for the different forms on the website.
+        for full customization. In addition to that,
+        <strong className="red"> Gravity Forms</strong> was added to the
+        website, for the different forms on the website.
       </>,
       <>
         Lastly, options were added for the website colors, logo and social media
@@ -254,14 +255,14 @@ export const projectData = [
     conclusionParagraphs: [
       <>
         When I began with this project, I wasn’t familiar with WordPress at all
-        and definitely didn’t know how to work in a{" "}
-        <strong className="red">boilerplate</strong> and create the theme from
+        and definitely didn’t know how to work in a
+        <strong className="red"> boilerplate</strong> and create the theme from
         scratch. By the end I could easily navigate WordPress and the
         boilerplate and find what I was looking for.
       </>,
       <>
         I helped deliver the website to the client, showing him around the
-        front-end and the <strong className="red">WordPress back-end</strong>{" "}
+        front-end and the <strong className="red">WordPress back-end </strong>
         and explaining how he could add his own content. It was amazing to be
         part of this project and being able to contribute to such a noble
         organisation this way.
@@ -310,9 +311,9 @@ export const projectData = [
     roles: ["Front-end", "Back-end"],
     description: (
       <>
-        A sign up form I made during my internship at Go2People, built using{" "}
-        <strong className="red">PHP</strong>, utilizing the{" "}
-        <strong className="red">Fetch API</strong> and sending an email using
+        A sign up form I made during my internship at Go2People, built using
+        <strong className="red"> PHP</strong>, utilizing the
+        <strong className="red"> Fetch API</strong> and sending an email using
         the <strong className="red">mail PHP</strong> function.
       </>
     ),
@@ -353,13 +354,13 @@ export const projectData = [
     conclusionParagraphs: [
       <>
         I added error messages which were displayed underneath the correct
-        inputs. This was done using a{" "}
-        <strong className="red">forEach loop</strong> which looped through the
+        inputs. This was done using a
+        <strong className="red"> forEach loop</strong> which looped through the
         fields and added the appropriate error message element and text when
         necessary, which was really challenging for me back then.
       </>,
       <>
-        Lastly, I used the <strong className="red">PHP mail function</strong>{" "}
+        Lastly, I used the <strong className="red">PHP mail function </strong>
         which sent an email, styled the form and added some easter eggs. The
         form was finished!
       </>,
