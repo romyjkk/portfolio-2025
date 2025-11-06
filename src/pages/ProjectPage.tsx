@@ -24,10 +24,11 @@ function ProjectPage({
 
   if (!project) {
     return (
-      <>
-        <h1>Project not found</h1>;
+      <section className="errorPage">
+        <h1>404</h1>
+        <p>Page not found</p>
         <Button href="/" buttonText="Go back" />
-      </>
+      </section>
     );
   }
 

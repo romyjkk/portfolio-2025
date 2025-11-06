@@ -100,3 +100,9 @@ footer {
         color: var(--tertiaryTextColor);
     }
 }
+
+.errorPage {
+    h1 {
+        font-size: clamp(6rem, 8vw, 10rem);
+    }
+}
