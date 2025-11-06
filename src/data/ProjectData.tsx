@@ -113,7 +113,7 @@ export const projectData = [
         ],
       },
     ],
-    demonstrationVideo: "/projImages/proj1/details/dashboard.png",
+    demonstrationVideo: "/projImages/proj1/details/demoVideo.mp4",
     file: "/files/designRationale.pdf",
   },
   {

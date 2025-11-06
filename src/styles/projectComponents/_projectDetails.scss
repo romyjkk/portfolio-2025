@@ -350,6 +350,15 @@ main {
                         max-width: 35rem;
                     }
                 }
+                .demonstrationVideoContainer {
+                    .videoFrame {
+                        max-width: 25rem;
+                        width: 100%;
+                        video {
+                            width: 100%;
+                        }
+                    }
+                }
             }
         }
         .our-solar-system-project {
