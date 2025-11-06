@@ -52,7 +52,10 @@ function AboutMe() {
       end: "bottom +=500",
       pin: window.innerWidth > 768 ? ".me" : false,
       pinSpacing: true,
-      toggleActions: "restart none reverse reverse",
+      toggleActions:
+        window.innerWidth > 768
+          ? "restart none reverse reverse"
+          : "play none none none",
       animation: tl,
     });
   });

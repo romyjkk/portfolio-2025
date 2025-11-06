@@ -83,17 +83,9 @@ footer {
 
 .timeline::before {
     font-family: "Rocket Command", sans-serif;
-    // transform: rotate(-90deg);
     font-size: clamp(2rem, 4vw, 4rem);
     writing-mode: vertical-lr;
     text-orientation: upright;
-    // color: var(--secondaryTextColor);
-}
-
-.experienceTextContainer {
-    h2 {
-        // filter: drop-shadow(0 0 0.1rem var(--primaryTextColor));
-    }
 }
 
 .scrollIndicator {
