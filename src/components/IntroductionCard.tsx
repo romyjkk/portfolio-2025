@@ -54,7 +54,7 @@ function IntroductionCard() {
                   <h1>Romy, level 23</h1>
                   <p>
                     A <strong>front-end developer</strong> with a passion for
-                    creativity. Recently graduated from Communication &
+                    creativity. Recently graduated with a BSc in Communication &
                     Multimedia Design at HvA.
                   </p>
                   <div>
@@ -84,7 +84,7 @@ function IntroductionCard() {
                   <h1>Romy, level 23</h1>
                   <p>
                     A <strong>front-end developer</strong> with a passion for
-                    creativity. Recently graduated from Communication &
+                    creativity. Recently graduated with a BSc in Communication &
                     Multimedia Design at HvA.
                     {/* Matrix me: Took the red pill without a second of hesitation, turned
                       out to be an agile and fearless fighter. */}

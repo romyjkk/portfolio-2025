@@ -9,7 +9,7 @@ export const projectData = [
     description: (
       <>
         A web application designed & developed to improve the communication
-        between staff at escaperooms. The most important features include
+        between staff at escape rooms. The most important features include
         reporting issues and managing inventory.
       </>
     ),
@@ -18,12 +18,12 @@ export const projectData = [
     introParagraphs: [
       <>
         In the graduation phase of my study, the goal was to pick a real problem
-        and create a solution. I work at an escaperoom and chose a problem we
+        and create a solution. I work at an escape room and chose a problem we
         often face: <strong className="red">bad communication.</strong>
       </>,
       <>
         During these six months, I extensively researched this topic,
-        interviewed staff and other escaperooms, designed an application and
+        interviewed staff and other escape rooms, designed an application and
         tested this with the staff. The result is a product where issues can be
         reported and inventory can be managed, creating a neat overview that’s
         easy to navigate.
@@ -40,7 +40,7 @@ export const projectData = [
         During the project, I was responsible for the
         <strong className="red"> front-end, </strong> but in addition to that I
         spent many hours in the JavaScript files after expressing my interest in
-        improving my{" "}
+        improving my
         <strong className="red"> JavaScript (and back-end) </strong>
         skills. I worked on:
       </>,
@@ -66,8 +66,8 @@ export const projectData = [
         One of the biggest challenges for me was finding my way around multiple
         files with <strong className="red">1000+</strong> lines of code and
         creating/editing components using JavaScript with
-        <strong className="red"> dynamic data</strong>, while still applying
-        <strong className="red"> semantics</strong>.
+        <strong className="red"> dynamic data,</strong> while still applying
+        <strong className="red"> semantics.</strong>
       </>,
       <>
         There’s still a lot of work to do, we’d like to implement more
@@ -126,8 +126,8 @@ export const projectData = [
     description: (
       <>
         A simulation of our solar system (not to scale) containing information
-        about stellar objects, using{" "}
-        <strong className="red">THREE.js and GSAP.</strong>
+        about stellar objects, using
+        <strong className="red"> THREE.js and GSAP.</strong>
       </>
     ),
     mockup: "/mockups/mockup2.png",
@@ -168,7 +168,7 @@ export const projectData = [
       <>
         When I was happy with all the positions, I added a loader, music and
         some animations as a finishing touch. The result is a pretty clean
-        little website which I’m proud of. In the future, I will definitely be
+        little website I’m proud of. In the future, I will definitely be
         creating more with GSAP and THREE.js. The possibilities are endless!
       </>,
     ],
@@ -226,7 +226,7 @@ export const projectData = [
         <strong className="red"> WordPress</strong> website for Baseball and
         Softball against Cancer, an amazing organisation raising money for
         cancer research. It’s a WordPress website and the theme is custom made
-        using <strong className="red">Blade PHP</strong>.
+        using <strong className="red">Blade PHP.</strong>
       </>,
       <>
         This project was perfect for learning how to work with WordPress and
@@ -332,7 +332,7 @@ export const projectData = [
       <>
         Since I had no prior (real) experience with PHP, I didn’t really know
         where to start, but luckily there was an experienced back-end developer
-        I could help for assistance when that was necessary.
+        I could ask for assistance when that was necessary.
       </>,
       <>
         The <strong className="red">Fetch API</strong> was crucial for sending
