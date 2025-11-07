@@ -55,7 +55,8 @@ function IntroductionCard() {
                   <p>
                     A <strong>front-end developer</strong> with a passion for
                     creativity. Recently graduated with a BSc in Communication &
-                    Multimedia Design at HvA.
+                    Multimedia Design at the Amsterdam University of Applied
+                    Sciences (HvA).
                   </p>
                   <div>
                     <p>
@@ -85,7 +86,8 @@ function IntroductionCard() {
                   <p>
                     A <strong>front-end developer</strong> with a passion for
                     creativity. Recently graduated with a BSc in Communication &
-                    Multimedia Design at HvA.
+                    Multimedia Design at the Amsterdam University of Applied
+                    Sciences (HvA).
                     {/* Matrix me: Took the red pill without a second of hesitation, turned
                       out to be an agile and fearless fighter. */}
                   </p>
