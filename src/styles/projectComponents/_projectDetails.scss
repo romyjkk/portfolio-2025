@@ -91,7 +91,6 @@ main {
                     flex: 0 0 auto;
                     video {
                         width: 100%;
-                        // height: 100%;
                     }
                 }
             }
@@ -110,7 +109,6 @@ main {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    // width: 50%;
                     img {
                         height: clamp(20rem, 30vw, 50rem);
                         width: auto;
@@ -156,11 +154,6 @@ main {
                     }
                 }
             }
-            .demonstrationVideoContainer {
-                .videoFrame {
-                    // width: 80%;
-                }
-            }
         }
     }
     .bac-sac-project {
@@ -204,21 +197,6 @@ main {
     }
     .horrorflix-project {
         .projectDetailsSection {
-            // .singleProjectImage {
-            //     display: flex;
-            //     justify-content: center;
-            //     .projectImage {
-            //         padding: 1rem;
-            //         background-color: var(--primaryBackgroundColor);
-            //         border: 0.3rem solid var(--primaryAccentColor);
-            //         box-shadow: 0 0 0.5rem var(--primaryAccentColor);
-            //         flex: 0 0 auto;
-            //         width: 7%;
-            //         img {
-            //             width: 100%;
-            //         }
-            //     }
-            // }
             .horrorflixProjImages,
             .singleProjectImage {
                 display: flex;
@@ -248,7 +226,6 @@ main {
             }
             .demonstrationVideoContainer {
                 .videoFrame {
-                    // width: 80%;
                     video {
                         width: 100%;
                     }
@@ -273,149 +250,6 @@ main {
         &:hover,
         &:active {
             background-color: var(--secondaryAccentColor);
-        }
-    }
-}
-
-@media (min-width: 576px) {
-    main {
-        .projectPageWrapper {
-            .projectDetailsSection {
-                .imagesAndDescription {
-                    .projectImages,
-                    .bacSacProjImages,
-                    .singleProjectImage,
-                    .horrorflixProjImages {
-                        padding: 1rem 0 2rem 0;
-                        .projectImage {
-                            border: 0.5rem solid var(--primaryAccentColor);
-                            box-shadow: 0 0 1rem var(--primaryAccentColor);
-                        }
-                    }
-                }
-            }
-        }
-        .escape-manager-project {
-            .projectDetailsSection {
-                .imagesAndDescription {
-                }
-                .projectImages {
-                    .projectImage {
-                        max-width: 30%;
-                        img {
-                        }
-                    }
-                }
-            }
-        }
-        .our-solar-system-project {
-            .heroSection {
-                .projImageContainer {
-                    max-width: 35rem;
-                }
-            }
-        }
-        .bac-sac-project {
-            .projectDetailsSection {
-                .imagesAndDescription {
-                    .projectImages {
-                        .projectImage {
-                            width: 45%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 768px) {
-    main {
-        .projectPageWrapper {
-            .projectDetailsSection {
-                .paragraphs {
-                    padding: 2rem;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 992px) {
-    main {
-        .escape-manager-project {
-            .projectDetailsSection {
-                .projectImages {
-                    .projectImage {
-                        max-width: 35rem;
-                    }
-                }
-                .demonstrationVideoContainer {
-                    .videoFrame {
-                        max-width: 25rem;
-                        width: 100%;
-                        video {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-        }
-        .our-solar-system-project {
-            .heroSection {
-                .projImageContainer {
-                    max-width: 40rem;
-                }
-            }
-            .projectDetailsSection {
-                .imagesAndDescription {
-                    .projectImage {
-                        max-width: 80rem;
-                        width: 100%;
-                    }
-                }
-                .demonstrationVideoContainer {
-                    .videoFrame {
-                        max-width: 90rem;
-                        width: 100%;
-                        video {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-        }
-        .bac-sac-project {
-            .projectDetailsSection {
-                .imagesAndDescription {
-                    .projectImages {
-                        .projectImage {
-                            max-width: 50rem;
-                            width: 100%;
-                        }
-                        .veryHigh {
-                            max-width: 40rem;
-                        }
-                        &::-webkit-scrollbar {
-                            display: none;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    main {
-        .horrorflix-project {
-            .projectDetailsSection {
-                .demonstrationVideoContainer {
-                    .videoFrame {
-                        width: 60%;
-                    }
-                }
-            }
         }
     }
 }

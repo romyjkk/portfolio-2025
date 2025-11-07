@@ -22,13 +22,7 @@ function Button({
   };
 
   return (
-    <button
-      // download={download}
-      // target={target}
-      className="button"
-      onClick={handleClick}
-      // href={href}
-    >
+    <button className="button" onClick={handleClick}>
       <div className="buttonFront">
         <p>{buttonText}</p>
       </div>

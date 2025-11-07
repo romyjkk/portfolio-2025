@@ -3,6 +3,7 @@ import github from "/github.svg";
 import linkedin from "/linkedin.svg";
 
 function Footer() {
+  // Will perhaps use this in the future:
   // const currentYear = new Date().getFullYear();
 
   return (

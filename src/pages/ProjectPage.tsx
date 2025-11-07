@@ -1,10 +1,10 @@
-import ProjectData from "../data/ProjectData";
-import Button from "../components/Button";
 import { useParams } from "react-router";
+import { useEffect } from "react";
 
 import Hero from "../projectComponents/Hero";
 import ProjectDetails from "../projectComponents/ProjectDetails";
-import { useEffect } from "react";
+import ProjectData from "../data/ProjectData";
+import Button from "../components/Button";
 
 function ProjectPage({
   smootherRef,

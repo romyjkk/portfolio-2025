@@ -163,3 +163,8 @@ const TransitionComponent = ({ children }: { children: React.ReactNode }) => {
 };
 
 export default TransitionComponent;
+
+/* 
+I used the following example for this: React Page Transitions with GSAP - StackBlitz. (n.d.). StackBlitz. 
+https://stackblitz.com/edit/react-6rzfpp?file=src%2Frouter%2FRouter.js,src%2Fcontext%2FTransitionContext.js,src%2Fcomponents%2FTransition.js,src%2Fviews%2FBoxes.js
+*/

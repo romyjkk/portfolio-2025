@@ -16,14 +16,12 @@ function IntroductionCard() {
       matrixifiedGlitch4,
     ];
 
-    const tl = gsap.timeline({ repeat: -1, repeatDelay: 3 }); // glitch elke ±3 seconden
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: 3 });
     const glitchImage = document.querySelector(".glitchImage");
     if (glitchImage) {
-      tl.set(glitchImage, { attr: { src: matrixifiedPortrait } }); // start normaal
+      tl.set(glitchImage, { attr: { src: matrixifiedPortrait } });
 
-      // glitch burst
       tl.add(() => {
-        // laat in korte tijd meerdere glitches zien
         const burst = gsap.timeline();
         glitches.forEach((img, i) => {
           burst.set(glitchImage, { attr: { src: img } }, i * 0.05);
@@ -88,7 +86,7 @@ function IntroductionCard() {
                     A <strong>front-end developer</strong> with a passion for
                     creativity. Recently graduated from Communication &
                     Multimedia Design at HvA.
-                    {/* Took the red pill without a second of hesitation, turned
+                    {/* Matrix me: Took the red pill without a second of hesitation, turned
                       out to be an agile and fearless fighter. */}
                   </p>
                   <div>

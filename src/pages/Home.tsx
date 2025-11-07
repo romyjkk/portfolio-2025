@@ -1,13 +1,14 @@
-import IntroductionCard from "../components/IntroductionCard";
-import ProjectPreviews from "../components/ProjectPreviews";
-import AboutMe from "../components/AboutMe";
-import Experience from "../components/Experience";
 import { useLocation } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
+
+import IntroductionCard from "../components/IntroductionCard";
+import ProjectPreviews from "../components/ProjectPreviews";
+import AboutMe from "../components/AboutMe";
+import Experience from "../components/Experience";
 
 function Home({
   smootherRef,
@@ -18,12 +19,6 @@ function Home({
   const location = useLocation();
 
   useGSAP(() => {
-    if (smootherRef.current) {
-      // smootherRef.current.scrollTo(0, false);
-    } else {
-      // window.scrollTo(0, 0);
-    }
-
     const state = location.state as { scrollTarget?: string } | null;
 
     setTimeout(() => {

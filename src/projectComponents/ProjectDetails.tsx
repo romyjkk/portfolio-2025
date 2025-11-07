@@ -1,3 +1,5 @@
+// This could probably be done better, but I wanted to load the data in dynamically instead of creating different files for each project
+
 import projectData from "../data/ProjectData";
 import Link from "../components/Link";
 
@@ -122,14 +124,6 @@ function ProjectDetails({ id }: { id: string }) {
         </article>
       )}
 
-      {/* {project.challenges && (
-        <article className="paragraphs challengesParagraphs">
-          {project.challenges?.map((challenge: string, index: number) => {
-            return <p key={index}>{challenge}</p>;
-          })}
-        </article>
-      )} */}
-
       {(project.images?.[1] as any)?.emResults && (
         <article className="imagesAndDescription">
           <article className="projectImages">
@@ -229,7 +223,6 @@ function ProjectDetails({ id }: { id: string }) {
               <video muted loop autoPlay>
                 <source src={project.demonstrationVideo} type="video/mp4" />
               </video>
-              {/* <img src={project.demonstrationVideo} /> */}
             </figure>
           </article>
         </>

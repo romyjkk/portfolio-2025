@@ -2,11 +2,8 @@ import { gsap } from "gsap";
 
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { useRef } from "react";
 
 function Experience() {
-  // const experienceRef = useRef<HTMLElement | null>(null);
-
   useGSAP(() => {
     if (window.innerWidth > 768) {
       const tl = gsap.timeline({ paused: true });

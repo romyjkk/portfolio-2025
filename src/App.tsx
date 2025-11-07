@@ -2,7 +2,6 @@ import { gsap } from "gsap";
 import { useLayoutEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useRef } from "react";
-
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -10,6 +9,14 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { Flip } from "gsap/Flip";
+import { useLocation } from "react-router-dom";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import ProjectPage from "./pages/ProjectPage";
+import { TransitionProvider } from "./helperFunctions/TransitionContext";
+import TransitionComponent from "./helperFunctions/Transition";
 
 gsap.registerPlugin(
   ScrollTrigger,
@@ -20,14 +27,6 @@ gsap.registerPlugin(
   DrawSVGPlugin,
   Flip
 );
-
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import ProjectPage from "./pages/ProjectPage";
-import { TransitionProvider } from "./helperFunctions/TransitionContext";
-import TransitionComponent from "./helperFunctions/Transition";
-import { useLocation } from "react-router-dom";
 
 function AppContent() {
   const location = useLocation();

@@ -29,7 +29,6 @@ function AboutMe() {
       return glitchTl2;
     };
 
-    // voeg de glitches tegelijk toe, maar op andere elementen
     tl.fromTo(".introductionText", { opacity: 0 }, { opacity: 1 }, 0.5)
       .fromTo(".introductionTextCopy1", { opacity: 0 }, { opacity: 1 }, 0.5)
       .fromTo(".introductionTextCopy2", { opacity: 0 }, { opacity: 1 }, 0.5)

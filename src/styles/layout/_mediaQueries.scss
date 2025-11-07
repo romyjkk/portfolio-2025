@@ -7,59 +7,55 @@
             }
         }
     }
-    main .homePageWrapper {
-        .introductionCardContainer {
-            .introductionCard {
-                max-width: 70rem;
-                .introductionCardInner {
-                    .introductionCardFront {
+    main {
+        .homePageWrapper {
+            .introductionCardContainer {
+                .introductionCard {
+                    max-width: 70rem;
+                }
+            }
+            .projectContainer {
+                .projects {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(4, 1fr);
+                    gap: 10rem;
+                    max-width: 120rem;
+                    .project:nth-of-type(odd) {
+                        justify-self: baseline;
+                    }
+                    .project:nth-of-type(even) {
+                        justify-self: end;
+                    }
+                    .projectTwo {
                         > div {
+                            > section {
+                                margin-left: 3rem;
+                            }
+                        }
+                    }
+                    .projectFour {
+                        > div {
+                            > section {
+                                margin-left: 4rem;
+                            }
                         }
                     }
                 }
             }
-        }
-        .projectContainer {
-            .projects {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(4, 1fr);
-                gap: 10rem;
-                max-width: 120rem;
-                .project:nth-of-type(odd) {
-                    justify-self: baseline;
-                }
-                .project:nth-of-type(even) {
-                    justify-self: end;
-                }
-                .projectTwo {
-                    > div {
-                        > section {
-                            margin-left: 3rem;
-                        }
-                    }
-                }
-                .projectFour {
-                    > div {
-                        > section {
-                            margin-left: 4rem;
-                        }
-                    }
-                }
-            }
-        }
-        #wrapper {
-            .myExperience {
-                .experiences {
-                    .experience {
-                        .experienceContainer {
-                            .experienceContainerBorder {
-                                .experienceContainerClip {
-                                    padding: 3rem;
-                                    &::before,
-                                    &::after {
-                                        width: 7rem;
-                                        height: 7rem;
+            #wrapper {
+                .myExperience {
+                    .experiences {
+                        .experience {
+                            .experienceContainer {
+                                .experienceContainerBorder {
+                                    .experienceContainerClip {
+                                        padding: 3rem;
+                                        &::before,
+                                        &::after {
+                                            width: 7rem;
+                                            height: 7rem;
+                                        }
                                     }
                                 }
                             }
@@ -68,25 +64,7 @@
                 }
             }
         }
-    }
-
-    .button {
-        max-width: fit-content;
-        .buttonFront {
-            max-width: fit-content;
-            padding: 1rem 3rem 1rem 3rem;
-        }
-    }
-    footer {
-        margin-top: 10rem;
-        padding: 2rem;
-        ul {
-            gap: 3rem;
-        }
-    }
-    main {
         .projectPageWrapper {
-            // margin-top: 15rem;
             .heroSection {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -111,44 +89,96 @@
                     }
                 }
             }
+            .projectDetailsSection {
+                .imagesAndDescription {
+                    .projectImages,
+                    .bacSacProjImages,
+                    .singleProjectImage,
+                    .horrorflixProjImages {
+                        padding: 1rem 0 2rem 0;
+                        .projectImage {
+                            border: 0.5rem solid var(--primaryAccentColor);
+                            box-shadow: 0 0 1rem var(--primaryAccentColor);
+                        }
+                    }
+                }
+            }
+        }
+        .escape-manager-project {
+            .projectDetailsSection {
+                .projectImages {
+                    .projectImage {
+                        max-width: 30%;
+                    }
+                }
+            }
+        }
+        .our-solar-system-project {
+            .heroSection {
+                .projImageContainer {
+                    max-width: 35rem;
+                }
+            }
+        }
+    }
+
+    .button {
+        max-width: fit-content;
+        .buttonFront {
+            max-width: fit-content;
+            padding: 1rem 3rem 1rem 3rem;
+        }
+    }
+    footer {
+        margin-top: 10rem;
+        padding: 2rem;
+        ul {
+            gap: 3rem;
         }
     }
 }
 
 @media (min-width: 768px) {
-    main .projectPageWrapper {
-        .heroSection {
-            .funkyShape {
-                display: block;
-                grid-area: 1 / 1 / 2 / 3;
-                animation: dropShadow 5s linear infinite;
+    main {
+        .projectPageWrapper {
+            .heroSection {
+                .funkyShape {
+                    display: block;
+                    grid-area: 1 / 1 / 2 / 3;
+                    animation: dropShadow 5s linear infinite;
+                }
+            }
+            .projectDetailsSection {
+                .paragraphs {
+                    padding: 2rem;
+                }
             }
         }
-    }
-    main .homePageWrapper {
-        #wrapper {
-            .myExperience {
-                max-width: 90vw;
-                width: 100%;
-                justify-content: space-between;
-                .timelineContainer {
-                    display: flex;
-                }
-                .experiences {
-                    display: grid;
-                    grid-template-rows: repeat(1, 1fr);
-                    .experience {
-                        grid-area: 1/1;
-                        height: 100vh;
-                        width: 100%;
-                        .experienceContainer {
-                            .experienceContainerBorder {
-                                .experienceContainerClip {
-                                    padding: 7rem 5rem;
-                                    &::before,
-                                    &::after {
-                                        width: 8rem;
-                                        height: 8rem;
+        .homePageWrapper {
+            #wrapper {
+                .myExperience {
+                    max-width: 90vw;
+                    width: 100%;
+                    justify-content: space-between;
+                    .timelineContainer {
+                        display: flex;
+                    }
+                    .experiences {
+                        display: grid;
+                        grid-template-rows: repeat(1, 1fr);
+                        .experience {
+                            grid-area: 1/1;
+                            height: 100vh;
+                            width: 100%;
+                            .experienceContainer {
+                                .experienceContainerBorder {
+                                    .experienceContainerClip {
+                                        padding: 7rem 5rem;
+                                        &::before,
+                                        &::after {
+                                            width: 8rem;
+                                            height: 8rem;
+                                        }
                                     }
                                 }
                             }
@@ -161,19 +191,80 @@
 }
 
 @media (min-width: 992px) {
-    main .homePageWrapper {
-        #wrapper {
-            .myExperience {
-                // margin: 0 2rem;
-                .timelineContainer {
-                    .timeline {
-                        svg {
-                            max-height: 80vh;
+    main {
+        .homePageWrapper {
+            #wrapper {
+                .myExperience {
+                    .timelineContainer {
+                        .timeline {
+                            svg {
+                                max-height: 80vh;
+                            }
+                        }
+                    }
+                    .experiences {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .escape-manager-project {
+            .projectDetailsSection {
+                .projectImages {
+                    .projectImage {
+                        max-width: 35rem;
+                    }
+                }
+                .demonstrationVideoContainer {
+                    .videoFrame {
+                        max-width: 25rem;
+                        width: 100%;
+                        video {
+                            width: 100%;
                         }
                     }
                 }
-                .experiences {
-                    width: 100%;
+            }
+        }
+        .our-solar-system-project {
+            .heroSection {
+                .projImageContainer {
+                    max-width: 40rem;
+                }
+            }
+            .projectDetailsSection {
+                .imagesAndDescription {
+                    .projectImage {
+                        max-width: 80rem;
+                        width: 100%;
+                    }
+                }
+                .demonstrationVideoContainer {
+                    .videoFrame {
+                        max-width: 90rem;
+                        width: 100%;
+                        video {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .bac-sac-project {
+            .projectDetailsSection {
+                .imagesAndDescription {
+                    .projectImages {
+                        .projectImage {
+                            max-width: 50rem;
+                            width: 100%;
+                        }
+                        .veryHigh {
+                            max-width: 40rem;
+                        }
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
@@ -192,13 +283,22 @@
 }
 
 @media (min-width: 1200px) {
-    .pageHeader {
-    }
-    main .homePageWrapper {
-        .projectContainer {
-            .projects {
-                align-self: center;
-                width: 100%;
+    main {
+        .homePageWrapper {
+            .projectContainer {
+                .projects {
+                    align-self: center;
+                    width: 100%;
+                }
+            }
+        }
+        .horrorflix-project {
+            .projectDetailsSection {
+                .demonstrationVideoContainer {
+                    .videoFrame {
+                        width: 60%;
+                    }
+                }
             }
         }
     }
@@ -212,7 +312,6 @@
                 .introductionCardBack {
                     > div {
                         clip-path: polygon(0 0, 95% 0, 100% 10%, 100% 100%, 5% 100%, 0 90%);
-                        // border: 0.4rem solid var(--primaryAccentColor);
                         > section {
                             clip-path: polygon(0 0, 95% 0, 100% 10%, 100% 100%, 5% 100%, 0 90%);
                             flex-direction: row;

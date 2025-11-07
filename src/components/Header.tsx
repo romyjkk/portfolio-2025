@@ -1,8 +1,8 @@
 import { gsap } from "gsap";
+import { Link, useLocation, useNavigate } from "react-router";
 
 import Button from "./Button";
 import logo from "/logo.svg";
-import { Link, useLocation, useNavigate } from "react-router";
 
 function Header() {
   const navigate = useNavigate();
