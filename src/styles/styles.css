@@ -388,13 +388,6 @@ main .projectContainer .projects .projectOne > div figure {
 main .projectContainer .projects .projectOne > div figure img {
   margin-left: 1rem;
 }
-main .projectContainer .projects .projectOne > div figure .noise {
-  position: absolute;
-  width: clamp(6rem, 50%, 20rem);
-  height: clamp(2rem, 35%, 20rem);
-  left: 25%;
-  top: 18%;
-}
 main .projectContainer .projects .projectOne > div section {
   width: 90%;
   margin-right: 1rem;
@@ -440,6 +433,7 @@ main .projectContainer .projects .projectFour > div figure {
   margin-left: -1rem;
   order: 4;
 }
+
 main .aboutMeContainer {
   display: flex;
   align-items: center;
@@ -973,76 +967,6 @@ main .horrorflix-project .projectDetailsSection .demonstrationVideoContainer .vi
   background-color: var(--secondaryAccentColor);
 }
 
-@media (min-width: 576px) {
-  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .projectImages,
-  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .bacSacProjImages,
-  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .singleProjectImage,
-  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .horrorflixProjImages {
-    padding: 1rem 0 2rem 0;
-  }
-  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .projectImages .projectImage,
-  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .bacSacProjImages .projectImage,
-  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .singleProjectImage .projectImage,
-  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .horrorflixProjImages .projectImage {
-    border: 0.5rem solid var(--primaryAccentColor);
-    box-shadow: 0 0 1rem var(--primaryAccentColor);
-  }
-  main .escape-manager-project .projectDetailsSection .projectImages .projectImage {
-    max-width: 30%;
-  }
-  main .our-solar-system-project .heroSection .projImageContainer {
-    max-width: 35rem;
-  }
-  main .bac-sac-project .projectDetailsSection .imagesAndDescription .projectImages .projectImage {
-    width: 45%;
-  }
-}
-@media (min-width: 768px) {
-  main .projectPageWrapper .projectDetailsSection .paragraphs {
-    padding: 2rem;
-  }
-}
-@media (min-width: 992px) {
-  main .escape-manager-project .projectDetailsSection .projectImages .projectImage {
-    max-width: 35rem;
-  }
-  main .escape-manager-project .projectDetailsSection .demonstrationVideoContainer .videoFrame {
-    max-width: 25rem;
-    width: 100%;
-  }
-  main .escape-manager-project .projectDetailsSection .demonstrationVideoContainer .videoFrame video {
-    width: 100%;
-  }
-  main .our-solar-system-project .heroSection .projImageContainer {
-    max-width: 40rem;
-  }
-  main .our-solar-system-project .projectDetailsSection .imagesAndDescription .projectImage {
-    max-width: 80rem;
-    width: 100%;
-  }
-  main .our-solar-system-project .projectDetailsSection .demonstrationVideoContainer .videoFrame {
-    max-width: 90rem;
-    width: 100%;
-  }
-  main .our-solar-system-project .projectDetailsSection .demonstrationVideoContainer .videoFrame video {
-    width: 100%;
-  }
-  main .bac-sac-project .projectDetailsSection .imagesAndDescription .projectImages .projectImage {
-    max-width: 50rem;
-    width: 100%;
-  }
-  main .bac-sac-project .projectDetailsSection .imagesAndDescription .projectImages .veryHigh {
-    max-width: 40rem;
-  }
-  main .bac-sac-project .projectDetailsSection .imagesAndDescription .projectImages::-webkit-scrollbar {
-    display: none;
-  }
-}
-@media (min-width: 1200px) {
-  main .horrorflix-project .projectDetailsSection .demonstrationVideoContainer .videoFrame {
-    width: 60%;
-  }
-}
 :root {
   --gridBackgroundColor: #07210b;
   --primaryBackgroundColor: #000000;
@@ -1145,67 +1069,67 @@ main .horrorflix-project .projectDetailsSection .demonstrationVideoContainer .vi
 }
 @keyframes glitch {
   0% {
-    clip-path: inset(74px 0 23px 0);
+    clip-path: inset(27px 0 35px 0);
   }
   5% {
-    clip-path: inset(37px 0 52px 0);
+    clip-path: inset(72px 0 54px 0);
   }
   10% {
-    clip-path: inset(17px 0 26px 0);
+    clip-path: inset(74px 0 48px 0);
   }
   15% {
-    clip-path: inset(74px 0 20px 0);
+    clip-path: inset(27px 0 6px 0);
   }
   20% {
-    clip-path: inset(47px 0 50px 0);
+    clip-path: inset(43px 0 77px 0);
   }
   25% {
-    clip-path: inset(8px 0 57px 0);
+    clip-path: inset(69px 0 40px 0);
   }
   30% {
-    clip-path: inset(38px 0 49px 0);
+    clip-path: inset(5px 0 56px 0);
   }
   35% {
-    clip-path: inset(4px 0 29px 0);
+    clip-path: inset(28px 0 72px 0);
   }
   40% {
-    clip-path: inset(33px 0 32px 0);
+    clip-path: inset(44px 0 38px 0);
   }
   45% {
-    clip-path: inset(23px 0 8px 0);
+    clip-path: inset(68px 0 78px 0);
   }
   50% {
-    clip-path: inset(25px 0 3px 0);
+    clip-path: inset(71px 0 46px 0);
   }
   55% {
-    clip-path: inset(34px 0 13px 0);
+    clip-path: inset(71px 0 48px 0);
   }
   60% {
-    clip-path: inset(3px 0 13px 0);
+    clip-path: inset(27px 0 77px 0);
   }
   65% {
-    clip-path: inset(64px 0 6px 0);
+    clip-path: inset(40px 0 65px 0);
   }
   70% {
-    clip-path: inset(3px 0 20px 0);
+    clip-path: inset(62px 0 67px 0);
   }
   75% {
-    clip-path: inset(22px 0 7px 0);
+    clip-path: inset(60px 0 33px 0);
   }
   80% {
-    clip-path: inset(23px 0 49px 0);
+    clip-path: inset(30px 0 38px 0);
   }
   85% {
-    clip-path: inset(17px 0 56px 0);
+    clip-path: inset(65px 0 45px 0);
   }
   90% {
-    clip-path: inset(4px 0 32px 0);
+    clip-path: inset(31px 0 20px 0);
   }
   95% {
-    clip-path: inset(58px 0 45px 0);
+    clip-path: inset(70px 0 58px 0);
   }
   100% {
-    clip-path: inset(33px 0 21px 0);
+    clip-path: inset(72px 0 23px 0);
   }
 }
 @keyframes noise {
@@ -1353,22 +1277,6 @@ body {
     width: 7rem;
     height: 7rem;
   }
-  .button {
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-  }
-  .button .buttonFront {
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    padding: 1rem 3rem 1rem 3rem;
-  }
-  footer {
-    margin-top: 10rem;
-    padding: 2rem;
-  }
-  footer ul {
-    gap: 3rem;
-  }
   main .projectPageWrapper .heroSection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1391,12 +1299,50 @@ body {
   main .projectPageWrapper .heroSection .projMetaData .projDescription {
     width: 90%;
   }
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .projectImages,
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .bacSacProjImages,
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .singleProjectImage,
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .horrorflixProjImages {
+    padding: 1rem 0 2rem 0;
+  }
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .projectImages .projectImage,
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .bacSacProjImages .projectImage,
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .singleProjectImage .projectImage,
+  main .projectPageWrapper .projectDetailsSection .imagesAndDescription .horrorflixProjImages .projectImage {
+    border: 0.5rem solid var(--primaryAccentColor);
+    box-shadow: 0 0 1rem var(--primaryAccentColor);
+  }
+  main .escape-manager-project .projectDetailsSection .projectImages .projectImage {
+    max-width: 30%;
+  }
+  main .our-solar-system-project .heroSection .projImageContainer {
+    max-width: 35rem;
+  }
+  .button {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .button .buttonFront {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    padding: 1rem 3rem 1rem 3rem;
+  }
+  footer {
+    margin-top: 10rem;
+    padding: 2rem;
+  }
+  footer ul {
+    gap: 3rem;
+  }
 }
 @media (min-width: 768px) {
   main .projectPageWrapper .heroSection .funkyShape {
     display: block;
     grid-area: 1/1/2/3;
     animation: dropShadow 5s linear infinite;
+  }
+  main .projectPageWrapper .projectDetailsSection .paragraphs {
+    padding: 2rem;
   }
   main .homePageWrapper #wrapper .myExperience {
     max-width: 90vw;
@@ -1430,6 +1376,40 @@ body {
   main .homePageWrapper #wrapper .myExperience .experiences {
     width: 100%;
   }
+  main .escape-manager-project .projectDetailsSection .projectImages .projectImage {
+    max-width: 35rem;
+  }
+  main .escape-manager-project .projectDetailsSection .demonstrationVideoContainer .videoFrame {
+    max-width: 25rem;
+    width: 100%;
+  }
+  main .escape-manager-project .projectDetailsSection .demonstrationVideoContainer .videoFrame video {
+    width: 100%;
+  }
+  main .our-solar-system-project .heroSection .projImageContainer {
+    max-width: 40rem;
+  }
+  main .our-solar-system-project .projectDetailsSection .imagesAndDescription .projectImage {
+    max-width: 80rem;
+    width: 100%;
+  }
+  main .our-solar-system-project .projectDetailsSection .demonstrationVideoContainer .videoFrame {
+    max-width: 90rem;
+    width: 100%;
+  }
+  main .our-solar-system-project .projectDetailsSection .demonstrationVideoContainer .videoFrame video {
+    width: 100%;
+  }
+  main .bac-sac-project .projectDetailsSection .imagesAndDescription .projectImages .projectImage {
+    max-width: 50rem;
+    width: 100%;
+  }
+  main .bac-sac-project .projectDetailsSection .imagesAndDescription .projectImages .veryHigh {
+    max-width: 40rem;
+  }
+  main .bac-sac-project .projectDetailsSection .imagesAndDescription .projectImages::-webkit-scrollbar {
+    display: none;
+  }
 }
 @media (min-width: 1050px) {
   main .homePageWrapper #wrapper .myExperience {
@@ -1441,6 +1421,9 @@ body {
   main .homePageWrapper .projectContainer .projects {
     align-self: center;
     width: 100%;
+  }
+  main .horrorflix-project .projectDetailsSection .demonstrationVideoContainer .videoFrame {
+    width: 60%;
   }
 }
 @container intro (inline-size > 40rem) {
