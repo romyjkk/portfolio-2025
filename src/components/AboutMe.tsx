@@ -1,4 +1,4 @@
-import portrait from "/me.jpeg";
+import portrait from "/me.webp";
 import { gsap } from "gsap";
 
 import { useGSAP } from "@gsap/react";

@@ -13,8 +13,8 @@ export const projectData = [
         reporting issues and managing inventory.
       </>
     ),
-    mockup: "/mockups/mockup1.png",
-    projectImage: "/projImages/proj1/projImg1.png",
+    mockup: "/mockups/mockup1.webp",
+    projectImage: "/projImages/proj1/projImg1.webp",
     introParagraphs: [
       <>
         In the graduation phase of my study, the goal was to pick a real problem
@@ -82,26 +82,26 @@ export const projectData = [
     images: [
       {
         emSketches: [
-          "/projImages/proj1/details/dashboardV1.png",
-          "/projImages/proj1/details/dashboardV2.png",
-          "/projImages/proj1/details/dashboardV3.png",
-          "/projImages/proj1/details/dashboardV4.png",
+          "/projImages/proj1/details/dashboardV1.webp",
+          "/projImages/proj1/details/dashboardV2.webp",
+          "/projImages/proj1/details/dashboardV3.webp",
+          "/projImages/proj1/details/dashboardV4.webp",
         ],
       },
       {
         emResults: [
-          "/projImages/proj1/details/createIssue.png",
-          "/projImages/proj1/details/createObject.png",
-          "/projImages/proj1/details/workingFilters.png",
-          "/projImages/proj1/details/profilePage.png",
+          "/projImages/proj1/details/createIssue.webp",
+          "/projImages/proj1/details/createObject.webp",
+          "/projImages/proj1/details/workingFilters.webp",
+          "/projImages/proj1/details/profilePage.webp",
         ],
       },
       {
         glitch: [
-          "/projImages/proj1/glitch1.png",
-          "/projImages/proj1/glitch2.png",
-          "/projImages/proj1/glitch3.png",
-          "/projImages/proj1/glitch4.png",
+          "/projImages/proj1/glitch1.webp",
+          "/projImages/proj1/glitch2.webp",
+          "/projImages/proj1/glitch3.webp",
+          "/projImages/proj1/glitch4.webp",
         ],
       },
     ],
@@ -130,8 +130,8 @@ export const projectData = [
         <strong className="red"> THREE.js and GSAP.</strong>
       </>
     ),
-    mockup: "/mockups/mockup2.png",
-    projectImage: "/projImages/proj2/projImg2Flipped.png",
+    mockup: "/mockups/mockup2.webp",
+    projectImage: "/projImages/proj2/projImg2Flipped.webp",
     introParagraphs: [
       <>
         Inspired by all the amazing THREE.js and GSAP projects I’ve come across
@@ -174,22 +174,22 @@ export const projectData = [
     ],
     images: [
       {
-        scrollTrigger: "/projImages/proj2/details/scrollTrigger.png",
+        scrollTrigger: "/projImages/proj2/details/scrollTrigger.webp",
       },
       {
         ossResults: [
-          "/projImages/proj2/details/loader.png",
-          "/projImages/proj2/details/sun.png",
-          "/projImages/proj2/details/uranus.png",
-          "/projImages/proj2/details/fullScene.png",
+          "/projImages/proj2/details/loader.webp",
+          "/projImages/proj2/details/sun.webp",
+          "/projImages/proj2/details/uranus.webp",
+          "/projImages/proj2/details/fullScene.webp",
         ],
       },
       {
         glitch: [
-          "/projImages/proj2/glitch1Flipped.png",
-          "/projImages/proj2/glitch2Flipped.png",
-          "/projImages/proj2/glitch3Flipped.png",
-          "/projImages/proj2/glitch4Flipped.png",
+          "/projImages/proj2/glitch1Flipped.webp",
+          "/projImages/proj2/glitch2Flipped.webp",
+          "/projImages/proj2/glitch3Flipped.webp",
+          "/projImages/proj2/glitch4Flipped.webp",
         ],
       },
     ],
@@ -218,8 +218,8 @@ export const projectData = [
         Digital.
       </>
     ),
-    mockup: "/mockups/mockup3.png",
-    projectImage: "/projImages/proj3/projImg3.png",
+    mockup: "/mockups/mockup3.webp",
+    projectImage: "/projImages/proj3/projImg3.webp",
     introParagraphs: [
       <>
         During my internship at Kobalt Digital, I worked on the (sponsor)
@@ -271,24 +271,24 @@ export const projectData = [
     images: [
       {
         oldDesign: [
-          "/projImages/proj3/details/bacOld.jpeg",
-          "/projImages/proj3/details/sacOld.jpeg",
+          "/projImages/proj3/details/bacOld.webp",
+          "/projImages/proj3/details/sacOld.webp",
         ],
         wordPress: [
           "/projImages/proj3/details/bacHeroBackEnd.webp",
-          "/projImages/proj3/details/bacHeroFrontEnd.png",
+          "/projImages/proj3/details/bacHeroFrontEnd.webp",
         ],
         newDesign: [
-          "/projImages/proj3/details/bacNew.jpeg",
-          "/projImages/proj3/details/sacNew.png",
+          "/projImages/proj3/details/bacNew.webp",
+          "/projImages/proj3/details/sacNew.webp",
         ],
       },
       {
         glitch: [
-          "/projImages/proj3/glitch1.png",
-          "/projImages/proj3/glitch2.png",
-          "/projImages/proj3/glitch3.png",
-          "/projImages/proj3/glitch4.png",
+          "/projImages/proj3/glitch1.webp",
+          "/projImages/proj3/glitch2.webp",
+          "/projImages/proj3/glitch3.webp",
+          "/projImages/proj3/glitch4.webp",
         ],
       },
     ],
@@ -317,8 +317,8 @@ export const projectData = [
         the <strong className="red">mail PHP</strong> function.
       </>
     ),
-    mockup: "/mockups/mockup4.png",
-    projectImage: "/projImages/proj4/projImg4Flipped.png",
+    mockup: "/mockups/mockup4.webp",
+    projectImage: "/projImages/proj4/projImg4Flipped.webp",
     processParagraphs: [
       <>
         The only requirements for this project were using
@@ -367,21 +367,21 @@ export const projectData = [
     ],
     images: [
       {
-        validation: "/projImages/proj4/details/validation.png",
+        validation: "/projImages/proj4/details/validation.webp",
       },
       {
         sent: [
-          "/projImages/proj4/details/easterEgg1.png",
-          "/projImages/proj4/details/sent.png",
-          "/projImages/proj4/details/email.png",
+          "/projImages/proj4/details/easterEgg1.webp",
+          "/projImages/proj4/details/sent.webp",
+          "/projImages/proj4/details/email.webp",
         ],
       },
       {
         glitch: [
-          "/projImages/proj4/glitch1Flipped.png",
-          "/projImages/proj4/glitch2Flipped.png",
-          "/projImages/proj4/glitch3Flipped.png",
-          "/projImages/proj4/glitch4Flipped.png",
+          "/projImages/proj4/glitch1Flipped.webp",
+          "/projImages/proj4/glitch2Flipped.webp",
+          "/projImages/proj4/glitch3Flipped.webp",
+          "/projImages/proj4/glitch4Flipped.webp",
         ],
       },
     ],

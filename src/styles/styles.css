@@ -291,7 +291,7 @@ footer ul li a:hover img {
 }
 .introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div section .portraitContainer .glitchImage img,
 .introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div section .portraitContainer .glitchImage img {
-  background-image: url("/portrait.png");
+  background-image: url("/portrait.webp");
 }
 .introductionCardContainer .introductionCard .introductionCardInner .introductionCardFront > div section .introduction,
 .introductionCardContainer .introductionCard .introductionCardInner .introductionCardBack > div section .introduction {
@@ -775,6 +775,10 @@ main .projectPageWrapper .projectDetailsSection .imagesAndDescription .projectIm
   height: -moz-fit-content;
   height: fit-content;
 }
+main .projectPageWrapper .projectDetailsSection .imagesAndDescription .projectImages:focus-visible {
+  border: none;
+  outline: 0.4rem solid var(--primaryTextColor);
+}
 main .projectPageWrapper .projectDetailsSection .processParagraphs ul {
   list-style: disc;
   padding: 0 0 0 2rem;
@@ -1069,67 +1073,67 @@ main .horrorflix-project .projectDetailsSection .demonstrationVideoContainer .vi
 }
 @keyframes glitch {
   0% {
-    clip-path: inset(27px 0 35px 0);
+    clip-path: inset(52px 0 32px 0);
   }
   5% {
-    clip-path: inset(72px 0 54px 0);
+    clip-path: inset(66px 0 37px 0);
   }
   10% {
-    clip-path: inset(74px 0 48px 0);
+    clip-path: inset(38px 0 63px 0);
   }
   15% {
-    clip-path: inset(27px 0 6px 0);
+    clip-path: inset(37px 0 10px 0);
   }
   20% {
-    clip-path: inset(43px 0 77px 0);
+    clip-path: inset(16px 0 61px 0);
   }
   25% {
-    clip-path: inset(69px 0 40px 0);
+    clip-path: inset(16px 0 62px 0);
   }
   30% {
-    clip-path: inset(5px 0 56px 0);
+    clip-path: inset(59px 0 34px 0);
   }
   35% {
-    clip-path: inset(28px 0 72px 0);
+    clip-path: inset(3px 0 66px 0);
   }
   40% {
-    clip-path: inset(44px 0 38px 0);
+    clip-path: inset(71px 0 42px 0);
   }
   45% {
-    clip-path: inset(68px 0 78px 0);
+    clip-path: inset(48px 0 9px 0);
   }
   50% {
-    clip-path: inset(71px 0 46px 0);
+    clip-path: inset(17px 0 8px 0);
   }
   55% {
-    clip-path: inset(71px 0 48px 0);
+    clip-path: inset(50px 0 62px 0);
   }
   60% {
-    clip-path: inset(27px 0 77px 0);
+    clip-path: inset(40px 0 27px 0);
   }
   65% {
-    clip-path: inset(40px 0 65px 0);
+    clip-path: inset(47px 0 17px 0);
   }
   70% {
-    clip-path: inset(62px 0 67px 0);
+    clip-path: inset(2px 0 60px 0);
   }
   75% {
-    clip-path: inset(60px 0 33px 0);
+    clip-path: inset(67px 0 29px 0);
   }
   80% {
-    clip-path: inset(30px 0 38px 0);
+    clip-path: inset(20px 0 10px 0);
   }
   85% {
-    clip-path: inset(65px 0 45px 0);
+    clip-path: inset(33px 0 16px 0);
   }
   90% {
-    clip-path: inset(31px 0 20px 0);
+    clip-path: inset(41px 0 15px 0);
   }
   95% {
-    clip-path: inset(70px 0 58px 0);
+    clip-path: inset(72px 0 19px 0);
   }
   100% {
-    clip-path: inset(72px 0 23px 0);
+    clip-path: inset(55px 0 51px 0);
   }
 }
 @keyframes noise {
@@ -1231,6 +1235,19 @@ button {
   top: -0.2rem;
   border-bottom: 0.2rem solid var(--secondaryButtonColor);
   border-right: 0.2rem solid transparent;
+}
+.button:focus-visible {
+  outline: none;
+  border: none;
+}
+.button:focus-visible .buttonFront {
+  border: none;
+  outline: 0.4rem solid var(--primaryTextColor);
+}
+
+a:focus-visible {
+  outline: 0.4rem solid var(--primaryTextColor);
+  border: none;
 }
 
 body {

@@ -83,4 +83,19 @@ button {
             }
         }
     }
+    &:focus-visible {
+        outline: none;
+        border: none;
+        .buttonFront {
+            border: none;
+            outline: 0.4rem solid var(--primaryTextColor);
+        }
+    }
+}
+
+a {
+    &:focus-visible {
+        outline: 0.4rem solid var(--primaryTextColor);
+        border: none;
+    }
 }

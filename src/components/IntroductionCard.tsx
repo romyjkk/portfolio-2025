@@ -1,11 +1,11 @@
 import { gsap } from "gsap";
 
-import portrait from "/portrait.png";
-import matrixifiedPortrait from "/portraitMatrixified.jpg";
-import matrixifiedGlitch1 from "/glitch/glitch1.png";
-import matrixifiedGlitch2 from "/glitch/glitch2.png";
-import matrixifiedGlitch3 from "/glitch/glitch3.png";
-import matrixifiedGlitch4 from "/glitch/glitch4.png";
+import portrait from "/portrait.webp";
+import matrixifiedPortrait from "/portraitMatrixified.webp";
+import matrixifiedGlitch1 from "/glitch/glitch1.webp";
+import matrixifiedGlitch2 from "/glitch/glitch2.webp";
+import matrixifiedGlitch3 from "/glitch/glitch3.webp";
+import matrixifiedGlitch4 from "/glitch/glitch4.webp";
 
 function IntroductionCard() {
   const glitchEffect = () => {
