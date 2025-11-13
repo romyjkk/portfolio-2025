@@ -39,10 +39,18 @@ function Hero({ id }: { id: string }) {
 
   return (
     <section className="heroSection">
-      <img className="funkyShape" src="/shapesAndBorders/funkyShape.svg" />
+      <img
+        className="funkyShape"
+        src="/shapesAndBorders/funkyShape.svg"
+        alt=""
+      />
       <figure className="projImageContainer">
-        <img ref={imgRef} src={project.projectImage} />
-        <img src={project.mockup} />
+        <img
+          ref={imgRef}
+          src={project.projectImage}
+          alt={`${project.title} project image`}
+        />
+        <img src={project.mockup} alt={`${project.title} mockup`} />
       </figure>
       <section className="projMetaData">
         <div className="container">

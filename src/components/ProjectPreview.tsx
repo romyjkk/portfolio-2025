@@ -94,7 +94,12 @@ function ProjectPreview(props: {
       key={props.id}
       className={`project ${props.className}`}
     >
-      <img ref={shapeRef} className="funkyShape" src={props.funkyShape} />
+      <img
+        ref={shapeRef}
+        className="funkyShape"
+        src={props.funkyShape}
+        alt=""
+      />
       <div ref={contentRef} className="projContentContainer">
         <figure className="projImageContainer">
           <img

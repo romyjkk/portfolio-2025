@@ -27,7 +27,10 @@ function ProjectDetails({ id }: { id: string }) {
               (emSketch: string, index: number) => {
                 return (
                   <figure key={index} className="projectImage">
-                    <img src={emSketch} />
+                    <img
+                      src={emSketch}
+                      alt="From sketch to final Figma version"
+                    />
                   </figure>
                 );
               }
@@ -48,7 +51,7 @@ function ProjectDetails({ id }: { id: string }) {
               (oldDesign: string, index: number) => {
                 return (
                   <figure key={index} className="projectImage">
-                    <img src={oldDesign} />
+                    <img src={oldDesign} alt="Old versions of the websites" />
                   </figure>
                 );
               }
@@ -79,7 +82,10 @@ function ProjectDetails({ id }: { id: string }) {
         <article className="imagesAndDescription">
           <article className="singleProjectImage">
             <figure className="projectImage">
-              <img src={(project.images?.[0] as any).validation} />
+              <img
+                src={(project.images?.[0] as any).validation}
+                alt="Form validation example"
+              />
             </figure>
           </article>
           {(project.imageDescriptions?.[0] as any).validation && (
@@ -97,7 +103,7 @@ function ProjectDetails({ id }: { id: string }) {
               (wp: string, index: number) => {
                 return (
                   <figure key={index} className="projectImage">
-                    <img src={wp} />
+                    <img src={wp} alt="Hero: WordPress and front-end" />
                   </figure>
                 );
               }
@@ -113,7 +119,10 @@ function ProjectDetails({ id }: { id: string }) {
         <article className="imagesAndDescription">
           <article className="singleProjectImage">
             <figure className="projectImage">
-              <img src={(project.images?.[0] as any).scrollTrigger} />
+              <img
+                src={(project.images?.[0] as any).scrollTrigger}
+                alt="GSAP ScrollTrigger with markers"
+              />
             </figure>
           </article>
           {(project.imageDescriptions?.[0] as any).scrollTrigger && (
@@ -131,7 +140,7 @@ function ProjectDetails({ id }: { id: string }) {
               (emResult: string, index: number) => {
                 return (
                   <figure key={index} className="projectImage">
-                    <img src={emResult} />
+                    <img src={emResult} alt="The application in use" />
                   </figure>
                 );
               }
@@ -158,7 +167,7 @@ function ProjectDetails({ id }: { id: string }) {
               (sent: string, index: number) => {
                 return (
                   <figure key={index} className="projectImage">
-                    <img src={sent} />
+                    <img src={sent} alt="Form results" />
                   </figure>
                 );
               }
@@ -177,7 +186,7 @@ function ProjectDetails({ id }: { id: string }) {
               (ossResult: string, index: number) => {
                 return (
                   <figure key={index} className="projectImage">
-                    <img src={ossResult} />
+                    <img src={ossResult} alt="Website results" />
                   </figure>
                 );
               }
@@ -198,7 +207,7 @@ function ProjectDetails({ id }: { id: string }) {
               (newDesign: string, index: number) => {
                 return (
                   <figure key={index} className="projectImage veryHigh">
-                    <img src={newDesign} />
+                    <img src={newDesign} alt="Website results" />
                   </figure>
                 );
               }
@@ -222,6 +231,7 @@ function ProjectDetails({ id }: { id: string }) {
             <figure className="videoFrame">
               <video muted loop autoPlay>
                 <source src={project.demonstrationVideo} type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
             </figure>
           </article>
